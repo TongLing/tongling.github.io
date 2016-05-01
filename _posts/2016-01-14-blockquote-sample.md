@@ -1,6 +1,7 @@
 ---
 layout: post
-title: With nice formatting too...
+title: With nice formatting...
+author: Jason Long
 ---
 
 
