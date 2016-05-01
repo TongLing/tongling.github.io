@@ -2,6 +2,7 @@
 layout: default
 ---
 
+
 {% for post in paginator.posts %}
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -10,7 +11,6 @@ layout: default
 
   <header class="post-header">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h1 class="post-title" itemprop="name headline">  {{ post.title }}</h1> </a>
-
   </header>
 
     {{ post.content }}
