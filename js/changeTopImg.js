@@ -1,6 +1,6 @@
 // 修改顶端图片的样式。在资源文件中放置了很多图片（coverxx），需要取出图片时
 // 就可以直接使用Javascript修改相应的样式
-
+var date = Date();
 var random = Math.floor(Math.random()*20);
 if (random <10)
 {

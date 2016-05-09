@@ -60,6 +60,7 @@ a:hover {
 .page-header {
   color: #fff;
   text-align: center;
+  background-color: #c93;
   background-size: cover;
   opacity: 1.0;
 }
@@ -132,6 +133,7 @@ a:hover {
   color: #5F7585;
 }
 .main-content p {
+  font-size: 1em;
   margin-bottom: 1em; }
 .main-content code {
   padding: 2px 4px;
