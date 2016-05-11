@@ -6,7 +6,9 @@ author: TongLing
 
 
 今天在做前端开发的时候，需要在JSON用前后端传递相应的时间。需要传递的时间有两个：StartTime和EndTime。
+
 startTime表示当前的时间，格式为"2016-05-04"这样的。endTime表示一个星期以前的时间，格式为"2016-04-28"。
+
 ```
 <script type="text/javascript">
     var now = new Date();    
