@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css">
+  <link rel="canonical" href="/javascript-time/">
+  <link rel="alternate" type="application/rss+xml" title="童凌的技术博客" href="/feed.xml">
+  <meta name="description" content="今天在做前端开发的时候，需要在JSON用前后端传递相应的时间。需要传递的时间有两个：StartTime和EndTime。">
+
+   <title>Javascript中的时间处理问题</title>
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="page-header">
+     <h1 class="project-name"> <a class="header-link" href="/"> Think, Code, Solve.</a></h1>
+</header>
+
+
+    <section class="main-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" >
+
+    <div class="main-content" itemprop="articleBody">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Javascript中的时间处理问题</h1>
+   <p class="post-meta"><time datetime="2016-05-09T00:00:00+08:00" itemprop="datePublished">May 9, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span></p>
+  </header>
+
+    <p>今天在做前端开发的时候，需要在JSON用前后端传递相应的时间。需要传递的时间有两个：StartTime和EndTime。</p>
+
+<p>startTime表示当前的时间，格式为”2016-05-04”这样的。endTime表示一个星期以前的时间，格式为”2016-04-28”。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    var now = new Date();    
+    var pre = new Date();   // now 和 pre 都是 Date 类
+    pre.setDate(now.getDate()-7); // pre修改以后，得到的还是Date类
+
+    //将标准Date格式，转换成"2016-05-03"这样的字符串格式。
+     function setFormat(date){
+        var year = date.getFullYear();//年份
+        var month = date.getMonth();  //月份
+        var date = date.getDate();    //日期
+        return (year + "-" + month + "-" + date);//拼接成字符串
+    }
+    var endTime = setFormat(now);
+    var startTime = setFormat(pre);
+</code></pre>
+</div>
+
+  </div>
+  <!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2098130"></script>
+<!-- UY END -->
+
+</article>
+
+      </div>
+    </section>
+
+    
+
+<p style="font-size: 60%; text-align: right;">blog built using the <a href="https://github.com/jasonlong/cayman-theme">cayman-theme</a> by <a href="https://github.com/jasonlong">Jason Long</a>. <a href="http://creativecommons.org/licenses/by/4.0/">LICENSE</a></p>
+
+    <!-- 修改顶端图片的样式。在资源文件中放置了很多图片（coverxx），需要取出图片时
+     就可以直接使用Javascript修改相应的样式 -->
+    <script src ="../js/changeTopImg.js"></script>
+
+
+
+  </body>
+
+    
+
+
+</html>

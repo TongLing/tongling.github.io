@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css">
+  <link rel="canonical" href="/index-change-js/">
+  <link rel="alternate" type="application/rss+xml" title="童凌的技术博客" href="/feed.xml">
+  <meta name="description" content="不知道你有没有注意到，本博客首页的图片会自动切换？我最近写了点代码，实现了这个功能。这个功能挺有意思的，push上来分享一下~ 以后有时间的话打算写一个这样的插件跟大家交流交流~">
+
+   <title>首页的图片自动切换功能</title>
+
+
+
+</head>
+
+
+  <body>
+
+    <header class="page-header">
+     <h1 class="project-name"> <a class="header-link" href="/"> Think, Code, Solve.</a></h1>
+</header>
+
+
+    <section class="main-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting" >
+
+    <div class="main-content" itemprop="articleBody">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">首页的图片自动切换功能</h1>
+   <p class="post-meta"><time datetime="2016-05-12T00:00:00+08:00" itemprop="datePublished">May 12, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span></p>
+  </header>
+
+    <p>不知道你有没有注意到，本博客首页的图片会自动切换？我最近写了点代码，实现了这个功能。这个功能挺有意思的，push上来分享一下~ 以后有时间的话打算写一个这样的插件跟大家交流交流~</p>
+
+<h3>1. 描述 </h3>
+<p>我的服务器目录文件夹结构是这样的:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> +index.html 
+ |--js        // js脚本和文件
+ |--css       // css文件
+ |--img       // 各种图片
+ |--resources // 除了以上资源以外的其他资源
+ |--posts     // 博客文章存放在这里
+</code></pre>
+</div>
+
+<p>在js文件夹下新建一个脚本，使用img文件夹下的图片，实现对首页进行图片自动切换的功能。</p>
+
+<h3>2. 实现方法</h3>
+<p>在index.html中，找到与图片相关的DOM节点:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;header class="post-header"&gt;
+......
+&lt;/header&gt;
+</code></pre>
+</div>
+
+<p>与此相关的css样式是这样的:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.page-header {
+  color: #fff;
+  text-align: center;
+  opacity: 0.95;    
+  background:"#56687c url('../img/default.jpg no repeat 50%')";
+}
+</code></pre>
+</div>
+
+<p>可以看到default.jpg被固定加载进来了。</p>
+
+<p>所以为了实现自动切换功能，我们的思路就是让css中加载的图片路径自动变化。</p>
+
+<p>在js文件夹下新建一个changeTopImg.js脚本，插入以下代码:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// 修改顶端图片的样式。在资源文件中放置了很多图片（coverxx），需要取出图片时
+// 就可以直接使用Javascript修改相应的样式.
+
+var random = Math.floor(Math.random()*20); //生成0~19的随机数
+
+if (random &lt; 10){random = "0"+random;}
+
+var cls = document.getElementsByClassName('page-header'); //取得节点
+
+cls[0].style.background="#56687C 
+
+url('../img/cover"+random+".jpg') no-repeat 50%"; //修改样式
+</code></pre>
+</div>
+
+<p>再将js代码引入index.html网页中，测试效果。</p>
+
+  </div>
+  <!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2098130"></script>
+<!-- UY END -->
+
+</article>
+
+      </div>
+    </section>
+
+    
+
+<p style="font-size: 60%; text-align: right;">blog built using the <a href="https://github.com/jasonlong/cayman-theme">cayman-theme</a> by <a href="https://github.com/jasonlong">Jason Long</a>. <a href="http://creativecommons.org/licenses/by/4.0/">LICENSE</a></p>
+
+    <!-- 修改顶端图片的样式。在资源文件中放置了很多图片（coverxx），需要取出图片时
+     就可以直接使用Javascript修改相应的样式 -->
+    <script src ="../js/changeTopImg.js"></script>
+
+
+
+  </body>
+
+    
+
+
+</html>

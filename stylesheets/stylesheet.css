@@ -58,11 +58,16 @@ a:hover {
       margin-left: 0; } }
 
 .page-header {
+    
+   transition: 5s; 
   color: #fff;
   text-align: center;
+    height:auto;
+    width:auto;
   background-color: #c93;
   background-size: cover;
-  opacity: 1.0;
+  opacity: 0.95;
+     
 }
 
 @media screen and (min-width: 64em) {
@@ -85,12 +90,15 @@ a:hover {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     transition: 0.5s;
+    opacity: 0.8;
 }
+
 
 .header-link:hover {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
     transition: 0.5s;
     text-decoration: none;
+    opacity: 1;
 }
 
 @media screen and (min-width: 64em) {

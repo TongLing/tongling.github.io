@@ -33,6 +33,119 @@
     <div class="main-content" itemprop="articleBody">
 
   <header class="post-header">
+      <a class="post-link" href="/index-change-js/"><h1 class="post-title" itemprop="name headline">  首页的图片自动切换功能</h1> </a>
+  </header>
+
+    <p>不知道你有没有注意到，本博客首页的图片会自动切换？我最近写了点代码，实现了这个功能。这个功能挺有意思的，push上来分享一下~ 以后有时间的话打算写一个这样的插件跟大家交流交流~</p>
+
+<h3>1. 描述 </h3>
+<p>我的服务器目录文件夹结构是这样的:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code> +index.html 
+ |--js        // js脚本和文件
+ |--css       // css文件
+ |--img       // 各种图片
+ |--resources // 除了以上资源以外的其他资源
+ |--posts     // 博客文章存放在这里
+</code></pre>
+</div>
+
+<p>在js文件夹下新建一个脚本，使用img文件夹下的图片，实现对首页进行图片自动切换的功能。</p>
+
+<h3>2. 实现方法</h3>
+<p>在index.html中，找到与图片相关的DOM节点:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;header class="post-header"&gt;
+......
+&lt;/header&gt;
+</code></pre>
+</div>
+
+<p>与此相关的css样式是这样的:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>.page-header {
+  color: #fff;
+  text-align: center;
+  opacity: 0.95;    
+  background:"#56687c url('../img/default.jpg no repeat 50%')";
+}
+</code></pre>
+</div>
+
+<p>可以看到default.jpg被固定加载进来了。</p>
+
+<p>所以为了实现自动切换功能，我们的思路就是让css中加载的图片路径自动变化。</p>
+
+<p>在js文件夹下新建一个changeTopImg.js脚本，插入以下代码:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// 修改顶端图片的样式。在资源文件中放置了很多图片（coverxx），需要取出图片时
+// 就可以直接使用Javascript修改相应的样式.
+
+var random = Math.floor(Math.random()*20); //生成0~19的随机数
+
+if (random &lt; 10){random = "0"+random;}
+
+var cls = document.getElementsByClassName('page-header'); //取得节点
+
+cls[0].style.background="#56687C 
+
+url('../img/cover"+random+".jpg') no-repeat 50%"; //修改样式
+</code></pre>
+</div>
+
+<p>再将js代码引入index.html网页中，测试效果。</p>
+
+
+ <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-05-12T00:00:00+08:00" itemprop="datePublished">May 12, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span> • <a href="/index-change-js/">查看全文</a></p>
+
+  </div>
+
+</article>
+
+
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="main-content" itemprop="articleBody">
+
+  <header class="post-header">
+      <a class="post-link" href="/javascript-time/"><h1 class="post-title" itemprop="name headline">  Javascript中的时间处理问题</h1> </a>
+  </header>
+
+    <p>今天在做前端开发的时候，需要在JSON用前后端传递相应的时间。需要传递的时间有两个：StartTime和EndTime。</p>
+
+<p>startTime表示当前的时间，格式为”2016-05-04”这样的。endTime表示一个星期以前的时间，格式为”2016-04-28”。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    var now = new Date();    
+    var pre = new Date();   // now 和 pre 都是 Date 类
+    pre.setDate(now.getDate()-7); // pre修改以后，得到的还是Date类
+
+    //将标准Date格式，转换成"2016-05-03"这样的字符串格式。
+     function setFormat(date){
+        var year = date.getFullYear();//年份
+        var month = date.getMonth();  //月份
+        var date = date.getDate();    //日期
+        return (year + "-" + month + "-" + date);//拼接成字符串
+    }
+    var endTime = setFormat(now);
+    var startTime = setFormat(pre);
+</code></pre>
+</div>
+
+
+ <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-05-09T00:00:00+08:00" itemprop="datePublished">May 9, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span> • <a href="/javascript-time/">查看全文</a></p>
+
+  </div>
+
+</article>
+
+
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="main-content" itemprop="articleBody">
+
+  <header class="post-header">
       <a class="post-link" href="/Hello-Blog/"><h1 class="post-title" itemprop="name headline">  新的旅程</h1> </a>
   </header>
 

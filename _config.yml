@@ -8,6 +8,7 @@
 # Site settings
 title: '童凌的技术博客'
 description: 'Think, Code, Solve.' # write a nice description for your blog
+subtitle: '生活向前，珍惜当下' # subtitles for this blog
 baseurl: '' # the subpath of your site, e.g. /blog
 url: '' # the base hostname & protocol for your site http://www.example.com
 # google_analytics: 'UA-XXXXXX-X'

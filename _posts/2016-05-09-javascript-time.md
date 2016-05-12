@@ -10,7 +10,6 @@ author: TongLing
 startTime表示当前的时间，格式为"2016-05-04"这样的。endTime表示一个星期以前的时间，格式为"2016-04-28"。
 
 ```
-<script type="text/javascript">
     var now = new Date();    
     var pre = new Date();   // now 和 pre 都是 Date 类
     pre.setDate(now.getDate()-7); // pre修改以后，得到的还是Date类
@@ -24,5 +23,4 @@ startTime表示当前的时间，格式为"2016-05-04"这样的。endTime表示�
     }
     var endTime = setFormat(now);
     var startTime = setFormat(pre);
-</script>
 ```
