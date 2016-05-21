@@ -6,17 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: '童凌的技术博客'
-description: 'Think, Code, Solve.' # write a nice description for your blog
-subtitle: '生活向前，珍惜当下' # subtitles for this blog
-baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site http://www.example.com
+title:        '童凌的技术博客'
+description:  'Think, Code, Solve.' # write a nice description for your blog
+subtitle:     '生活向前，珍惜当下' # subtitles for this blog
+baseurl:      '' # the subpath of your site, e.g. /blog
+url:          '' # the base hostname & protocol for your site http://www.example.com
 # google_analytics: 'UA-XXXXXX-X'
-author: 'TongLing'
-twitter_username: 'twitter_username'
+author:       'TongLing'
 # Build settings
-markdown: kramdown
-permalink: '/:title/'
-gems: [jekyll-paginate]
+markdown:     kramdown
+permalink:    '/:title/'
+gems:         [jekyll-paginate]
 # 首页上显示的最多项目条数
-paginate: 10
+paginate:    1
+paginate_path: 'page:num'

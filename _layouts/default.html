@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
-
     <section class="main-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </section>
-
     {% include footer.html %}
-    <!-- 修改顶端图片的样式。在资源文件中放置了很多图片（coverxx），需要取出图片时
-     就可以直接使用Javascript修改相应的样式 -->
     <script src ="../js/changeTopImg.js"></script>
-
-
-
   </body>
-
     {% include scripts.html %}
-
 </html>

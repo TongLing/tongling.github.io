@@ -2,6 +2,8 @@
 layout: post
 title: 新的旅程
 author: TongLing
+categories: [随笔]
+tags: [随笔]
 ---
 
 

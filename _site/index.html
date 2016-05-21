@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,429 +15,82 @@
 
 </head>
 
-
   <body>
-
     <header class="page-header">
      <h1 class="project-name"> <a class="header-link" href="/"> Think, Code, Solve.</a></h1>
 </header>
 
-
     <section class="main-content">
       <div class="wrapper">
-        
+        <div class='category'>
+		
+			<a href="/category/index.html#web开发">web开发<span>3</span></a>
+		
+			<a href="/category/index.html#随笔">随笔<span>1</span></a>
+		
+			<a href="/category/index.html#插件">插件<span>1</span></a>
+		
+</div>
+
+
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
     <div class="main-content" itemprop="articleBody">
 
   <header class="post-header">
-      <a class="post-link" href="/baiduCleaner/"><h1 class="post-title" itemprop="name headline">  Baiducleaner</h1> </a>
+      <a class="post-link" href="/baiduCleaner/"><h1 class="post-title" itemprop="name headline">  baiduCleaner</h1> </a>
   </header>
 
-    
-<p>#baiduCleaner</p>
-
-<p>开发了好几天，终于把百度去广告的插件开发完毕。目前正在测试中，大家可以试用一下.
+    <p>开发了好几天，终于把百度去广告的插件开发完毕。目前正在测试中，大家可以试用一下.
 <a href="https://github.com/TongLing/baiduCleaner">下载链接</a></p>
 
 <p>baiduCleaner是一款去广告插件，可以帮助清除百度搜索结果页面中的所有带”推广”字样的链接。</p>
 
 <p>使用前后效果对比：
-<img src="../baiduCleaner/img/comparison.png" alt="comparison" /></p>
+<img src="../img/baiduCleaner/present.png" alt="comparison" /></p>
 
 <hr />
 
-<p>##版本更新
-1.0.1 – 2016年 5月 15日 发布
-添加了百度搜索页面中最基本的广告过滤功能
-<img src="../baiduCleanerimg/1.0.1 - before.png" alt="before" />
-<img src="../baiduCleanerimg/1.0.1 - after.png" alt="before" /></p>
+<h2>版本更新</h2>
+
+<p>1.0.1 – 2016年5月15日
+* 添加了百度搜索页面中最基本的广告过滤功能
+<img src="../img/baiduCleaner/before.png" alt="before" />
+<img src="../img/baiduCleaner/after.png" alt="before" /></p>
 
 <hr />
 <p>使用教程：</p>
 
-<p>1、下载解压baiduCleaner.zip
-2、打开chrome，URL输入chrome://extensions/
-3、点击“开发者模式”
-4、加载“已解压的扩展程序”，选择解压的文件夹
-5、点击启用</p>
+<p>1、下载解压baiduCleaner.zip</p>
+
+<p>2、打开chrome，URL输入chrome://extensions/</p>
+
+<p>3、点击“开发者模式”</p>
+
+<p>4、加载“已解压的扩展程序”，选择解压的文件夹</p>
+
+<p>5、点击启用</p>
 
 <p>享受没有广告的感觉吧！</p>
 
 <hr />
 
-<p>##改进目标</p>
+<h2>改进目标</h2>
 
-<p>未来这个插件将会支持
-* 除了百度以外，以后会支持更多的搜索网站
-* 更加彻底的过滤广告策略</p>
-
-
- <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-05-20T00:00:00+08:00" itemprop="datePublished">May 20, 2016</time> • <a href="/baiduCleaner/">查看全文</a></p>
-
-  </div>
-
-</article>
-
-
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="main-content" itemprop="articleBody">
-
-  <header class="post-header">
-      <a class="post-link" href="/index-change-js/"><h1 class="post-title" itemprop="name headline">  首页的图片自动切换功能</h1> </a>
-  </header>
-
-    <p>不知道你有没有注意到，本博客首页的图片会自动切换？我最近写了点代码，实现了这个功能。这个功能挺有意思的，push上来分享一下~ 以后有时间的话打算写一个这样的插件跟大家交流交流~</p>
-
-<h3>1. 描述 </h3>
-<p>我的服务器目录文件夹结构是这样的:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code> +index.html 
- |--js        // js脚本和文件
- |--css       // css文件
- |--img       // 各种图片
- |--resources // 除了以上资源以外的其他资源
- |--posts     // 博客文章存放在这里
-</code></pre>
-</div>
-
-<p>在js文件夹下新建一个脚本，使用img文件夹下的图片，实现对首页进行图片自动切换的功能。</p>
-
-<h3>2. 实现方法</h3>
-<p>在index.html中，找到与图片相关的DOM节点:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>&lt;header class="post-header"&gt;
-......
-&lt;/header&gt;
-</code></pre>
-</div>
-
-<p>与此相关的css样式是这样的:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>.page-header {
-  color: #fff;
-  text-align: center;
-  opacity: 0.95;    
-  background:"#56687c url('../img/default.jpg no repeat 50%')";
-}
-</code></pre>
-</div>
-
-<p>可以看到default.jpg被固定加载进来了。</p>
-
-<p>所以为了实现自动切换功能，我们的思路就是让css中加载的图片路径自动变化。</p>
-
-<p>在js文件夹下新建一个changeTopImg.js脚本，插入以下代码:</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>// 修改顶端图片的样式。在资源文件中放置了很多图片（coverxx），需要取出图片时
-// 就可以直接使用Javascript修改相应的样式.
-
-var random = Math.floor(Math.random()*20); //生成0~19的随机数
-
-if (random &lt; 10){random = "0"+random;}
-
-var cls = document.getElementsByClassName('page-header'); //取得节点
-
-cls[0].style.background="#56687C 
-
-url('../img/cover"+random+".jpg') no-repeat 50%"; //修改样式
-</code></pre>
-</div>
-
-<p>再将js代码引入index.html网页中，测试效果。</p>
-
-
- <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-05-12T00:00:00+08:00" itemprop="datePublished">May 12, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span> • <a href="/index-change-js/">查看全文</a></p>
-
-  </div>
-
-</article>
-
-
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="main-content" itemprop="articleBody">
-
-  <header class="post-header">
-      <a class="post-link" href="/javascript-time/"><h1 class="post-title" itemprop="name headline">  Javascript中的时间处理问题</h1> </a>
-  </header>
-
-    <p>今天在做前端开发的时候，需要在JSON用前后端传递相应的时间。需要传递的时间有两个：StartTime和EndTime。</p>
-
-<p>startTime表示当前的时间，格式为”2016-05-04”这样的。endTime表示一个星期以前的时间，格式为”2016-04-28”。</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code>    var now = new Date();    
-    var pre = new Date();   // now 和 pre 都是 Date 类
-    pre.setDate(now.getDate()-7); // pre修改以后，得到的还是Date类
-
-    //将标准Date格式，转换成"2016-05-03"这样的字符串格式。
-     function setFormat(date){
-        var year = date.getFullYear();//年份
-        var month = date.getMonth();  //月份
-        var date = date.getDate();    //日期
-        return (year + "-" + month + "-" + date);//拼接成字符串
-    }
-    var endTime = setFormat(now);
-    var startTime = setFormat(pre);
-</code></pre>
-</div>
-
-
- <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-05-09T00:00:00+08:00" itemprop="datePublished">May 9, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span> • <a href="/javascript-time/">查看全文</a></p>
-
-  </div>
-
-</article>
-
-
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="main-content" itemprop="articleBody">
-
-  <header class="post-header">
-      <a class="post-link" href="/Hello-Blog/"><h1 class="post-title" itemprop="name headline">  新的旅程</h1> </a>
-  </header>
-
-    <p>2016年5月1日，新的博客在这里安家落户了。</p>
-
-<p>学习计算机专业三年来，大多数时候我都保持着对这个行业的敬畏与热爱。计算机行业是个天才辈出的领域，一代代前辈大师们的辛苦耕耘，才换来如今行业的繁荣。也许和大多数程序员一样，我改变不了世界的进程，但是我愿意默默地为这块肥沃的热土添砖加瓦。</p>
-
-<p>以前的<a href="http://blog.csdn.net/tlonline" target="_blank_">博客</a>记载的大多数都是与ACM相关的内容，同时很多也是在课本上学习到的知识。这个博客目前刚刚搭建完毕，只有基本的功能，我会慢慢把它给完善好。</p>
-
-<p>这个月还要尽快完成中国大学生软件杯的事情。希望能够顺利吧。</p>
-
-
- <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-05-01T00:00:00+08:00" itemprop="datePublished">May 1, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span> • <a href="/Hello-Blog/">查看全文</a></p>
-
-  </div>
-
-</article>
-
-
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="main-content" itemprop="articleBody">
-
-  <header class="post-header">
-      <a class="post-link" href="/JSCards/"><h1 class="post-title" itemprop="name headline">  用html+css+js实现选项卡切换效果</h1> </a>
-  </header>
-
-    <p>使用之前学过的综合知识，实现一个新闻门户网站上的常见选项卡效果：</p>
-
-<p><img src="http://img.blog.csdn.net/20160328102139200" alt="这里写图片描述" /></p>
-<pre>
-文字素材:
-房产：
-    275万购昌平邻铁三居 总价20万买一居
-    200万内购五环三居 140万安家东三环
-    北京首现零首付楼盘 53万购东5环50平
-    京楼盘直降5000 中信府 公园楼王现房
-家居:
-     40平出租屋大改造 美少女的混搭小窝
-     经典清新简欧爱家 90平老房焕发新生
-     新中式的酷色温情 66平撞色活泼家居
-     瓷砖就像选好老婆 卫生间烟道的设计
-二手房：
-     通州豪华3居260万 二环稀缺2居250w甩
-     西3环通透2居290万 130万2居限量抢购
-     黄城根小学学区仅260万 121平70万抛!
-     独家别墅280万 苏州桥2居优惠价248万
-</pre>
-
-<p>先分析基本思路。首先编写HTML，然后再加载样式，最后用JS修改相应的DOM，达到更改选项卡和内容的目的。</p>
-
-<h2>一、HTML页面布局</h2>
-<p>HTML显示的是所有与文字有关的信息，所以在这个页面中与文字有关的信息为上面选项卡的<b>三个标题</b>，以及<b>选项卡的内容</b>。
-于是决定标题使用<code class="highlighter-rouge">&lt;ul&gt; &lt;li&gt;</code>布局，内容使用<code class="highlighter-rouge">&lt;div&gt;</code>布局。编写代码如下：
-<img src="http://img.blog.csdn.net/20160328103735871" alt="HTML代码" /></p>
-
-<p>现在展示出来的样式是这样的：</p>
-
-<p><img src="http://img.blog.csdn.net/20160328103856535" alt="这里写图片描述" /></p>
-
-<h2>CSS样式</h2>
-<p>要制作成上图所示的选项卡样式，几个地方需要注意：
-1、整个选项卡的样式设置
-2、选项卡标题的样式设置
-3、选项卡内容的样式设置
-4、只能显示一个选项卡的内容，其他选项卡内容隐藏。</p>
-
-<p><img src="http://img.blog.csdn.net/20160328104130731" alt="CSS样式" /></p>
-
-<p>写完以后，效果就出来啦。</p>
-
-<p><img src="http://img.blog.csdn.net/20160328104324248" alt="JavaScript代码" /></p>
-
-<h2>JavaScript实现选项卡切换</h2>
-<p>1、首先需要获取选项卡标题和选项卡内容
-2、选项卡内容有三个，需要循环遍历来操作，得知哪个选项卡和哪个选项内容匹配。
-3、通过改变DOM的css类名称,当前点击的选项卡显示，其它隐藏。
-<img src="http://img.blog.csdn.net/20160328104522513" alt="JS实现" /></p>
-
-<p>完整代码：</p>
-
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;head</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span> 选项卡<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
-<span class="c">/* CSS样式制作 */</span>  
- <span class="o">*</span><span class="p">{</span><span class="nl">padding</span><span class="p">:</span><span class="m">0px</span><span class="p">;</span> <span class="nl">margin</span><span class="p">:</span><span class="m">0px</span><span class="p">;}</span>
-  <span class="nt">a</span><span class="p">{</span> <span class="nl">text-decoration</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span> <span class="nl">color</span><span class="p">:</span><span class="no">black</span><span class="p">;}</span>
-  <span class="nt">a</span><span class="nd">:hover</span><span class="p">{</span><span class="nl">text-decoration</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span> <span class="nl">color</span><span class="p">:</span><span class="m">#336699</span><span class="p">;}</span>
-   <span class="nf">#tab</span><span class="p">{</span><span class="nl">width</span><span class="p">:</span><span class="m">270px</span><span class="p">;</span> <span class="nl">padding</span><span class="p">:</span><span class="m">5px</span><span class="p">;</span><span class="nl">height</span><span class="p">:</span><span class="m">150px</span><span class="p">;</span><span class="nl">margin</span><span class="p">:</span><span class="m">20px</span><span class="p">;}</span>
-   <span class="nf">#tab</span> <span class="nt">ul</span><span class="p">{</span><span class="nl">list-style</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span> <span class="nl">display</span><span class="p">:;</span><span class="nl">height</span><span class="p">:</span><span class="m">30px</span><span class="p">;</span><span class="nl">line-height</span><span class="p">:</span><span class="m">30px</span><span class="p">;</span> 
-        <span class="nl">border-bottom</span><span class="p">:</span><span class="m">2px</span> <span class="m">#C88</span> <span class="nb">solid</span><span class="p">;}</span>
-   <span class="nf">#tab</span> <span class="nt">ul</span> <span class="nt">li</span><span class="p">{</span><span class="nl">background</span><span class="p">:</span><span class="m">#FFF</span><span class="p">;</span><span class="nl">cursor</span><span class="p">:</span><span class="nb">pointer</span><span class="p">;</span><span class="nl">float</span><span class="p">:</span><span class="nb">left</span><span class="p">;</span>
-    <span class="nl">list-style</span><span class="p">:</span><span class="nb">none</span> <span class="n">height</span><span class="p">:</span><span class="m">29px</span><span class="p">;</span> <span class="nl">line-height</span><span class="p">:</span><span class="m">29px</span><span class="p">;</span><span class="nl">padding</span><span class="p">:</span><span class="m">0px</span> <span class="m">10px</span><span class="p">;</span> 
-    <span class="nl">margin</span><span class="p">:</span><span class="m">0px</span> <span class="m">10px</span><span class="p">;</span> <span class="nl">border</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="m">#BBB</span><span class="p">;</span> <span class="nl">border-bottom</span><span class="p">:</span><span class="m">2px</span> <span class="nb">solid</span> <span class="m">#C88</span><span class="p">;}</span>
-   <span class="nf">#tab</span> <span class="nt">ul</span> <span class="nt">li</span><span class="nc">.on</span><span class="p">{</span><span class="nl">border-top</span><span class="p">:</span><span class="m">2px</span> <span class="nb">solid</span> <span class="no">gray</span><span class="p">;</span> <span class="nl">border-bottom</span><span class="p">:</span><span class="m">2px</span> <span class="nb">solid</span> <span class="m">#FFF</span><span class="p">;}</span>
-   <span class="nf">#tab</span> <span class="nt">div</span><span class="p">{</span><span class="nl">height</span><span class="p">:</span><span class="m">100px</span><span class="p">;</span><span class="nl">width</span><span class="p">:</span><span class="m">250px</span><span class="p">;</span> <span class="nl">line-height</span><span class="p">:</span><span class="m">24px</span><span class="p">;</span><span class="nl">border-top</span><span class="p">:</span><span class="nb">none</span><span class="p">;</span>  
-            <span class="nl">padding</span><span class="p">:</span><span class="m">1px</span><span class="p">;</span> <span class="nl">border</span><span class="p">:</span><span class="m">1px</span> <span class="nb">solid</span> <span class="m">#336699</span><span class="p">;</span><span class="nl">padding</span><span class="p">:</span><span class="m">10px</span><span class="p">;}</span>
-   <span class="nc">.hide</span><span class="p">{</span><span class="nl">display</span><span class="p">:</span><span class="nb">none</span><span class="p">;}</span>
-<span class="nt">&lt;/style&gt;</span>
-
-    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-    <span class="c1">// JS实现选项卡切换</span>
-    <span class="nb">window</span><span class="p">.</span><span class="nx">onload</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
-    <span class="kd">var</span> <span class="nx">myTab</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"tab"</span><span class="p">);</span>    <span class="c1">//整个div</span>
-    <span class="kd">var</span> <span class="nx">myUl</span> <span class="o">=</span> <span class="nx">myTab</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"ul"</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span><span class="c1">//一个节点</span>
-    <span class="kd">var</span> <span class="nx">myLi</span> <span class="o">=</span> <span class="nx">myUl</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"li"</span><span class="p">);</span>    <span class="c1">//数组</span>
-    <span class="kd">var</span> <span class="nx">myDiv</span> <span class="o">=</span> <span class="nx">myTab</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">"div"</span><span class="p">);</span> <span class="c1">//数组</span>
-
-    <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">myLi</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="nx">myLi</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">index</span> <span class="o">=</span> <span class="nx">i</span><span class="p">;</span>
-        <span class="nx">myLi</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">onclick</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
-            <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">myLi</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">){</span>
-                <span class="nx">myLi</span><span class="p">[</span><span class="nx">j</span><span class="p">].</span><span class="nx">className</span><span class="o">=</span><span class="s2">"off"</span><span class="p">;</span>
-                <span class="nx">myDiv</span><span class="p">[</span><span class="nx">j</span><span class="p">].</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"hide"</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">this</span><span class="p">.</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"on"</span><span class="p">;</span>
-            <span class="nx">myDiv</span><span class="p">[</span><span class="k">this</span><span class="p">.</span><span class="nx">index</span><span class="p">].</span><span class="nx">className</span> <span class="o">=</span> <span class="s2">"show"</span><span class="p">;</span>
-        <span class="p">}</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="nt">&lt;/script&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-<span class="c">&lt;!-- HTML页面布局 --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">id =</span><span class="err"> </span><span class="s">"tab"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;ul&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"off"</span><span class="nt">&gt;</span>房产<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"on"</span><span class="nt">&gt;</span>家居<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"off"</span><span class="nt">&gt;</span>二手房<span class="nt">&lt;/li&gt;</span>
-        <span class="nt">&lt;/ul&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"firstPage"</span> <span class="na">class=</span><span class="s">"hide"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>275万购昌平邻铁三居 总价20万买一居<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>200万内购五环三居 140万安家东三环<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>北京首现零首付楼盘 53万购东5环50平<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>京楼盘直降5000 中信府 公园楼王现房<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"secondPage"</span> <span class="na">class=</span><span class="s">"show"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>40平出租屋大改造 美少女的混搭小窝<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>经典清新简欧爱家 90平老房焕发新生<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>新中式的酷色温情 66平撞色活泼家居<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>瓷砖就像选好老婆 卫生间烟道的设计<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"thirdPage"</span> <span class="na">class =</span><span class="err"> </span><span class="s">"hide"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>通州豪华3居260万 二环稀缺2居250w甩<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>西3环通透2居290万 130万2居限量抢购<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>黄城根小学学区仅260万 121平70万抛!<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">href =</span><span class="err"> </span><span class="s">"#"</span><span class="nt">&gt;</span>独家别墅280万 苏州桥2居优惠价248万<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-</div>
-
-
- <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-04-28T00:00:00+08:00" itemprop="datePublished">Apr 28, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span> • <a href="/JSCards/">查看全文</a></p>
-
-  </div>
-
-</article>
-
-
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="main-content" itemprop="articleBody">
-
-  <header class="post-header">
-      <a class="post-link" href="/blockquote-sample/"><h1 class="post-title" itemprop="name headline">  With nice formatting...</h1> </a>
-  </header>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-<blockquote>
-  <p>“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
-</blockquote>
-
-<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>未来这个插件将会支持</p>
 
 <ul>
-  <li>list item</li>
-  <li>list item</li>
-  <li>list item</li>
+  <li>
+    <p>除了百度以外，以后会支持更多的搜索网站</p>
+  </li>
+  <li>
+    <p>更加彻底的过滤广告策略</p>
+  </li>
 </ul>
 
-<p>Plus <strong>bolding</strong> and <em>italics</em> and whatever else you want.</p>
 
-<p><a href="https://github.com/adueck/cayman-blog/archive/master.zip">Download this template</a> or get it from the <a href="https://github.com/adueck/cayman-blog">GitHub repo</a>.</p>
-
-
- <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-01-14T00:00:00+08:00" itemprop="datePublished">Jan 14, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Jason Long</span></span> • <a href="/blockquote-sample/">查看全文</a></p>
-
-  </div>
-
-</article>
-
-
-
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-
-    <div class="main-content" itemprop="articleBody">
-
-  <header class="post-header">
-      <a class="post-link" href="/Design-Mode/"><h1 class="post-title" itemprop="name headline">  设计模式</h1> </a>
-  </header>
-
-    <p>下面的内容是常用的二十多种设计模式，整理了一天时间，为了准备几天以后的考试。</p>
-
-<p>因为是用Word来做的，这里好像暂时不能添加相关表格内容，所以就转换成图片了。</p>
-
-<p>这里记下的都是基本的内容，详细的内容还是要看参考书。</p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/1359720-784d4358e26c3975.png" alt="图片1" /></p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/1359720-ff0a2bc55c608b30.png" alt="图片2" /></p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/1359720-ee6a304ea25efa5c.png" alt="图片3" /></p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/1359720-5e662486af81870f.png" alt="图片4" /></p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/1359720-bd923dfc30a65bae.png" alt="图片5" /></p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/1359720-e2302ff26ced4dc2.png" alt="图片6" /></p>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/1359720-3a70ace384a230f5.png" alt="图片7" /></p>
-
-<p>参考文献：</p>
-
-<p>[1]刘伟，胡志刚，郭克华. «设计模式». 北京:清华大学出版社.2011.</p>
-
-<p>[2]程杰. «大话设计模式».北京:清华大学出版社.2007.</p>
-
-
- <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-01-02T00:00:00+08:00" itemprop="datePublished">Jan 2, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span> • <a href="/Design-Mode/">查看全文</a></p>
+ <p class="post-meta" style="text-align: right; color: rgb(152,152,152);"><time datetime="2016-05-20T00:00:00+08:00" itemprop="datePublished">May 20, 2016</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">TongLing</span></span> • <a href="/baiduCleaner/">查看全文</a></p>
 
   </div>
 
@@ -451,25 +103,23 @@ url('../img/cover"+random+".jpg') no-repeat 50%"; //修改样式
   
 
   
+    <div id = "next-page" class = "paginator">
+      <a href="/page2" class="next"> 下一页 </a>
+    </div>
+  
+
+
 
 </div>
 
       </div>
     </section>
-
     
 
 <p style="font-size: 60%; text-align: right;">blog built using the <a href="https://github.com/jasonlong/cayman-theme">cayman-theme</a> by <a href="https://github.com/jasonlong">Jason Long</a>. <a href="http://creativecommons.org/licenses/by/4.0/">LICENSE</a></p>
 
-    <!-- 修改顶端图片的样式。在资源文件中放置了很多图片（coverxx），需要取出图片时
-     就可以直接使用Javascript修改相应的样式 -->
     <script src ="../js/changeTopImg.js"></script>
-
-
-
   </body>
-
     
-
 
 </html>

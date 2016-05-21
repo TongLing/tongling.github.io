@@ -2,6 +2,8 @@
 layout: post
 title: 首页的图片自动切换功能
 author: TongLing
+categories: [web开发]
+tags: [javascript]
 ---
 
 
@@ -11,7 +13,7 @@ author: TongLing
 我的服务器目录文件夹结构是这样的:
 
 ```
- +index.html 
+ +index.html
  |--js        // js脚本和文件
  |--css       // css文件
  |--img       // 各种图片
@@ -57,7 +59,7 @@ if (random < 10){random = "0"+random;}
 
 var cls = document.getElementsByClassName('page-header'); //取得节点
 
-cls[0].style.background="#56687C 
+cls[0].style.background="#56687C
 
 url('../img/cover"+random+".jpg') no-repeat 50%"; //修改样式
 ```

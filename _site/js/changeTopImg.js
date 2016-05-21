@@ -3,4 +3,4 @@
 var random = Math.floor(Math.random()*20);
 if (random < 10){random = "0"+random;}
 var cls = document.getElementsByClassName('page-header');
-cls[0].style.background="#56687C url('../img/cover"+random+".jpg') no-repeat 50%";
+cls[0].style.background="#56687C url('../img/indexCover/cover"+random+".jpg') no-repeat 50%";

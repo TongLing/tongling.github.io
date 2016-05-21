@@ -58,8 +58,8 @@ a:hover {
       margin-left: 0; } }
 
 .page-header {
-    
-   transition: 5s; 
+
+   transition: 5s;
   color: #fff;
   text-align: center;
     height:auto;
@@ -67,7 +67,7 @@ a:hover {
   background-color: #c93;
   background-size: cover;
   opacity: 0.95;
-     
+
 }
 
 @media screen and (min-width: 64em) {
@@ -297,3 +297,49 @@ a:hover {
   .sharing-buttons {
     max-width: 80%;
     margin: 0 auto;} }
+
+.paginator{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: left;
+  text-decoration: none;
+}
+#previous-page{
+  float:left;
+}
+#previous-page:hover{
+  float:left;
+  background: #EEE;
+  text-decoration: none;
+}
+#previous-page a:hover{
+  text-decoration: none;
+}
+#next-page{
+  float: right;
+}
+#next-page:hover{
+  float:right;
+  background: #EEE;
+  text-decoration: none;
+}
+#next-page a:hover{
+    text-decoration: none;
+}
+.category{
+  text-align: center;
+}
+.category a{
+  text-align:
+  display:inline;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: left;
+  text-decoration: none;
+}
+.category a:hover{
+  background: #EEE;
+  text-decoration: none;
+}
