@@ -1,0 +1,1193 @@
+---
+Author: Tongling
+method: post
+---
+
+# OpenJSCAD 官方文档
+
+标签（空格分隔）： 3D Web
+<h1>OpenJSCAD使用指南</h1>
+---
+
+简介
+---
+欢迎使用OpenJSCAD。
+为了方便大家访问，[OpenJSCAD.org][1]基于[OpenJsCad][2]软件开发。你可以使用简洁，方便的代码来快速创建3D原型，尤其在创建3D打印模型时特别有用。
+
+OpenJSCAD是面向对象的，对于使用过OpenJSCAD的程序员来说，这个网站
+
+ - 能够使用JavaScript的理念和资源
+ - 完全支持OpenSCAD源代码(95%的功能)
+ - 方便程序员转换3D文件OpenJSCAD格式
+ - 可以快速创建2D和3D模型。
+
+
+<h2>在线/离线编辑功能</h2> 
+---
+[OpenJSCAD][3] 包含了图形界面编辑器，你可以
+
+ - 在线使用编辑器写代码
+ - 离线使用你喜欢的编辑器来编辑代码，然后另存为.jscad格式，将文件直接拖入网站左下角的方框内，即可直接读取并生成相应模型。
+
+<h2>本地离线安装</h2>
+首先，你需要
+
+ - 安装NodeJS(命令 `apt-get install nodejs`), 注意，NodeJS的版本需要大于0.8.1.
+ - 克隆Github上面的源代码，然后
+```
+% git clone git@github.com:Spiritdude/OpenJSCAD.org.git
+% cd OpenJSCAD.org
+% make install
+```
+<h3>离线网页浏览器</h3>
+打开文件夹下的`index.html`，开始加载示例文件。你也可以直接将文件拖到左下角的方框内加载。目前支持的文件格式有`.jscad`,`.scad`,`.amf`,`.stl`四种格式。
+
+<h3>离线命令行界面</h3>
+执行以下命令：
+```
+% cd examples
+% openjscad logo.jscad
+% openjscad logo.jscad -o test.stl
+% openjscad logo.jscad -of stl
+```
+这样你就成功创建了`logo.stl`和`test.stl`文件。
+
+同样，你也可以导入不同格式的文件：
+```
+% openjscad example001.scad -o example001.jscad
+% openjscad example001.scad -o example001.stl
+% openjscad frog.stl -o frog.jscad
+% openjscad frog.stl -o frog2.stl             # does actually stl -> jscad -> stl (ascii)
+% openjscad example001.jscad -o example001.amf  
+% openjscad example001.jscad -of amf          # creates example001.amf
+% openjscad example001.jscad -of stlb         # creates example001.stl (binary)
+% openjscad example001.jscad -of stlb -o test.stl
+```
+
+ - -o 指定输出名
+ - -of 指定输出格式:jscad,stl(默认格式),stla,amf,dxf)
+
+<h2>语言/文件格式支持</h2>
+---
+目前该软件支持以下几种格式：
+
+ - JSCAD / 这种文件格式描述了代码的细节，从代码中可以很容易看出模型的构建过程，采用Javascript + CSG 技术实现。
+ - SCAD / CAD文件使用的格式, 95%的语言支持这个格式的代码显示。
+ - STL / 标准的3D文件传输格式 [维基百科：STL(文件格式)][4]
+ - AMF / 一种新型的3D文件传输格式
+
+导入和导出文件时，均支持以上格式。默认使用在线编辑器编辑时，使用.jscad格式
+<h3>本地JSCAD,SCAD,STL和AMF文件演示</h3>
+你可以查看这个示例：
+
+<h4>本地示例<h4>
+ - http://openjscad.org/#examples/slices/tor.jscad
+ - http://localhost/OpenJSCAD.org/#examples/slices/tor.jscad
+
+<h4>远程示例<h4>
+
+ - http://openjscad.org/#http://openjscad.org/examples/slices/tor.jscad
+ - http://openjscad.org/#http://www.thingiverse.com/download:164128 (STL)
+ - http://openjscad.org/#http://pastebin.com/raw.php?i=5RbzVguT (SCAD)
+ - http://openjscad.org/#http://amf.wikispaces.com/file/view/Rook.amf/268219202/Rook.amf (AMF)
+
+<h2>JSCAD文件格式分析</h2>
+---
+JSCAD格式至少定义了一个main函数，作为执行的入口。想要得到模型，你需要使用return 返回一个object:
+```
+function main() {
+   return union(sphere(), ...);    // 一个union形状的Objects
+   return [sphere(), ...];        // 一个长长的数组，也是Object类型
+}
+```
+或者也可以这样定义：
+```
+var w = new Array();
+function a() {
+   w.push( sphere() );
+   w.push( cube().translate([2,0,0]) );
+}
+function main() {
+   a();
+   return w;
+}
+```
+但是下面这种写法是不允许的：
+```
+var w = new Array();
+w.push( sphere() );        //这句话不在function()内，所以不能被执行
+w.push( cube().translate([2,0,0]) );
+function main() {
+    return w;
+}
+```
+无论代码结构有多复杂，所有的代码最终输出必须通过`return objects`。
+
+<h2>3D原型</h2>
+---
+所有的参数通过object对象传递，在这些构成模型的参数中，大部分是可选的。三维向量的三个参数会以数组的形式传递。如果一个向量只写了一个参数，它将同时作用于x,y,z三个参数上。
+例如： cube(长方体)的radius = 1, 即代表长方体的长、宽、高均为1。
+
+所有曲面图形都有'fn'或者'resolution'参数，它控制着曲面的精度。如果resolution设置为8，那么多边形将在xoy,xoz和yoz面上将被分别等分为8块。当resolution值设置得很高时，进行图形渲染的时间将会大幅上升，渲染时间与多面体平面个数的平方成正比。如果省略resolution值，那么将使用默认的两个参数: CSG.defaultResolution2D 和CSG.defaultresolution3D。第一个参数用于2D曲线，第二个参数用于3d曲线。
+
+<h3>长方体(cube)</h3>
+---
+长方体(cube)的语法格式如下：
+```
+cube();                            // 普通写法
+cube(1);
+cube({size: 1});
+cube({size: [1,2,3]});             //几何中心为(1,2,3) 
+cube({size: 1, center: true});     //几何中心为(0,0,0)
+cube({size: 1, center: [true,true,false]}); // 几何中心落在x轴和y轴上，但是不在z轴上
+cube({size: [1,2,3], round: true});
+
+CSG.cube();                        // 面向对象的写法
+CSG.cube({
+  center: [0, 0, 0],
+  radius: [1, 1, 1]
+});
+CSG.roundedCube({                  // 圆角长方体
+  center: [0, 0, 0],
+  radius: 1,
+  roundradius: 0.2,                //圆角半径
+  resolution: 8,                   //精度
+});
+```
+
+<h3>球体(sphere)</h3>
+球体(sphere)的语法格式如下：
+```
+sphere();                          // 普通写法
+sphere(1);
+sphere({r: 2});                    // 默认center: true
+sphere({r: 2, center: false});    
+sphere({r: 2, center: [true, true, false]}); // 中心落在x,y轴上，但不在z轴上
+sphere({r: 10, fn: 100 });          //精度
+sphere({r: 10, fn: 100, type: 'geodesic'});  //  geodesic approach (icosahedron further triangulated)
+
+CSG.sphere();                      //面向对象的写法
+CSG.sphere({
+  center: [0, 0, 0],
+  radius: 2,                      //只能是标量
+  resolution: 32
+});
+```
+
+<h3>圆柱体</h3>
+圆柱体(Cylinder)的语法格式如下：
+```
+cylinder({r: 1, h: 10});                 // 普通写法
+cylinder({d: 1, h: 10});
+cylinder({r: 1, h: 10, center: true});   // 默认center为false
+cylinder({r: 1, h: 10, center: [true, true, false]});
+cylinder({r: 1, h: 10, round: true});
+cylinder({r1: 3, r2: 0, h: 10});
+cylinder({d1: 1, d2: 0.5, h: 10});
+cylinder({start: [0,0,0], end: [0,0,10], r1: 1, r2: 2, fn: 50});
+
+CSG.cylinder({                      // 面向对象写法
+  start: [0, -1, 0],
+  end: [0, 1, 0],
+  radius: 1,                       
+  resolution: 16
+});
+CSG.cylinder({
+  start: [0, -1, 0],
+  end: [0, 1, 0],
+  radiusStart: 1,    //这是顶面和底面半径不等的圆柱
+  radiusEnd: 2,
+  resolution: 16
+});
+CSG.roundedCylinder({               //旋转过的圆柱
+  start: [0, -1, 0],
+  end: [0, 1, 0],
+  radius: 1,
+  resolution: 16
+});
+```
+<h3>圆环(Torus)</h3>
+圆环(Torus)有以下参数：
+
+ - ri:内圆半径(inner radius,默认为1)
+ - ro:外圆半径(outer radius,默认为4)
+ - fni:内圆精度(inner resolution,默认为16)
+ - fno:外圆精度(outer resolution,默认为32)
+ - roti:旋转角度(inner rotation,默认为0)
+ - 
+语法格式如下：
+```
+torus();                    // 内圆半径为1，外圆半径为4
+torus({ ri: 1.5, ro: 3 });
+torus{{ ri: 0.2 });
+
+torus({ fni:4 });           // 默认内圆精度>=4
+torus({ fni:4,roti:45 });   // 旋转45度
+torus({ fni:4,fno:4,roti:45 });
+torus({ fni:4,fno:5,roti:45 });
+```
+
+<h3>多面体(Polyhedron)</h3>
+使用一组点，线或多边形可以组成多面体。这些列出的点(points)包含了所有三角形的顶点，三角形(triangles)的三个参数代表着哪几个点构成了该三角形的面。
+```
+polyhedron({      //四面体
+  points: [ [10,10,0],[10,-10,0],[-10,-10,0],[-10,10,0], // 四个点
+            [0,0,10] ],                        
+  triangles: [ [0,1,4],[1,2,4],[2,3,4],[3,0,4],//四个与顶点相连的三角形
+               [1,0,3],[2,1,3] ]    //这两个三角形拼成了一个正方形
+});
+```
+在上述样例中，你也可以定义`polygons: [ [0,1,4,5], [..] ]`,不使用`triangles`。
+
+面向对象的编程方法是这样的：
+```
+var polygons = [];
+polygons.push(new CSG.Polygon([
+      new CSG.Vertex(new CSG.Vector3D(x1,y1,z1)),
+      new CSG.Vertex(new CSG.Vector3D(x2,y2,z2)),
+      new CSG.Vertex(new CSG.Vector3D(x3,y3,z3))
+   ])
+);
+// add more polygons and finally:
+solid = CSG.fromPolygons(polygons);
+```
+
+<h3>文字：</h3>
+使用`vector_text(x,y,string)`和`vector_char(x,y,char)`可以方便地构建字母模型。
+```
+var l = vector_text(0,0,"Hello");   
+var o = [];
+l.forEach(function(pl) {                   // pl = 折线
+   o.push(rectangular_extrude(pl, {w: 2, h: 2})); 
+});
+return union(o);
+```
+如果你想要控制字母的更多参数，可以这样写:
+```
+var c = vector_char(x,y,"A");
+c.width;    // width of the vector font rendered character
+c.segments; // array of segments / polylines
+```
+
+<h2>3D变形</h2>
+---
+<h3>缩放(Scale)</h3>
+按X,Y,Z轴上的比例进行缩放
+```
+scale(2,obj);          // openscad like
+scale([1,2,3],obj);    // 
+obj.scale([1,2,3]);    // 面向对象
+```
+
+<h3>旋转(Rotate)</h3>
+```
+rotate([90,15,30],obj);       // openscad like
+rotate(90,[1,0.25,0.5],obj);  //    ''
+
+obj.rotateX(90);              // 面向对象
+obj.rotateY(45);
+obj.rotateZ(30);
+```
+
+<h3>平移(Translate)</h3>
+按照X,Y,Z轴方向进行平移：
+```
+translate([0,0,10],obj);  // openscad like
+
+obj.translate([0,0,10]);  // 面向对象
+```
+<h3>中心</h3>
+指定参数,让几何体中心落在x,y或z轴上。
+```
+center(true,cube());                // openscad-like all axis
+center([true,true,false],cube());   // openscad-like axis-wise [x,y,z]
+
+cube().center(true);                // object oriented center all axis
+cube().center([true,false,true]);   // object oriented center axis-wise [x,y,z]
+```
+false:什么都不做, true:将几何体中心移到坐标轴上。
+
+<h3>矩阵运算(Matrix Operations)</h3>
+```
+var m = new CSG.Matrix4x4();
+m = m.multiply(CSG.Matrix4x4.rotationX(40));  //按照x轴旋转
+m = m.multiply(CSG.Matrix4x4.rotationZ(40));  //按照Z轴旋转
+m = m.multiply(CSG.Matrix4x4.translation([-.5, 0, 0])); //平移
+m = m.multiply(CSG.Matrix4x4.scaling([1.1, 1.2, 1.3])); //缩放
+
+//应用到object上
+var cube3 = cube.transform(m);
+```
+
+<h3>镜像(Mirror)</h3>
+```
+mirror([10,20,90], cube(1)); // openscad like
+
+var cube = CSG.cube().translate([1,0,0]);   // 面向对象
+
+var cube2 = cube.mirroredX(); // mirrored in the x=0 plane
+var cube3 = cube.mirroredY(); // mirrored in the y=0 plane
+var cube4 = cube.mirroredZ(); // mirrored in the z=0 plane
+
+// create a plane by specifying 3 points:
+var plane = CSG.Plane.fromPoints([5,0,0], [5, 1, 0], [3, 1, 7]);
+
+// and mirror in that plane:
+var cube5 = cube.mirrored(plane);
+```
+
+<h3>并集(Union)</h3>
+```
+union(sphere({r: 1, center:true}),cube({size: 1.5, center:true}));  // openscad like
+sphere({r: 1, center:true}).union(cube({size: 1.5, center:true}));  // 面向对象
+```
+
+<h3>交集(Intersection)</h3>
+```
+intersection(sphere({r: 1, center:true}),cube({size: 1.5, center:true})); // openscad like
+sphere({r: 1, center:true}).intersect(cube({size: 1.5, center:true}));   // object-oriented
+```
+
+<h3>差集(Difference)</h3>
+```
+difference(sphere({r: 1, center:true}),cube({size: 1.5, center:true}));    // openscad like
+sphere({r: 1, center:true}).subtract(cube({size: 1.5, center:true}));      // object-oriented
+```
+
+<h2>2D 原型</h2>:
+
+---
+
+<h3>圆形(Circle)</h3>
+```
+circle();                        // openscad like
+circle(1); 
+circle({r: 2, fn:5});
+circle({r: 3, center: true});    // center: false (default)
+
+CAG.circle({center: [0,0], radius: 3, resolution: 32});   // object-oriented
+```
+
+<h3>正方形(Rectangle)</h3>
+```
+square();                                   // openscad like
+square(1);                                  // 1x1
+square([2,3]);                              // 2x3
+square({size: [2,4], center: true});        // 2x4, center: false (default)
+
+CAG.rectangle({center: [0,0], radius: [w/2, h/2]});   // object-oriented, whereas w or h = side-length of square
+CAG.roundedRectangle({center: [0,0], radius: [w/2, h/2], roundradius: 1, resolution: 4});
+```
+
+<h3>多边形(Polygon)</h3>
+```
+polygon([ [0,0],[3,0],[3,3] ]);                // openscad like
+polygon({ points: [ [0,0],[3,0],[3,3] ] });                    
+polygon({ points: [ [0,0],[3,0],[3,3],[0,6] ], paths: [ [0,1,2],[1,2,3] ] }); // multiple paths not yet implemented
+
+var shape1 = CAG.fromPoints([ [0,0],[5,0],[3,5],[0,5] ]);    // object-oriented
+```
+
+<h2>二维变换</h2>
+---
+```
+translate([2,2], circle(1));      // 平移
+rotate([0,0,90], square());       // 旋转
+shape = center(true, shape());    // 以原点为中心
+shape = center([true,false], shape()); // 以x轴位中心
+
+shape = shape.translate([-2, -2]);   // 平移
+shape = shape.rotateZ(20);          //旋转
+shape = shape.scale([0.7, 0.9]);    //缩放
+shape = shape.center(true);          // 以原点为中心
+scape = shape.center([true,false]);  // 以x轴为中心
+```
+
+<h2>2D 路径(Paths)</h2>
+---
+一系列的点依次连接成一条折线，就形成了路径。通过`CSG.Path2D`和`path`类，都可以使用2D路径。二者的区别是：Path可以是开放的折线，而CSG必须是封闭的折线。
+
+Paths可以根据一系列的二维坐标，或者`CSG.Path2D.arc()`函数，形成一条曲线。注意，多个不同的路径可以互相连接，形成一条新的复杂路径。
+
+用两个函数可以将路径转换为CAG:
+
+ - expandToCAG(pathradius, resolution) 用一个圆来模拟路径，向外扩张
+ - innerToCAG() 根据路径形成一个CAG. 只有闭合路径才能使用该函数。
+
+目前可以用`rectangularExtrude() `函数创建3D模型。
+
+```
+var path = new CSG.Path2D([ [10,10], [-10,10] ], /* closed = */ false);
+var anotherpath = new CSG.Path2D([ [-10,-10] ]);
+path = path.concat(anotherpath);
+path = path.appendPoint([10,-10]);
+path = path.close(); // close the path
+
+// of course we could simply have done:
+// var path = new CSG.Path2D([ [10,10], [-10,10], [-10,-10], [10,-10] ], /* closed = */ true);
+
+// We can make arcs and circles:
+var curvedpath = CSG.Path2D.arc({
+  center: [0,0,0],
+  radius: 10,
+  startangle: 0,
+  endangle: 180,
+  resolution: 16,
+});
+```
+<h3>组合(Hull)</h3>
+可以把多种2D图形拼在一起：
+```
+var h = hull( square(10),circle(10).translate([10,10,0]) );
+
+linear_extrude({ height: 10 }, h);
+```
+
+<h3>Chain Hull</h3>
+---
+Chained hulling is a variant of hull on multiple 2D forms, essentially sequential hulling and then union those, based on an idea by Whosa whatsis:
+![此处输入图片的描述][5]
+
+```
+chain_hull( 
+    circle(), circle().translate([2,0,0]), ... );   // list of CAG/2D forms
+
+var a = [];
+a.push(circle()); 
+chain_hull( a );                       // array of CAG/2D forms
+
+chain_hull({closed: true},             // default is false
+   circle(),circle().translate([2,0,0]),circle().translate([2,2,0]));
+```
+<h2>拉伸</h2>
+---
+<h3>线性拉伸</h3>
+将2D图形拉伸称为3D图形，使用linear_extrude()函数
+```
+// openscad like
+linear_extrude({ height: 10 }, square());
+linear_extrude({ height: 10, twist: 90 }, square([1,2]));
+linear_extrude({ height: 10, twist: 360, slices: 50}, circle().translate([1,0,0]) );
+
+linear_extrude({ height: 10, center: true, twist: 360, slices: 50}, translate([2,0,0], square([1,2])) );
+linear_extrude({ height: 10, center: true, twist: 360, slices: 50}, square([1,2]).translate([2,0,0]) );
+```
+
+<h3>矩形拉伸(Rectangular Extrude)</h3>
+Extrude the path by following it with a rectangle (upright, perpendicular to the path direction), returns a CSG solid.
+Simplified (openscad like, even though OpenSCAD doesn't provide this) via rectangular_extrude(), where as
+
+ - w: width (default: 1),
+ - h: height (default: 1),
+ - fn: resolution (default: 8), and
+ - closed: whether path is closed or not (default: false)
+
+```
+rectangular_extrude([ [10,10], [-10,10], [-20,0], [-10,-10], [10,-10] ],  // path is an array of 2d coords
+    {w: 1, h: 3, closed: true});
+```
+or more low-evel and object-oriented via rectangularExtrude(), with following unnamed variables: 1. width of the extrusion, in the z=0 plane 2. height of the extrusion in the z direction 3. resolution, number of segments per 360 degrees for the curve in a corner 4. roundEnds: if true, the ends of the polygon will be rounded, otherwise they will be flat
+```
+// first creating a 2D path, and then extrude it
+var path = new CSG.Path2D([ [10,10], [-10,10], [-20,0], [-10,-10], [10,-10] ], /*closed=*/true);
+var csg = path.rectangularExtrude(3, 4, 16, true);   // w, h, resolution, roundEnds
+return csg;
+```
+
+<h3>旋转拉伸(Rotate Extrude)</h3>
+可以使用 rotate_extrude()函数：
+```
+// openscad-like
+rotate_extrude( translate([4,0,0], circle({r: 1, fn: 30, center: true}) ) );
+
+// more object-oriented
+rotate_extrude({fn:4}, square({size: [1,1], center: true}).translate([4,0,0]) );
+
+rotate_extrude( polygon({points:[ [0,0],[2,1],[1,2],[1,3],[3,4],[0,5] ]}) );
+rotate_extrude({fn:4}, polygon({points:[ [0,0],[2,1],[1,2],[1,3],[3,4],[0,5] ]}) );
+```
+可以方便地拉伸各种2D图形，包括圆，长方形和多边形。
+
+<h2>图形切片</h2>
+---
+solidFromSlices()函数提供将图形切割的功能（例如，把三角形转换成长方形），然后这些多边形同样可提供旋转、平移等操作。
+solidFromSlices()从CSG.Polygon实例中定义，在CSG.fromSlices提供静态方法，所有的方法都能生成一个实例图形。
+
+ - @parameter {Object} options It provide slices to generate a solid. Each slice is a convex polygon in 3D space. The necessity of the convex limit is being evaluated. For proper result slices must be similar oriented - an angle between their normals should be less 180 degrees.
+ - numslices {Number} - number of slices to be generated. Must be 2 or more. The first and the last slices are used as bottom and top facets.
+ - callback {Function} - A function(t, sliceN) generating slices. It receives 2 parameters: t - [0..1], where 0 - corresponds the bottom facet and 1 - to the top. sliceN - [0..numslices-1] the current slice number. The callback is called in context of the CSG.Polygon. Thus slices can be generated from the initial polygon by transforming it. Look at "Tor (multi-color)" example.
+ - loop {Boolean} - If true the bottom and the top are not generated and a solid becomes a loop. Look at "Tor (multi-color)" example again.
+
+```
+var csg = new CSG.Polygon.createFromPoints([ [0,1,0], ... ]).  // initial polygon
+   solidFromSlices({
+      numslices: num,              // amount of slices
+      loop: true|false,            // final CSG is close by looping (start = end) like a torus
+      callback: function(t,slice) {
+         // t: 0..1
+         // slice: 0 .. (numslices-1)
+         return this.translate|rotate(...).setColor(..);
+      }
+   });
+```
+
+```
+function main(params) {
+    var sqrt3 = Math.sqrt(3) / 2;
+    var radius = 10;
+
+    var hex = CSG.Polygon.createFromPoints([
+        [radius, 0, 0],
+        [radius / 2, radius * sqrt3, 0],
+        [-radius / 2, radius * sqrt3, 0],
+        [-radius, 0, 0],
+        [-radius / 2, -radius * sqrt3, 0],
+        [radius / 2, -radius * sqrt3, 0]
+    ]);
+
+    var angle = 5;
+    return hex.solidFromSlices({
+      numslices: 720 / angle,
+      callback: function(t, slice) {
+         var coef = 1 - t * 0.8;
+         return this.rotateZ(5 * slice).scale(coef).translate([radius * 4 * t, t * 15, 0]).rotate(
+            [0,20,0],
+            [-1, 0, 0],
+            angle * slice
+         );
+      }
+   });
+}
+```
+<h2>扩大与缩小</h2>
+---
+
+Expansion can be seen as the 3D convolution of an object with a sphere. Contraction is the reverse: the area outside the solid is expanded, and this is then subtracted from the solid.
+
+Expansion and contraction are very powerful ways to get an object with nice smooth corners. For example a rounded cube can be created by expanding a normal cube.
+
+Note that these are expensive operations: spheroids are created around every corner and edge in the original object, so the number of polygons quickly increases. Expansion and contraction therefore are only practical for simple non-curved objects.
+
+expand() and contract() take two parameters: the first is the radius of expansion or contraction; the second parameter is optional and specififies the resolution (number of polygons on spherical surfaces, per 360 degree revolution):
+
+```
+expand(0.2, 8, difference(cube(2),translate([0.3,0.3,0.3], cube(2))));   // openscad like
+
+var cube1 = CSG.cube({radius: 1.0});        // object-oriented
+var cube2 = CSG.cube({radius: 1.0}).translate([-0.3, -0.3, -0.3]);
+var csg = cube1.subtract(cube2);
+var rounded = csg.expand(0.2, 8); 
+```
+
+<h2>属性</h2>
+---
+The 'property' property of a solid can be used to store metadata for the object, for example the coordinate of a specific point of interest of the solid. Whenever the object is transformed (i.e. rotated, scaled or translated), the properties are transformed with it. So the property will keep pointing to the same point of interest even after several transformations have been applied to the solid.
+
+Properties can have any type, but only the properties of classes supporting a 'transform' method will actually be transformed. This includes CSG.Vector3D, CSG.Plane and CSG.Connector. In particular CSG.Connector properties (see below) can be very useful: these can be used to attach a solid to another solid at a predetermined location regardless of the current orientation.
+
+It's even possible to include a CSG solid as a property of another solid. This could be used for example to define the cutout cylinders to create matching screw holes for an object. Those 'solid properties' get the same transformations as the owning solid but they will not be visible in the result of CSG operations such as union().
+
+Other kind of properties (for example, strings) will still be included in the properties of the transformed solid, but the properties will not get any transformation when the owning solid is transformed.
+
+All primitive solids have some predefined properties, such as the center point of a sphere (TODO: document).
+
+The solid resulting from CSG operations (union(), subtract(), intersect()) will get the merged properties of both source solids. If identically named properties exist, only one of them will be kept.
+```
+var cube = CSG.cube({radius: 1.0});
+cube.properties.aCorner = new CSG.Vector3D([1, 1, 1]);
+cube = cube.translate([5, 0, 0]);
+cube = cube.scale(2);
+// cube.properties.aCorner will now point to [12, 2, 2],
+// which is still the same corner point 
+
+// Properties can be stored in arrays; all properties in the array
+// will be transformed if the solid is transformed:
+cube.properties.otherCorners = [
+  new CSG.Vector3D([-1, 1, 1]),
+  new CSG.Vector3D([-1, -1, 1])
+];
+
+// and we can create sub-property objects; these must be of the 
+// CSG.Properties class. All sub properties will be transformed with
+// the solid:
+cube.properties.myProperties = new CSG.Properties();
+cube.properties.myProperties.someProperty = new CSG.Vector3D([-1, -1, -1]);
+```
+
+<h2>接口</h2>
+---
+The CSG.Connector class is intended to facilitate attaching two solids to each other at a predetermined location and orientation. For example suppose we have a CSG solid depicting a servo motor and a solid of a servo arm: by defining a Connector property for each of them, we can easily attach the servo arm to the servo motor at the correct position (i.e. the motor shaft) and orientation (i.e. arm perpendicular to the shaft) even if we don't know their current position and orientation in 3D space.
+
+In other words Connector give us the freedom to rotate and translate objects at will without the need to keep track of their positions and boundaries. And if a third party library exposes connectors for its solids, the user of the library does not have to know the actual dimensions or shapes, only the names of the connector properties.
+
+A CSG.Connector consist of 3 properties:
+
+ - point: a CSG.Vector3D defining the connection point in 3D space
+ - normal: a CSG.Vector3D direction vector somewhat perpendicular to axis; this defines the "12 o'clock" orientation of the connection.
+ - axis: a CSG.Vector3D defining the direction vector of the connection (in the case of the servo motor example it would point in the direction of the shaft)
+ 
+When connecting two connectors, the solid is transformed such that the point properties will be identical, the axis properties will have the same direction (or opposite direction if mirror == true), and the normals match as much as possible.
+
+Connectors can be connected by means of two methods: A CSG solid's connectTo() function transforms a solid such that two connectors become connected. Alternatively we can use a connector's getTransformationTo() method to obtain a transformation matrix which would connect the connectors. This can be used if we need to apply the same transform to multiple solids.
+
+```
+var cube1 = CSG.cube({radius: 10});
+var cube2 = CSG.cube({radius: 4});
+
+// define a connector on the center of one face of cube1
+// The connector's axis points outwards and its normal points
+// towards the positive z axis:
+cube1.properties.myConnector = new CSG.Connector([10, 0, 0], [1, 0, 0], [0, 0, 1]);
+
+// define a similar connector for cube 2:
+cube2.properties.myConnector = new CSG.Connector([0, -4, 0], [0, -1, 0], [0, 0, 1]);
+
+// do some random transformations on cube 1:
+cube1 = cube1.rotateX(30);
+cube1 = cube1.translate([3.1, 2, 0]);
+
+// Now attach cube2 to cube 1:
+cube2 = cube2.connectTo(
+  cube2.properties.myConnector, 
+  cube1.properties.myConnector, 
+  true,   // mirror 
+  0       // normalrotation
+);
+
+// Or alternatively:
+var matrix = cube2.properties.myConnector.getTransformationTo(
+  cube1.properties.myConnector, 
+  true,   // mirror 
+  0       // normalrotation
+);
+cube2 = cube2.transform(matrix);
+
+var result = cube2.union(cube1);
+```
+
+<h2>边界 & 表面 布局</h2>
+---
+The getBounds() function can be used to retrieve the bounding box of an object. getBounds() returns an array with two CSG.Vector3Ds specifying the minimum x,y,z coordinate and the maximum x,y,z coordinate.
+
+lieFlat() lays an object onto the z=0 surface, in such a way that the z-height is minimized and it is centered around the z axis. This can be useful for CNC milling: it will transform a part of an object into the space of the stock material during milling. Or for 3D printing: it is laid in such a way that it can be printed with minimal number of layers. Instead of lieFlat() the function getTransformationToFlatLying() can be used, which returns a CSG.Matrix4x4 for the transformation.
+
+```
+ar cube1 = CSG.cube({radius: 10});
+var cube2 = CSG.cube({radius: 5});
+
+// get the right bound of cube1 and the left bound of cube2:
+var deltax = cube1.getBounds()[1].x - cube2.getBounds()[0].x;
+
+// align cube2 so it touches cube1:
+cube2  = cube2.translate([deltax, 0, 0]);
+
+var cube3 = CSG.cube({radius: [100,120,10]});
+// do some random transformations:
+cube3 = cube3.rotateZ(31).rotateX(50).translate([30,50,20]);
+// now place onto the z=0 plane:
+cube3  = cube3.lieFlat();
+
+// or instead we could have used:
+var transformation = cube3.getTransformationToFlatLying();
+cube3 = cube3.transform(transformation);
+
+return cube3;
+```
+
+<h2>其他</h2>
+---
+<h3>颜色</h3>
+OpenSCAD-like:
+
+ - color([r,g,b], object, object2 ...) e.g. color([1,1,0],sphere());
+ - color([r,g,b], array)
+ - color([r,g,b,a], object, object2 ...)
+ - color([r,g,b,a], array)
+ - color(name, object, object2 ...) e.g. color('red',sphere());
+ - color(name, a, object, object2 ...) e.g. color('red',0.5, sphere());
+ - color(name, array)
+ - color(name, a, array)
+
+whereas the named colors are case-insensitive ('RED'=='red')
+
+Object-oriented:
+
+ - .setColor([r,g,b]);
+ - .setColor([r,g,b,a]);
+ - .setColor(r,g,b);
+ - .setColor(r,g,b,a);
+
+实例：
+```
+color([1,0.5,0.3],sphere(1));                      // openscad like
+color([1,0.5,0.3],sphere(1),cube(2));
+color("Red",sphere(),cube().translate([2,0,0]));   // named color (case-insensitive)
+
+sphere().setColor(1,0.5,0.3);                      // object-oriented
+sphere().setColor([1,0.5,0.3]);   
+```
+
+See Wikipedia: Web Colors for all available named colors sorted by tone.
+
+代码段：
+```
+o.push( color([1,0,0],sphere()) );
+o.push( color([0,1,0],cube()) );
+o.push( color([0,0,1],cylinder()) );
+
+o.push( color("red",sphere()) );
+o.push( color("green", cube()) );
+o.push( color("blue", cylinder()) );
+
+for(var i=0; i<1; i+=1/12) {
+   o.push( cube().setColor(hsl2rgb(i,1,0.5)) );
+}
+```
+main函数：
+```
+function main() {
+   var o = [];
+   for(var i=0; i<8; i++) {
+      o.push(cylinder({r:3,h:20}).
+         setColor(
+            hsl2rgb(i/8,1,0.5).  // hsl to rgb, creating rainbow [r,g,b]
+            concat(1/8+i/8)      // and add to alpha to make it [r,g,b,a]
+         ).translate([(i-3)*7.5,0,0])
+      );
+   }
+   o.push(color("red",cube(5)).translate([-4,-10,0]));
+   o.push(color("red",0.5,cube(5)).translate([4,-10,0]));
+   return o;
+}
+```
+
+注意：Note: there are some OpenGL Transparency Limitations, e.g. depending on the order you might not see through otherwise partially transparent objects.
+
+<h3>Color Spacing Conversion</h3>
+
+Following functions to convert between color spaces:
+```
+var hsl = rgb2hsl(r,g,b); // or rgb2hsl([r,g,b]);
+var rgb = hsl2rgb(h,s,l); // or hsl2rgb([h,s,l]);
+var hsv = rgb2hsv(r,g,b); // or rgb2hsv([r,g,b]);
+var rgb = hsv2rgb(h,s,v); // or hsv2rgb([h,s,v]);
+```
+
+whereas
+
+ - r,g,b (red, green, blue)
+ - h,s,l (hue, saturation, lightness)
+ - h,s,v (hue, saturation, value)
+E.g. to create a rainbow, t = 0..1 and .setColor(hsl2rgb(t,1,0.5))
+See Tor (multi-color) example direct.
+
+<h3>输出</h3>
+```
+a = 1, b = 2;
+echo("a="+a,"b="+b);
+```
+输出结果：
+```
+a=1, b=2
+```
+
+<h2>数学函数</h2>
+---
+Following OpenSCAD compatible functions are available, aside of the Math.xyz() as of JavaScript:
+```
+sin(a);                   // a = 0..360
+cos(a);                   //     ''
+asin(a);                  // a = 0..1, returns 0..360
+acos(a);                  //       ''
+tan(a);                   // a = 0..360
+atan(a);                  // a = 0..1, returns 0..360
+atan2(a,b);               // returns 0..360
+ceil(a);
+floor(a);
+abs(a);
+min(a,b);
+max(a,b);
+rands(min,max,vn,seed);   // returns random vectors of vn dimension, seed not yet implemented
+log(a);
+lookup(ix,v);             // ix = index, e.g. v = [ [0,100], [10,10], [20,200] ] whereas v[x][0] = index, v[x][1] = value
+                          //    return will be linear interpolated (e.g. lookup(5,[ [0,100], [10,10], [20,200] ]) == 45
+
+pow(a,b);
+sign(a);                  // -1, 0 or 1
+sqrt(a);
+round(a);
+```
+<h2>Direct OpenSCAD Source Import</h2>
+An OpenSCAD (.scad) translator & importer is included in OpenJSCAD, following features aren't working yet:
+
+ - DXF import and manipulation (e.g. import_dxf, dxf-cross, dxf_dim functions).
+ - rotate_extrude() (Note: OpenJSCAD supports rotate_extrude() )
+ - minkowski() and hull() transformations (Note: OpenJSCAD supports hull() )
+ - $fa, $fs global variables.
+ - Modifier characters: #, !, %
+
+You can edit OpenSCAD source in the built-in editor, just make sure the first line says:
+```
+//!OpenSCAD
+```
+then the source-code is considered OpenSCAD syntax.
+
+Further CAD languages support might arrive at a later time.
+
+<h2>Converting OpenSCAD to OpenJSCAD</h2>
+
+In order to translate your OpenSCAD .scad into native OpenJSCAD .jscad code, consider this comparison:
+
+OpenSCAD (.scad)
+```
+union() {
+      //cube(size=[30,30,0.1],center=true);
+      translate([3,0,0]) cube();
+      difference() {
+         rotate([0,-45,0]) cube(size=[8,7,3],center=true);
+         sphere(r=3,$fn=20,center=true);
+      }
+      translate([10,5,5]) scale([0.5,1,2]) sphere(r=5,$fn=50);
+      translate([-15,0,0]) cylinder(r1=2,r2=0,h=10,$fn=20);
+     
+   for(i=[0:19]) {
+      rotate([0,i/20*360,0]) 
+      translate([i,0,0]) 
+      rotate([0,i/20*90,i/20*90,0]) 
+      cube(size=[1,1.2,.5],center=true);
+   }
+}
+```
+OpenJSCAD (.jscad)
+```
+function main() {  
+   var cubes = new Array();
+   for(i=0; i<20; i++) {
+      cubes[i] = rotate([0,i/20*360,0], 
+         translate([i,0,0], 
+         rotate([0,i/20*90,i/20*90,0], 
+         cube({size:[1,1.2,.5],center:true}))));
+    }
+   return union(
+      //cube({size:[30,30,0.1],center:true}),
+      translate([3,0,0],cube()),
+      difference(
+         rotate([0,-45,0], cube({size:[8,7,3],center:true})),
+         sphere({r:3,fn:20,center:true})
+      ),
+      translate([10,5,5], scale([0.5,1,2], sphere({r:5,fn:50}))),
+      translate([-15,0,0], cylinder({r1:2,r2:0,h:10,fn:20})),
+      cubes
+   );
+}
+```
+Essentially whenever named arguments in .scad appear func(a=1), translate it into func({a:1}), for example:
+
+ - .scad: translate([0,0,2]) sphere(size=2,$fn=50);
+ - .jscad (1): translate([0,0,2], sphere({size:2,fn:50}));
+ - .jscad (2): sphere({size:2,fn:50}).translate([0,0,2]);
+
+<h2>Interactive Parametric Models</h2>
+-------
+Models can have interactive parameters, allowing users to change values via familiar forms, i.e. typing in numbers, sliding bars, pulling down menus, etc. This allows the user to change values and create any number of possible combinations, allowing the model to become dynamic in nature. Any number of custom designs can be created, which can then be down loaded in any supported format.
+
+Interactive parameters are possible by adding a specific function called getParameterDefinitions(). This function can be added anywhere in to your JSCAD script, but must return an array of parameter definitions.
+
+```
+function getParameterDefinitions() {
+  return [{ name: 'width', type: 'float', initial: 10, caption: "Width of the cube:" }];
+}
+```
+The parameter definitions are used to create a set of fields which the user can change, i.e. options. The values of the fields are supplied to the main() function of your JSCAD script. For example, the value of the 'width' parameter is supplied as the 'params.width' attribute, and so on.
+```
+function main(params) {
+  // custom error checking:
+  if(params.width <= 0) throw new Error("Width should be positive!");
+  var mycube = CSG.cube({radius: params.width});
+  return mycube();
+}
+```
+All the common HTML5 field types are available as interactive parameters. This includes checkbox, color, date, email, float, int, number, password, slider, text and url. As well as two special parameter types for pull down choices, and grouping parameters.
+
+A minimum parameter specification contains only 'name' and 'type'. However, a complete parameter specification should have a 'caption' and 'initial' value. In addition, there are 'min', 'max', 'step', 'checked', 'size, 'maxlength', and 'placeholder' which are relevant to specific parameter types. Just keep try different combinations to get a nice parameter specification. Here's an good example.
+```
+{
+  name: 'width',
+  type: 'float',
+  initial: 1.20,
+  caption: 'Width of the thingy:',
+  min: 1.0,
+  max: 5.0,
+  step: 0.5
+}
+```
+In addition, there is the 'choice' type which creates a drop down list of choices for the user. The choices are provided by specifying the 'values' and 'captions'. The chosen value is passed into the main() function of the model.
+```
+{
+  name: 'shape',
+  type: 'choice',
+  values: ["TRI", "SQU", "CIR"],               // these are the values that will be supplied to your script
+  captions: ["Triangle", "Square", "Circle"],  // optional, these values are shown in the listbox
+                                               // if omitted, the items in the 'values' array are used
+  caption: 'Shape:',                           // optional, displayed left of the input field
+  initial: "SQU",                              // optional, default selected value
+                                               // if omitted, the first item is selected by default
+                                               // NOTE: parameter "default" is deprecated
+}
+```
+A complete example:
+```
+function getParameterDefinitions() {
+  return [
+    { name: 'width', type: 'float', initial: 10, caption: "Width of the cube:" },
+    { name: 'height', type: 'float', initial: 14, caption: "Height of the cube:" },
+    { name: 'depth', type: 'float', initial: 7, caption: "Depth of the cube:" },
+    { name: 'rounded', type: 'choice', caption: 'Round the corners?', values: [0, 1], captions: ["No thanks", "Yes please"], initial: 1 }
+  ];
+}
+
+function main(params) {
+  var result;
+  if(params.rounded == 1) {
+    result = CSG.roundedCube({radius: [params.width, params.height, params.depth], roundradius: 2, resolution: 32});
+  } else {
+    result = CSG.cube({radius: [params.width, params.height, params.depth]});
+  }
+  return result;
+}
+```
+There are plenty of examples of "Interactive" parameters available at http://www.openjscad.org/
+
+<h3>Command Line Interface (CLI) & Parameters</h3>
+openjscad accepts parameter for the interactive parameters:
+
+ - --key value (e.g. --thickness 3) or
+ - --key=value (e.g. --thickness=3)
+For example:
+```
+% openjscad name_plate.jscad --name "Just Me" --title "Geek" -o JustMe.amf
+% openjscad name_plate.jscad "--name=Just Me" "--title=Geek" -o JustMe.amf
+```
+
+<h2>Orthonormal Basis</h2>
+An orthonormal basis can be used to convert 3D points to 2D points by projecting them onto a 3D plane. An orthonormal basis is constructed from a given plane. Optionally a 'right hand' vector can be given, this will become the x axis of the two dimensional plane. If no right hand vector is given, a random one is chosen.
+
+CSG.OrthoNormalBasis.Z0Plane() creates an orthonormal basis for the z=0 plane. This transforms (xx,yy,zz) 3D coordinates into the 2D (xx, yy) coordinates, or vice versa from (xx, yy) into (xx, yy, 0).
+
+Use to2D() and line3Dto2D() to convert from the 3D space to the 2D plane. Use to3D() and line2Dto3D() to convert the other way.
+
+getProjectionMatrix() gives the projection matrix to transform into the orthonormal basis. getInverseProjectionMatrix() gives the matrix to transform back into the original basis.
+```
+// construct a plane:
+var plane = CSG.Plane.fromNormalAndPoint([1,1,0], [0,0,1]);
+var orthobasis = new CSG.OrthoNormalBasis(plane);
+// or if we would like a specific right hand vector: 
+// var orthobasis = new CSG.OrthoNormalBasis(plane, [0,0,1]);
+
+var point3d = new CSG.Vector3D(1,5,7);
+var point2d = orthobasis.to2D(point3d);
+var projected = orthobasis.to3D(point2d);
+```
+<h2>2D & 3D Math</h2>
+---
+There are utility classes for many 2D and 3D operations. Below is a quick summary, for details view the source of csg.js:
+<h3>Vector3D</h3>
+```
+var vec1 = new CSG.Vector3D(1,2,3);       // 3 arguments
+var vec2 = new CSG.Vector3D( [1,2,3] );   // 1 array argument
+var vec3 = new CSG.Vector3D(vec2);        // cloning a vector
+// get the values as: vec1.x, vec.y, vec1.z
+// vector math. All operations return a new vector, the original is unmodified!
+// vectors cannot be modified. Instead you should create a new vector.
+vec.negated()
+vec.abs()
+vec.plus(othervector)
+vec.minus(othervector)
+vec.times(3.0)
+vec.dividedBy(-5)
+vec.dot(othervector)
+vec.lerp(othervector, t)  // linear interpolation (0 <= t <= 1)
+vec.length()
+vec.lengthSquared()       // == vec.length()^2
+vec.unit()
+vec.cross(othervector)    // cross product: returns a vector perpendicular to both
+vec.distanceTo(othervector)
+vec.distanceToSquared(othervector)  // == vec.distanceTo(othervector)^2
+vec.equals(othervector)
+vec.multiply4x4(matrix4x4)   // right multiply by a 4x4 matrix
+vec.min(othervector)        // returns a new vector with the minimum x,y and z values
+vec.max(othervector)        // returns a new vector with the maximum x,y and z values
+```
+<h3>Vector 2D</h3>
+```
+var vec1 = new CSG.Vector2D(1,2);       // 2 arguments
+var vec2 = new CSG.Vector2D( [1,2] );   // 1 array argument
+var vec3 = new CSG.Vector2D(vec2);      // cloning a vector
+// vector math. All operations return a new vector, the original is unmodified!
+vec.negated()
+vec.abs()
+vec.plus(othervector)
+vec.minus(othervector)
+vec.times(3.0)
+vec.dividedBy(-5)
+vec.dot(othervector)
+vec.lerp(othervector, t)  // linear interpolation (0 <= t <= 1)
+vec.length()
+vec.lengthSquared()       // == vec.length()^2
+vec.unit()
+vec.normal()              // returns a 90 degree clockwise rotated vector
+vec.distanceTo(othervector)
+vec.distanceToSquared(othervector)  // == vec.distanceTo(othervector)^2
+vec.cross(othervector)    // 2D cross product: returns a scalar
+vec.equals(othervector)
+vec.min(othervector)        // returns a new vector with the minimum x and y values
+vec.max(othervector)        // returns a new vector with the maximum x and y values
+vec.multiply4x4(matrix4x4)   // right multiply by a 4x4 matrix
+vec.toVector3D(z)         // convert to a vector3D by adding a z coordinate
+vec.angleDegrees()        // returns the angle of the vector: [1,0] = 0 degrees, [0, 1] = 90 degrees, etc
+vec.angleRadians()        // ditto in radians
+var vec = CSG.Vector2D.fromAngleDegrees(degrees);  // returns a vector at the specified angle
+var vec = CSG.Vector2D.fromAngleRadians(radians);  // returns a vector at the specified angle
+```
+<h3>Matrix4x4</h3>
+```
+var m1 = new CSG.Matrix4x4();          // unity matrix
+var m2 = new CSG.Matrix4x4( [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1] );
+  // elements are passed in row order
+var result = m1.plus(m2); 
+var result = m1.minus(m2);
+var result = m1.multiply(m2);
+// matrix vector multiplication (vectors are padded with zeroes to get a 4x1 vector):
+var vec3d = m1.rightMultiply1x3Vector(vec3d);  // matrix * vector 
+var vec3d = m1.leftMultiply1x3Vector(vec3d);   // vector * matrix
+var vec2d = m1.rightMultiply1x2Vector(vec2d);  // matrix * vector 
+var vec2d = m1.leftMultiply1x2Vector(vec2d);   // vector * matrix
+// common transformation matrices:
+var m = CSG.Matrix4x4.rotationX(degrees);      // matrix for rotation about X axis
+var m = CSG.Matrix4x4.rotationY(degrees);      // matrix for rotation about Y axis
+var m = CSG.Matrix4x4.rotationZ(degrees);      // matrix for rotation about Z axis
+var m = CSG.Matrix4x4.rotation(rotationCenter, rotationAxis, degrees); // rotation about arbitrary point and axis
+var m = CSG.Matrix4x4.translation(vec3d);      // translation
+var m = CSG.Matrix4x4.scaling(vec3d);          // scale
+var m = CSG.Matrix4x4.mirroring(plane);        // mirroring in a plane; the argument must be a CSG.Plane
+// matrix transformations can be concatenated:
+var transform = CSG.Matrix4x4.rotationX(20).multiply(CSG.Matrix4x4.rotationY(30));
+// Use a CSG solid's transform() method to apply the transformation to a CSG solid
+```
+<h3>Plane</h3>
+A 3D plane is represented by a normal vector (should have unit length) and a distance from the origin w, the plane passes through normal.times(w)
+```
+var plane1 = new CSG.Plane(normal, w);         
+// Or we can construct a plane from 3 points:
+var plane2 = CSG.Plane.fromPoints(p1, p2, p3);
+// Or from a normal vector and 1 point:
+var plane3 = CSG.Plane.fromNormalAndPoint(normal, point);
+// Flip a plane (front side becomes back side):
+var plane4 = plane3.flipped();
+// Apply transformations (rotation, scaling, translation):
+var transformed = plane3.transformed(matrix4x4);  // argument is a CSG.Matrix4x4
+// Intersection of plane and 3d line:
+var point = plane3.intersectWithLine(line);        // argument is CSG.Line3D, returns a CSG.Vector3D
+// Intersection of 2 planes:
+var line = plane3.intersectWithPlane(plane);       // argument is another CSG.Plane, returns a CSG.Line3D
+// Distance to point:
+var w = signedDistanceToPoint(point);             // argument is CSG.Vector3D, returns a float (positive
+                                                  //    if in front of plane, negative if in back)
+```
+<h3>Line 3D</h3>
+A line in 3d space is represented by a point and a direction vector. Direction should be a unit vector. Point can be any point on the line:
+```
+var line = new CSG.Line3D(point, direction);      // argumenst are CSG.Vector3D
+// or by giving two points:
+var line = CSG.Line3D.fromPoints(p1, p2);         // argumenst are CSG.Vector3D
+var point = intersectWithPlane(plane);            // == plane.intersectWithLine(this)
+var line2 = line.reverse();                       // same line but reverse direction
+var line2 = line.transform(matrix4x4);            // for rotation, scaling, etc
+var p = line.closestPointOnLine(point);           // project point onto the line
+var d = line.distanceToPoint(point);
+```
+<h3>Line 2D</h3>
+A line in 2d space is represented by a normal vector and a distance w to the origin along the normal vector, or by a point and a direction vector. Direction should be a unit vector. Point can be any point on the line:
+```
+var line = new CSG.Line2D(CSG.Line2D(normal,w));
+// or by giving two points:
+var line = CSG.Line2D.fromPoints(p1, p2);         // argumenst are CSG.Vector2D
+var line2 = line.reverse();                       // same line but reverse direction
+var line2 = line.transform(matrix4x4);            // for rotation, scaling, etc
+var point = line.origin();                        // returns the point closest to the origin
+var dir = line.direction();                       // direction vector (CSG.Vector2D)
+var x = line.xAtY(y);                             // returns the x coordinate of the line at given y coordinate
+var d = absDistanceToPoint(point);                // returns the absolute distance between a point and the line
+var p = line.closestPoint(point);                 // projection of point onto the line
+var point = line.intersectWithLine(line2);        // intersection of two lines, returns CSG.Vector2D
+```
+<h2>Including Files</h2>
+---
+include() allows to include other JSCAD files (also recursively), e.g.
+```
+// main.jscad
+
+include("lib.jscad");
+
+function main() {
+   return myLib.b(2);
+}
+```
+and
+```
+// lib.jscad
+
+myLib = function() {
+   var a = function(n) {  // internal 
+      return n*2;  
+   }
+   myLib.b = function(n) {      // public 
+      return sphere(a(n));  
+   }
+}
+```
+See also Example 50: Platonics with a recursive use of include(); yet, it's a rather bad example of not localize the function names. A clear writing style-guide will follow how an OpenJSCAD library should look like.
+<h2>Support of include()</h2>
+include() is supported
+
+ - web-online remote (e.g. http://openjscad.org/): given you drag & dropped the files, or they are available on the web-server (e.g. the examples)
+ - web-online local (e.g. http://localhost/OpenJSCAD/): given you drag & dropped the files, or they are available on the local web-server
+ - web-offline local (e.g. file://..../OpenJSCAD/index.html): given you drag & dropped the files
+ - command-line interface (CLI): given they are locally available in the filesystem
+
+Example of a setup with drag & dropped files:
+
+
+<h2>File Layout of JSCAD Files</h2>
+---
+Assuming you want to create a larger OpenJSCAD project, you might use include() to split up the functionality:
+```
+ProjectName/
+   main.jscad          # this one contains the "function main()", this file will be executed
+   addon.jscad         # this file could be include("addon.jscad") in main.jscad
+   optimizer.jscad     #             ''     include("optimizer.jscad") in main.jscad or also in addon.jscad 
+   Makefile            # possible Makefile to do the same on CLI    
+```
+Note: The file named "main.jscad" must be present, and must contain the "function main()" declaration.
+
+<h2>Developing with Multiple JSCAD Files</h2>
+Depending on your browser and your local setup, following applies:
+
+ - Chrome (Version 26+):
+  - Online (http://...): drag & drop entire folder, e.g. ProjectName/ to the drag & drop zone
+  - Offline (file://...): drag & drop all jscad files (but not folder) to the drag & drop zone
+ - Firefox (Version 19+): drag & drop all jscad files of the project to the drag & drop zone
+ - Opera: not yet working (WebGL support not yet available)
+ - IE10: not yet working (WebGL support not yet available)
+
+<h2>Addendum</h2>
+---
+OpenJsCad Documentation, object-oriented only approach, most information from there is included here too.
+
+---End of User Guide---
+
+  [1]: http://openjscad.org/
+  [2]: http://
+  [3]: http://
+  [4]: http://
+  [5]: http://
