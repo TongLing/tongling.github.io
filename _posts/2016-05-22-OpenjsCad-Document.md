@@ -1,7 +1,11 @@
 ---
-Author: Tongling
-method: post
+layout: post
+title: OpenJsCad
+Author: TongLing
+categories: [文档]
+tags: [css]
 ---
+
 
 # OpenJSCAD 官方文档
 
@@ -22,7 +26,7 @@ OpenJSCAD是面向对象的，对于使用过OpenJSCAD的程序员来说，这�
  - 可以快速创建2D和3D模型。
 
 
-<h2>在线/离线编辑功能</h2> 
+<h2>在线/离线编辑功能</h2>
 ---
 [OpenJSCAD][3] 包含了图形界面编辑器，你可以
 
@@ -137,7 +141,7 @@ function main() {
 cube();                            // 普通写法
 cube(1);
 cube({size: 1});
-cube({size: [1,2,3]});             //几何中心为(1,2,3) 
+cube({size: [1,2,3]});             //几何中心为(1,2,3)
 cube({size: 1, center: true});     //几何中心为(0,0,0)
 cube({size: 1, center: [true,true,false]}); // 几何中心落在x轴和y轴上，但是不在z轴上
 cube({size: [1,2,3], round: true});
@@ -214,7 +218,7 @@ CSG.roundedCylinder({               //旋转过的圆柱
  - fni:内圆精度(inner resolution,默认为16)
  - fno:外圆精度(outer resolution,默认为32)
  - roti:旋转角度(inner rotation,默认为0)
- - 
+ -
 语法格式如下：
 ```
 torus();                    // 内圆半径为1，外圆半径为4
@@ -258,7 +262,7 @@ solid = CSG.fromPolygons(polygons);
 var l = vector_text(0,0,"Hello");   
 var o = [];
 l.forEach(function(pl) {                   // pl = 折线
-   o.push(rectangular_extrude(pl, {w: 2, h: 2})); 
+   o.push(rectangular_extrude(pl, {w: 2, h: 2}));
 });
 return union(o);
 ```
@@ -275,7 +279,7 @@ c.segments; // array of segments / polylines
 按X,Y,Z轴上的比例进行缩放
 ```
 scale(2,obj);          // openscad like
-scale([1,2,3],obj);    // 
+scale([1,2,3],obj);    //
 obj.scale([1,2,3]);    // 面向对象
 ```
 
@@ -361,7 +365,7 @@ sphere({r: 1, center:true}).subtract(cube({size: 1.5, center:true}));      // ob
 <h3>圆形(Circle)</h3>
 ```
 circle();                        // openscad like
-circle(1); 
+circle(1);
 circle({r: 2, fn:5});
 circle({r: 3, center: true});    // center: false (default)
 
@@ -449,11 +453,11 @@ Chained hulling is a variant of hull on multiple 2D forms, essentially sequentia
 ![此处输入图片的描述][5]
 
 ```
-chain_hull( 
+chain_hull(
     circle(), circle().translate([2,0,0]), ... );   // list of CAG/2D forms
 
 var a = [];
-a.push(circle()); 
+a.push(circle());
 chain_hull( a );                       // array of CAG/2D forms
 
 chain_hull({closed: true},             // default is false
@@ -576,7 +580,7 @@ expand(0.2, 8, difference(cube(2),translate([0.3,0.3,0.3], cube(2))));   // open
 var cube1 = CSG.cube({radius: 1.0});        // object-oriented
 var cube2 = CSG.cube({radius: 1.0}).translate([-0.3, -0.3, -0.3]);
 var csg = cube1.subtract(cube2);
-var rounded = csg.expand(0.2, 8); 
+var rounded = csg.expand(0.2, 8);
 ```
 
 <h2>属性</h2>
@@ -598,7 +602,7 @@ cube.properties.aCorner = new CSG.Vector3D([1, 1, 1]);
 cube = cube.translate([5, 0, 0]);
 cube = cube.scale(2);
 // cube.properties.aCorner will now point to [12, 2, 2],
-// which is still the same corner point 
+// which is still the same corner point
 
 // Properties can be stored in arrays; all properties in the array
 // will be transformed if the solid is transformed:
@@ -607,7 +611,7 @@ cube.properties.otherCorners = [
   new CSG.Vector3D([-1, -1, 1])
 ];
 
-// and we can create sub-property objects; these must be of the 
+// and we can create sub-property objects; these must be of the
 // CSG.Properties class. All sub properties will be transformed with
 // the solid:
 cube.properties.myProperties = new CSG.Properties();
@@ -625,7 +629,7 @@ A CSG.Connector consist of 3 properties:
  - point: a CSG.Vector3D defining the connection point in 3D space
  - normal: a CSG.Vector3D direction vector somewhat perpendicular to axis; this defines the "12 o'clock" orientation of the connection.
  - axis: a CSG.Vector3D defining the direction vector of the connection (in the case of the servo motor example it would point in the direction of the shaft)
- 
+
 When connecting two connectors, the solid is transformed such that the point properties will be identical, the axis properties will have the same direction (or opposite direction if mirror == true), and the normals match as much as possible.
 
 Connectors can be connected by means of two methods: A CSG solid's connectTo() function transforms a solid such that two connectors become connected. Alternatively we can use a connector's getTransformationTo() method to obtain a transformation matrix which would connect the connectors. This can be used if we need to apply the same transform to multiple solids.
@@ -648,16 +652,16 @@ cube1 = cube1.translate([3.1, 2, 0]);
 
 // Now attach cube2 to cube 1:
 cube2 = cube2.connectTo(
-  cube2.properties.myConnector, 
-  cube1.properties.myConnector, 
-  true,   // mirror 
+  cube2.properties.myConnector,
+  cube1.properties.myConnector,
+  true,   // mirror
   0       // normalrotation
 );
 
 // Or alternatively:
 var matrix = cube2.properties.myConnector.getTransformationTo(
-  cube1.properties.myConnector, 
-  true,   // mirror 
+  cube1.properties.myConnector,
+  true,   // mirror
   0       // normalrotation
 );
 cube2 = cube2.transform(matrix);
@@ -849,11 +853,11 @@ union() {
       }
       translate([10,5,5]) scale([0.5,1,2]) sphere(r=5,$fn=50);
       translate([-15,0,0]) cylinder(r1=2,r2=0,h=10,$fn=20);
-     
+
    for(i=[0:19]) {
-      rotate([0,i/20*360,0]) 
-      translate([i,0,0]) 
-      rotate([0,i/20*90,i/20*90,0]) 
+      rotate([0,i/20*360,0])
+      translate([i,0,0])
+      rotate([0,i/20*90,i/20*90,0])
       cube(size=[1,1.2,.5],center=true);
    }
 }
@@ -863,9 +867,9 @@ OpenJSCAD (.jscad)
 function main() {  
    var cubes = new Array();
    for(i=0; i<20; i++) {
-      cubes[i] = rotate([0,i/20*360,0], 
-         translate([i,0,0], 
-         rotate([0,i/20*90,i/20*90,0], 
+      cubes[i] = rotate([0,i/20*360,0],
+         translate([i,0,0],
+         rotate([0,i/20*90,i/20*90,0],
          cube({size:[1,1.2,.5],center:true}))));
     }
    return union(
@@ -981,7 +985,7 @@ getProjectionMatrix() gives the projection matrix to transform into the orthonor
 // construct a plane:
 var plane = CSG.Plane.fromNormalAndPoint([1,1,0], [0,0,1]);
 var orthobasis = new CSG.OrthoNormalBasis(plane);
-// or if we would like a specific right hand vector: 
+// or if we would like a specific right hand vector:
 // var orthobasis = new CSG.OrthoNormalBasis(plane, [0,0,1]);
 
 var point3d = new CSG.Vector3D(1,5,7);
@@ -1054,13 +1058,13 @@ var vec = CSG.Vector2D.fromAngleRadians(radians);  // returns a vector at the sp
 var m1 = new CSG.Matrix4x4();          // unity matrix
 var m2 = new CSG.Matrix4x4( [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1] );
   // elements are passed in row order
-var result = m1.plus(m2); 
+var result = m1.plus(m2);
 var result = m1.minus(m2);
 var result = m1.multiply(m2);
 // matrix vector multiplication (vectors are padded with zeroes to get a 4x1 vector):
-var vec3d = m1.rightMultiply1x3Vector(vec3d);  // matrix * vector 
+var vec3d = m1.rightMultiply1x3Vector(vec3d);  // matrix * vector
 var vec3d = m1.leftMultiply1x3Vector(vec3d);   // vector * matrix
-var vec2d = m1.rightMultiply1x2Vector(vec2d);  // matrix * vector 
+var vec2d = m1.rightMultiply1x2Vector(vec2d);  // matrix * vector
 var vec2d = m1.leftMultiply1x2Vector(vec2d);   // vector * matrix
 // common transformation matrices:
 var m = CSG.Matrix4x4.rotationX(degrees);      // matrix for rotation about X axis
@@ -1138,10 +1142,10 @@ and
 // lib.jscad
 
 myLib = function() {
-   var a = function(n) {  // internal 
+   var a = function(n) {  // internal
       return n*2;  
    }
-   myLib.b = function(n) {      // public 
+   myLib.b = function(n) {      // public
       return sphere(a(n));  
    }
 }
@@ -1165,7 +1169,7 @@ Assuming you want to create a larger OpenJSCAD project, you might use include() 
 ProjectName/
    main.jscad          # this one contains the "function main()", this file will be executed
    addon.jscad         # this file could be include("addon.jscad") in main.jscad
-   optimizer.jscad     #             ''     include("optimizer.jscad") in main.jscad or also in addon.jscad 
+   optimizer.jscad     #             ''     include("optimizer.jscad") in main.jscad or also in addon.jscad
    Makefile            # possible Makefile to do the same on CLI    
 ```
 Note: The file named "main.jscad" must be present, and must contain the "function main()" declaration.

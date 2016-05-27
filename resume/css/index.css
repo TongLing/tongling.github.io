@@ -1,0 +1,185 @@
+@-webkit-keyframes fadeInContents {
+0% {opacity: 0;  padding:600px 0px 0px 0px;}
+100% {opacity: 1; }
+}
+@-webkit-keyframes fadeInPoster {
+0% {opacity: 0;  padding:100px 0px 0px 0px;}
+100% {opacity: 1; }
+}
+body{
+    font-weight: 900;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 120%;
+    height: 120%;
+    background-color: #EFEFEF;
+    z-index: -1;
+    position: absolute;
+}
+#nav{
+margin:30px 30px 90% 90%;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #FCCCCC;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+#sidebar{
+     font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    float:left;
+    width:7%;
+    height:100%;
+    float: left;
+    z-index: 1;
+    position: relative;
+    color:#666666;
+    background: linear-gradient(to right,#444444,#222222);
+    border-left: 1px solid #000000;
+    opacity: 0.8;
+}
+#sidebar .menu{
+ word-break:keep-all;
+    position: relative;
+    height:35px;
+    width:100%;
+    border-radius: 0 5px 5px 0;
+    color:#999999;
+    transition:0.5s;
+    margin: 5 5 5 5px;
+    padding: 15 8 0 10px;
+    z-index:-10;
+    
+}
+#sidebar .menu:hover{
+    cursor:pointer;
+    color:#FFFFFF;
+    transition:0.5s;
+    background: #444444;
+    box-shadow: 1px 1px 1px #333333;
+}
+#poster{
+     font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    color:white;
+    float:left;
+    transition: 1s;
+    height:auto;
+    width: 1em;
+    overflow: hidden;
+    position: relative;
+    font-size:10em;
+    padding:0 0 0 0;
+    margin: 0 0 0 -3%;
+    line-height: 1.0em;
+    z-index: 0;
+    color:#FFFFFF;
+}
+#poster p{
+    padding: 0;
+    margin:0;
+}
+#poster> .show{
+-webkit-animation-name: fadeInPoster; /*动画名称*/
+-webkit-animation-duration: 1s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/
+    text-shadow: 1.5px 1.5px 3px #cccccc;
+}
+#poster> .hide{
+    transition:0.5s;
+    display: none;
+    width:0;
+    height:0;
+}
+#post-xmjl{
+    float:inherit;
+    position:relative;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+    height: 80%;  
+    width: 90%;
+}
+#content .show{
+-webkit-animation-name: fadeInContents; /*动画名称*/
+-webkit-animation-duration: 2s; /*动画持续时间*/
+-webkit-animation-iteration-count: 1; /*动画次数*/
+-webkit-animation-delay: 0s; /*延迟时间*/
+}
+#listleft{
+    margin:95 30 30 30px;    
+    position: relative;
+    float: left;
+    height:90%;
+    width:30%;
+    border:1px solid #EEEEEE;
+}
+#tag{
+    transition:0.5s;
+    margin:20px;
+    padding:15px;
+    width:auto;
+    height:100px;
+    overflow: hidden;
+    border: 1px solid #EEEEEE;
+}
+#tag:hover{
+    transition:0.5s;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+#tagright{
+    padding:0 0 0 10px;
+       overflow: hidden;
+    width:auto;
+    height:100px;
+}
+#tagup{
+    padding: 5px;
+    font-weight: 900;
+      font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+     word-break:keep-all;
+    overflow: hidden;
+    font-size:2em;
+    color:#444444;
+}
+#tagdown{
+    padding: 5px;
+    font-weight: 100;
+     word-break:keep-all;
+       overflow: hidden;
+    font-size: 0.8em;
+    color:#999999;
+}
+.img{
+    overflow: hidden;
+    width:92px;
+    height:92px;
+    float:left;
+    border: 1px solid #CCCCCC;
+    border-radius: 46px;
+    transition:0.5s;
+    background:#F6F6F6;
+}
+.img:hover{
+    transition:0.5s;
+    background:#FCFCFC;
+}
+.img> img{
+    width: 92px;
+    height:92px;
+}
+#listright{
+    margin:95 30 30 30px;
+    height:90%;
+     position: relative;
+    width:30%;
+    float: left;
+    border:1px solid #EEEEEE;
+}
+
