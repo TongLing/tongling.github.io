@@ -28,7 +28,6 @@ function switchNav(num) {
     }
     document.getElementsByClassName("menu")[num].style.background="#444444";
     document.getElementsByClassName("menu")[num].style.boxShadow="1px 1px 1px #CCCCCC";
-    //console.log("switchMenu");
     document.getElementById("w").setAttribute("class", "hide");
     document.getElementById("xmjl").setAttribute("class", "hide");
     document.getElementById("jybj").setAttribute("class", "hide");

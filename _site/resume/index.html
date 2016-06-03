@@ -4,47 +4,52 @@
         <meta charset="utf-8"/>
   <meta name="viewport" content="width=100%, initial-scale=1" />
         <title>TongLing's Resume</title>
-        <link rel="stylesheet" href="css/index.css" type="text/css"/>
+       
+           <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+   <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+   <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+         <link rel="stylesheet" href="css/index.css" type="text/css"/>
+        
         <script src="js/index.js" type="text/javascript"></script>
-        <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
     
     <body>
+        <canvas id="canvas"></canvas>
+      
         <div id = "nav">
         </div>
         <div id ="sidebar">
-            <div class="menu" href="#" onclick="switchMenu(0)">关于我</div>
-            <div class="menu" href="#" onclick="switchMenu(1)">项目经历</div>
-            <div class="menu" href="#" onclick="switchMenu(2)">专业技能</div>
-            <div class="menu" href="#" onclick="switchMenu(3)">教育背景</div>
-            <div class="menu" href="#" onclick="switchMenu(4)">实习经历</div>
-            <div class="menu" href="#" onclick="switchMenu(5)">了解更多</div>
+<div class="menu" href="#" onclick="switchMenu(0)">关于我</div>
+<div class="menu" href="#" onclick="switchMenu(1)">项目经历</div>
+<div class="menu" href="#" onclick="switchMenu(2)">专业技能</div>
+<div class="menu" href="#" onclick="switchMenu(3)">教育背景</div>
+<div class="menu" href="#" onclick="switchMenu(4)">实习经历</div>
+<div class="menu" href="#" onclick="switchMenu(5)">了解更多</div>
         </div>
         <div id = "poster">
-            <div id ="w" class = "show"><p>关于我&nbsp;&nbsp;</p></div>
-            <div id ="xmjl" class = "hide"><p>项目经历</p></div>
-            <div id ="zyjn" class = "hide"><p>专业技能</p></div>
-            <div id ="jybj" class = "hide"><p>教育背景</p></div>
-            <div id ="sxjl" class = "hide"><p>实习经历</p></div>
-            <div id ="ljgd" class = "hide"><p>了解更多</p></div>
+    <div id ="w" class = "show"><p>关于我</p></div>
+    <div id ="xmjl" class = "hide"><p>项目经历</p></div>
+    <div id ="zyjn" class = "hide"><p>专业技能</p></div>
+    <div id ="jybj" class = "hide"><p>教育背景</p></div>
+    <div id ="sxjl" class = "hide"><p>实习经历</p></div>
+    <div id ="ljgd" class = "hide"><p>了解更多</p></div>
         </div>
         
         <div id = "content">
         <div id ="post-w" class = "show">
-             <div id = "firstline"></div>
-            <div id = group>
-                
-             <div id ="circle"></div>
-            <div id ="circle"></div>
-            <div id ="circle"></div>
-            <div id ="circle"></div>
+            
+            <div id ="wrapper">
+            <img src ="img/tongling.png" id ="logo"></img>
+            <p>童凌 · 前端攻城狮</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> <a href = "mailto:545716730@163.com">545716730@163.com</a></p>
             </div>
-            <img src="img/tongling.png" id="logo">
-            </img>
-            <p>童凌</p>
-            <p>前端攻城狮</p>
-            <p>545716730@163.com</p>
-           
+ 
+              <div id ="linebottom">
+            <div id = "round" onclick = "windows.href("www.baidu.com");"></div>
+            <div id = "round"></div>
+            <div id = "round"></div>
+            <div id = "round"></div>
+            </div>
         </div>
         <div id ="post-xmjl" class = "hide">
             <div id ="listleft">
@@ -139,13 +144,32 @@
                 </div>
             </div>
         </div>
-        <div id ="post-zyjn" class = "hide">职业技能</div>
+        <div id ="post-zyjn" class = "hide">
+        <div id = "container">
+        <div id = "card"></div>
+        <div id = "card"></div>
+        <div id = "card"></div>
+        <div id = "card"></div>
+        <div id = "card"></div>
+        <div id = "card"></div>
+        <div id = "card"></div>
+        <div id = "card"></div>
+        <div id = "card"></div>
+        </div>
+        </div>
         <div id ="post-jybj" class = "hide">教育背景</div>
         <div id ="post-sxjl" class = "hide">实习经历</div>
-        <div id ="post-ljgd" class = "hide">了解更多</div>
-        </div>
+        <div id ="post-ljgd" class = "hide">知乎
+            <!-- 这里再做一个弹出框-->
+            <p>知乎</p>
+            <p>CSDN</p>
+            <p>豆瓣</p>
+            <p>Github</p>
+            </div>
+        
 
         <div id ="bottom"></div>
+  <script src ="js/background.js"></script>
         </body>
     
     

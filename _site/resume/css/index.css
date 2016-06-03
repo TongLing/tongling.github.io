@@ -1,3 +1,5 @@
+/* 下面这些是常用的过渡动画效果*/
+
 @-webkit-keyframes fadeInContents {
 0% {opacity: 0;  padding:600px 0px 0px 0px;}
 100% {opacity: 1; }
@@ -6,6 +8,7 @@
 0% {opacity: 0;  padding:100px 0px 0px 0px;}
 100% {opacity: 1; }
 }
+
 body{
     font-weight: 900;
     overflow: hidden;
@@ -34,7 +37,7 @@ margin:30px 30px 90% 90%;
 #sidebar{
      font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
     float:left;
-    width:7%;
+    width:120px;
     height:100%;
     float: left;
     z-index: 1;
@@ -75,7 +78,7 @@ margin:30px 30px 90% 90%;
     position: relative;
     font-size:10em;
     padding:0 0 0 0;
-    margin: 0 0 0 -3%;
+    margin: 0 0 0 -30px;
     line-height: 1.0em;
     z-index: 0;
     color:#FFFFFF;
@@ -118,6 +121,23 @@ margin:30px 30px 90% 90%;
 -webkit-animation-iteration-count: 1; /*动画次数*/
 -webkit-animation-delay: 0s; /*延迟时间*/
 }
+#canvas {
+    position:absolute;
+}
+#round{
+    margin:0 70 0 70px;
+    width:46px;
+    height:46px;
+    border-radius: 23px;
+    border: 1px solid #CCCCCC;
+    position:relative;
+    display: inline-block; 
+    transition: 0.5s;
+}
+#round:hover{
+    transition: 0.5s;
+    background-color: #CCCCCC;
+}
 #listleft{
     margin:95 30 30 30px;    
     position: relative;
@@ -126,19 +146,43 @@ margin:30px 30px 90% 90%;
     width:30%;
     border:1px solid #EEEEEE;
 }
+#container{
+    height: 700px;
+    width:  1200px;
+    padding: 0 0 50 200px;
+}
+#card{
+    margin: 10px;
+    float:left;
+    height:200px;
+    transition: 0.5s;
+    background: #CCCCCC;
+    opacity: 0.2;
+    border:1px dotted #CCCCCC;
+    width:300px;
+    padding:6px;
+}
+#card:hover{
+    transition:0.5s;
+    opacity: 0.5;
+    box-shadow: 1px 1px 1px #999999;
+}
 #tag{
     transition:0.5s;
     margin:20px;
     padding:15px;
     width:auto;
-    height:100px;
+    height:150px;
     overflow: hidden;
+    opacity: 0.9;
+    
     border: 1px solid #EEEEEE;
 }
 #tag:hover{
     transition:0.5s;
-    background: #FFFFFF;
-    border-radius: 15px;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    box-shadow: 1px 1px 1px #999999;
 }
 #tagright{
     padding:0 0 0 10px;
@@ -146,8 +190,9 @@ margin:30px 30px 90% 90%;
     width:auto;
     height:100px;
 }
+
 #tagup{
-    padding: 5px;
+    padding: 5px 0 0 5px;
     font-weight: 900;
       font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
      word-break:keep-all;
@@ -160,6 +205,7 @@ margin:30px 30px 90% 90%;
     font-weight: 100;
      word-break:keep-all;
        overflow: hidden;
+    line-height: 2em;
     font-size: 0.8em;
     color:#999999;
 }
@@ -179,20 +225,7 @@ margin:30px 30px 90% 90%;
 
 }
 
-#circle{
-    position:relative;
-    width:46px;
-    height:46px;
-    margin:30px 0 30px 0;
-        background: #FFF;
-    border:1px solid #000;
-    border-radius: 23px;
-    transition:0.5s;
-}
-#circle:hover{
-    transition:0.5s;
-    background: #E1E1E1;
-}
+
 .img:hover{
     transition:0.5s;
     background:#FCFCFC;
@@ -208,18 +241,43 @@ margin:30px 30px 90% 90%;
     height:1000px;
     border:1px solid #CCC;
 }
+#wrapper{
+    margin:100 100 100 500px;
+    width:246px;
+    height:auto;
+}
+#wrapper p{
+    padding:0.5em;
+    margin:0.5em;
+    color:#333333;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2em;
+    text-align: center;
+}
 #logo{
-    margin:100 100 100 100px;
+    margin:10 0 10 0px;
     width:244px;
     height:244px;
     border:1px solid #CCCCCC;
     border-radius: 122px;
     transition:0.5s;
     background: #F3F3F3;
+    opacity: 0.9;
+}
+#linebottom{
+    height:200px;
+    width:auto;
+    border-top: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-top-left-radius: 30px;
+    margin:0 0 0 150px;
+    
 }
 #logo:hover{
     transition:0.5s;
     background:#FFFFFF;
+    opacity: 1.0;
 }
 #listright{
     margin:95 30 30 30px;
