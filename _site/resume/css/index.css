@@ -133,10 +133,19 @@ margin:30px 30px 90% 90%;
     position:relative;
     display: inline-block; 
     transition: 0.5s;
+    background-image: url(../img/github.png);
+    overflow:hidden;
+    opacity: 0.3;
+}
+.indexicon{
+    width:46px;
+    height:46px;
 }
 #round:hover{
     transition: 0.5s;
+    opacity: 1.0;
     background-color: #CCCCCC;
+    box-shadow:0px 0px 8px #BBB;
 }
 #listleft{
     margin:95 30 30 30px;    
@@ -156,16 +165,17 @@ margin:30px 30px 90% 90%;
     float:left;
     height:200px;
     transition: 0.5s;
-    background: #CCCCCC;
-    opacity: 0.2;
+    
+    opacity: 1.0;
     border:1px dotted #CCCCCC;
     width:300px;
     padding:6px;
 }
 #card:hover{
     transition:0.5s;
+    background: #EEEEEE;
     opacity: 0.5;
-    box-shadow: 1px 1px 1px #999999;
+    box-shadow:0px 0px 8px #BBB;
 }
 #tag{
     transition:0.5s;
@@ -229,6 +239,7 @@ margin:30px 30px 90% 90%;
 .img:hover{
     transition:0.5s;
     background:#FCFCFC;
+        box-shadow:0px 0px 8px #BBB;
 }
 .img> img{
     width: 92px;
@@ -264,6 +275,7 @@ margin:30px 30px 90% 90%;
     transition:0.5s;
     background: #F3F3F3;
     opacity: 0.9;
+    
 }
 #linebottom{
     height:200px;
@@ -277,6 +289,7 @@ margin:30px 30px 90% 90%;
 #logo:hover{
     transition:0.5s;
     background:#FFFFFF;
+    box-shadow:0px 0px 8px #BBB;
     opacity: 1.0;
 }
 #listright{

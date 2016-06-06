@@ -53,7 +53,7 @@ margin:30px 30px 90% 90%;
     height:35px;
     width:100%;
     border-radius: 0 5px 5px 0;
-    color:#999999;
+    color:#CCCCCC;
     transition:0.5s;
     margin: 5 5 5 5px;
     padding: 15 8 0 10px;
@@ -133,10 +133,19 @@ margin:30px 30px 90% 90%;
     position:relative;
     display: inline-block; 
     transition: 0.5s;
+    background-image: url(../img/github.png);
+    overflow:hidden;
+    opacity: 0.3;
+}
+.indexicon{
+    width:46px;
+    height:46px;
 }
 #round:hover{
     transition: 0.5s;
+    opacity: 1.0;
     background-color: #CCCCCC;
+    box-shadow:0px 0px 8px #BBB;
 }
 #listleft{
     margin:95 30 30 30px;    
@@ -156,16 +165,58 @@ margin:30px 30px 90% 90%;
     float:left;
     height:200px;
     transition: 0.5s;
-    background: #CCCCCC;
-    opacity: 0.2;
+    
+    opacity: 0.9;
     border:1px dotted #CCCCCC;
     width:300px;
-    padding:6px;
+    padding:0;
+}
+
+#card img{
+    float: left;
+    height:90px;
+    width:120px;
+    margin:10px;
+    text-align: center;
+}
+#down {
+    text-align: left;
+    float: left;
+    height:70px;
+    width:280px;
+    margin:10px;
+    border: 0px solid #CCC;
+}
+#left {
+    font-size: 14px;    
+    width: 138px;
+    height:90px;
+    margin:10px;
+    padding:10px;
+    float: left;
+    border:0px solid #CCC;
+}
+#jybj-container{
+    text-align: center;
+    width:600px;
+    height:200px;
+    border: 1px solid #CCC;
+    margin:200px 20% 20% 20%;
+        padding: 20 100px 20px 100px;
+}
+#ljgd-container{
+    text-align: left;
+    width:600px;
+    height:200px;
+    border: 1px solid #CCC;
+    margin:200px 20% 20% 20%;
+        padding: 20 100px 20px 20px;
 }
 #card:hover{
     transition:0.5s;
-    opacity: 0.5;
-    box-shadow: 1px 1px 1px #999999;
+    background: #EEEEEE;
+    opacity: 1.0;
+    box-shadow:0px 0px 8px #BBB;
 }
 #tag{
     transition:0.5s;
@@ -229,6 +280,7 @@ margin:30px 30px 90% 90%;
 .img:hover{
     transition:0.5s;
     background:#FCFCFC;
+        box-shadow:0px 0px 8px #BBB;
 }
 .img> img{
     width: 92px;
@@ -249,7 +301,7 @@ margin:30px 30px 90% 90%;
 #wrapper p{
     padding:0.5em;
     margin:0.5em;
-    color:#333333;
+    color:#666666;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2em;
@@ -264,6 +316,22 @@ margin:30px 30px 90% 90%;
     transition:0.5s;
     background: #F3F3F3;
     opacity: 0.9;
+    
+}
+#switch{
+    margin:300 50 10 10px;
+    padding:2px 7px 2px 7px;
+    height:25px;
+    width:100px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background-color: #222222;
+    transition:0.5s;
+}
+
+#switch:hover{
+    transition:0.5s;
+    background-color: #000;
 }
 #linebottom{
     height:200px;
@@ -277,6 +345,7 @@ margin:30px 30px 90% 90%;
 #logo:hover{
     transition:0.5s;
     background:#FFFFFF;
+    box-shadow:0px 0px 8px #BBB;
     opacity: 1.0;
 }
 #listright{

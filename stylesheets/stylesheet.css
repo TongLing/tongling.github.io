@@ -327,6 +327,30 @@ a:hover {
 #next-page a:hover{
     text-decoration: none;
 }
+#previous-page2{
+  border: 0px solid;
+  float:left;
+}
+#previous-page2:hover{
+  float:left;
+  background: #EEE;
+  text-decoration: none;
+}
+#previous-page2 a:hover{
+  text-decoration: none;
+}
+#next-page2{
+  border: 0px solid;
+  float: right;
+}
+#next-page2:hover{
+  float:right;
+  background: #EEE;
+  text-decoration: none;
+}
+#next-page2 a:hover{
+    text-decoration: none;
+}
 .category{
   text-align: center;
 }
