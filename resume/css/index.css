@@ -54,7 +54,7 @@ overflow: hidden;
 }
 #button {
     height:40px;
-    width:200px;
+    width:230px;
     float:left;
     text-align: center;
     margin:5px;
@@ -69,7 +69,7 @@ overflow: hidden;
 }
 #button-big{
         height:40px;
-    width:410px;
+    width:470px;
     float:left;
     text-align: center;
     margin:5px;
@@ -202,6 +202,7 @@ overflow: hidden;
     text-align: center;
 }
 #down {
+    color:#777;
     text-align: left;
     float: left;
     height:70px;
@@ -219,7 +220,7 @@ overflow: hidden;
     border:0px solid #CCC;
 }
 #jybj-container{
-    text-align: left;
+    text-align: center;
     width:470px;
     height:250px;
     border: 1px solid #CCC;
@@ -229,9 +230,28 @@ overflow: hidden;
     font-size: 18px;
 }
 
+#ljgd-left{
+    width:280px;
+    float:left;
+    line-height: 2em;
+}
+#ljgd-right{
+    width:200px;
+    float:right;
+    text-align: right;
+    line-height: 2em;
+}
+
+hr{
+    border: 1px solid #ccc;
+}
+#big {
+    font-size:20px;
+}
 #ljgd-container{
+    line-height: 1.5em;
     text-align: left;
-    width:470px;
+    width:530px;
     height:250px;
     border: 1px solid #CCC;
     margin:250px 20% 20% 20%;
@@ -248,7 +268,7 @@ overflow: hidden;
     transition:0.5s;
     margin:20px;
     padding:15px;
-    width:auto;
+    width:400px;
     height:150px;
     overflow: hidden;
     opacity: 0.9;
@@ -342,7 +362,7 @@ overflow: hidden;
     border-radius: 122px;
     transition:0.5s;
     background: #F3F3F3;
-    opacity: 0.9;
+    opacity: 0.8;
     
 }
 #switch{
@@ -372,7 +392,7 @@ overflow: hidden;
 #logo:hover{
     transition:0.5s;
     background:#FFFFFF;
-    box-shadow:0px 0px 8px #BBB;
+    box-shadow:1px 1px 30px #BBB;
     opacity: 1.0;
 }
 #listright{

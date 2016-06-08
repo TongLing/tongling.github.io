@@ -1,29 +1,27 @@
-        var RollFlag = 1;
-		var scrollFunc = function (e) {
+
+
+
+var scrollFunc = function (e) {  
+        setTimeout(function(){
         e = e || window.event;
-        if (e.wheelDelta && RollFlag) {  //判断浏览器IE，谷歌滑轮事件             
-            if (e.wheelDelta > 0) { //当滑轮向上滚动时
-               
+        if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件  
+            if (e.wheelDelta > 0) { //当滑轮向上滚动时         
                Rollup();
-                RollFlag=0;
             }
             if (e.wheelDelta < 0) { //当滑轮向下滚动时
                Rolldown();
-                RollFlag=0;
-            
             }
         } else if (e.detail) {  //Firefox滑轮事件
             if (e.detail> 0) { //当滑轮向上滚动时
                Rollup();
-                RollFlag=0;
             }
             if (e.detail< 0) { //当滑轮向下滚动时
                 Rolldown();
-                RollFlag=0;
                  
             }
         }
     }
+    )}
     //给页面绑定滑轮滚动事件
     if (document.addEventListener) {//firefox
         document.addEventListener('DOMMouseScroll', scrollFunc, false);
@@ -31,6 +29,7 @@
     //滚动滑轮触发scrollFunc方法  //ie 谷歌
     window.onmousewheel = document.onmousewheel = scrollFunc; 
 
+//向上滚动一个页面
 function Rollup(){
     var num = -1;
     //计算出当前的num位置
@@ -53,6 +52,7 @@ function Rollup(){
     }
 }
 
+//向下滚动一个页面
 function Rolldown(){
     var num = -1;
     //计算出当前的num位置
@@ -60,7 +60,6 @@ function Rolldown(){
     var a = par.childNodes[1];
     var num = 0;
     do{
-
         if (a.getAttribute("class") === "show") {break;}
         else {
             a=a.nextElementSibling;

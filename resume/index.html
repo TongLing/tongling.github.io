@@ -15,6 +15,35 @@
     
     <body>
 
+        <script>
+        
+/*测试用，测完了以后这段代码可以删掉*/
+        var agent = navigator.userAgent;
+        if (/.*Firefox.*/.test(agent)) {
+    document.addEventListener("DOMMouseScroll", function(e) {
+        e = e || window.event;
+        var detail = e.detail;
+        if (detail > 0) {
+            console.log("鼠标向下滚动");
+        } else {
+            console.warn("鼠标向上滚动");
+        }
+    });
+} else {
+    document.onmousewheel = function(e) {
+        e = e || window.event;
+        var wheelDelta = e.wheelDelta;
+        if (wheelDelta > 0) {
+            console.log("鼠标向上滚动");
+        } else {
+            console.warn("鼠标向下滚动");
+        }
+    }
+   
+}
+/*测试用，测完了以后这段代码可以删掉*/
+    
+        </script>
         <canvas id="canvas"></canvas>
       
         <div id = "nav">
@@ -42,12 +71,12 @@
         <div id ="post-w" class = "show">
             
             <div id ="wrapper">
-            <img src ="img/tongling.png" id ="logo"></img>
+            <img src ="img/me.JPG" id ="logo"></img>
             <p>童凌 · 前端攻城狮</p>
             <p><span class="glyphicon glyphicon-home"></span> <a href = "http://tongling.github.io" target ="
                 ">http://tongling.com</a></p>
             <p><span class="glyphicon glyphicon-envelope"></span> <a href = "mailto:545716730@163.com">545716730@163.com</a></p>
-            
+            <p><div id="button"><a href = "resume.pdf">下载简历</a></div></p>
             </div>
  
               <div id ="linebottom">
@@ -223,6 +252,7 @@
         <p>软件工程系  软件工程卓越班</p>
         <p>2017年6月毕业</p>
         <p>研究课题与3D Web相关</p>
+        <div id="button" style="text-align:center"><a href="paper.pdf">查看论文</a></div>
     </div>
 </div>
         <div id ="post-sxjl" class = "hide">实习经历</div>
