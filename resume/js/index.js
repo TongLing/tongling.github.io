@@ -136,3 +136,7 @@ function switchMenu(num) {
     switchContent(num);
     
 }
+
+function PersonalInfo(){
+    alert("YES");
+}

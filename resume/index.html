@@ -55,7 +55,7 @@
 <div class="menu" href="#" onclick="switchMenu(2)">专业技能</div>
 <div class="menu" href="#" onclick="switchMenu(3)">教育背景</div>
 <div class="menu" href="#" onclick="switchMenu(4)">实习经历</div>
-<div class="menu" href="#" onclick="switchMenu(5)">了解更多</div>
+<div class="menu" href="#" onclick="switchMenu(5)">获得奖项</div>
                <div id ="switch"> 中 | <a href ="en.html">English</a></div>
         </div>
         <div id = "poster">
@@ -64,14 +64,28 @@
     <div id ="zyjn" class = "hide"><p>专业技能</p></div>
     <div id ="jybj" class = "hide"><p>教育背景</p></div>
     <div id ="sxjl" class = "hide"><p>实习经历</p></div>
-    <div id ="ljgd" class = "hide"><p>了解更多</p></div>
+    <div id ="ljgd" class = "hide"><p>获得奖项</p></div>
         </div>
         
         <div id = "content">
+          
         <div id ="post-w" class = "show">
-            
+      <div id="personalinfo" class="hide">
+                <p>Hi, this is Tong's Resume.</p>
+                <p>I was once a captain of local rock band, playing leading guitar in the team. 
+                <p>I taught hundreds of guitar beginners and helped some of them discover the fascination of music.
+                </p>
+                <p>I was a volunteer in Changsha Strawberry Music festival held in Jun, 2016.
+                </p>
+                <p>I love the music. Hope you could bring me to the bigger world. :)</p>
+                <p>For more personal information, please contact me directly: tonglingacademic@gmail.com</p>
+           
+                <div id ="confirm-button" onclick="document.getElementById('personalinfo').setAttribute('class', 'hide');" >
+                    <p onclick="">Got it</p>
+                </div>
+            </div>
             <div id ="wrapper">
-            <img src ="img/me.JPG" id ="logo"></img>
+            <img src ="img/me.JPG" id ="logo" onclick="document.getElementById('personalinfo').setAttribute('class', 'show');"></img>
             <p>童凌 · 前端攻城狮</p>
             <p><span class="glyphicon glyphicon-home"></span> <a href = "http://tongling.github.io" target ="
                 ">http://tongling.com</a></p>
@@ -99,7 +113,7 @@
                     </div>
                     <div id ="tagdown">
                         支持多种格式导入导出<br/>
-                        简单粗暴的即时交互
+                        简单的即时交互
                     </div>
                         </div>
                 </div>
@@ -146,7 +160,7 @@
                     </div>
                     <div id ="tagdown">
                         南华大学门户网站<br/>
-                        为7000名师生提供日常浏览，招考信息
+                        为7000名师生提供日常浏览，招生信息
                     </div>
                         </div>
                 </div>
@@ -248,16 +262,37 @@
         </div>
 <div id ="post-jybj" class = "hide">
     <div id ="jybj-container">
+        <big>毕业院校:</big>
         <p>南华大学 本科在读生    </p>
         <p>软件工程系  软件工程卓越班</p>
         <p>2017年6月毕业</p>
-        <p>研究课题与3D Web相关</p>
-        <div id="button" style="text-align:center"><a href="paper.pdf">查看论文</a></div>
+        <p>研究领域：图形处理, Web开发</p>
+        <hr>
+        <p>
+            <a href="paper.pdf">论文1:多文件格式三维图形三线浏览平台分析</a></p>
+        <div class="abstract">
+        摘要：针对目前三维模型文件需要使用计算机客户端上特定的三维图形软件才能打开，在网页端浏览不便的问题，提出一种在线预览3D文件的技术。研究了三维模型文件在浏览器上的显示方法，并实现了多种三维模型文件在浏览器中预览和实现的关键技术，并对文件转换时间和加载时间进行相关测试。实验结果表明，使用该技术实现的平台不仅完成了相应的三维文件格式转换，同时实现了良好的在线浏览效果。<br>
+        </div>
+        <p><a href="paper2.pdf">论文2:软件工程数据挖掘研究进展</a></p>
+        <div class="abstract">
+        摘要：就软件工程项目当中数据挖掘技术应用的实际情况来看，信息规则挖掘技术已经逐渐被应用到了很多行业领域当中，成功地完成了对庞大数据的分析和整理，并且将有价值的信息展现在人们面前，基于此，本文将针对软件工程当中的数据挖掘技术的研究进展展开分析，研究数据挖掘技术之所比被得到广泛应用的原因以及开发过程当中面临的挑战，旨在进一步加深对该技术的理解。
+        </div>
     </div>
 </div>
         <div id ="post-sxjl" class = "hide">
-            <div id="ljgd-container">
+             <div id="ljgd-container">
             
+                <div id = "ljgd-left"><strong>[北京大学2014夏令营]</strong></div>
+                <div id = "ljgd-right">[北京]</div>
+                <div id = "ljgd-left">[夏令营队员], [ACM集训]</div><br>
+                <div id = "ljgd-right">[2014.7 - 2014.8]</div>
+                <br/>
+                <br/>
+                <div>参加北京大学暑期课程夏令营培训</p>
+<p> 主要内容为涉及ACM程序设计竞赛的常用算法和技巧</p>
+                 <p>学习了经典著作《算法导论》中大量的实用算法</p>
+                </div>
+                <hr>
                 <div id = "ljgd-left"><strong>[深圳中兴网信科技有限公司]</strong></div>
                 <div id = "ljgd-right">[湖南衡阳]</div>
                 <div id = "ljgd-left">[实习生], [前端项目团队]</div><br>
@@ -267,19 +302,52 @@
                 <div>完成了”数字衡阳”信息化建设项目中对天气系统的大数据分析</p>
 <p> 前端页面的基础知识,使用html,javascript,css的页面开发</p><p> Hadoop 分布式文件系统集群的基本原理以及部署方法</p>
                 <p> 海量大规模数据的处理方法</p></div>
+                <hr>
+                <div id = "ljgd-left"><strong>[湖南省软件评测中心]</strong></div>
+                <div id = "ljgd-right">[长沙]</div>
+                <div id = "ljgd-left">[测试工程师], [软件测试部]</div><br>
+                <div id = "ljgd-right">[2016.6 - 2016.7]</div>
+                <br/>
+                <br/>
+                <div>在湖南省软件评测中心担任实习生</p>
+<p> 主要内容：自动化测试脚本，性能分析等</p>
+                 <p>通过文档配置管理工具Git展开相应的用例测试，缺陷维护工作</p>
+                </div>
             </div>
 </div>
         <div id ="post-ljgd" class = "hide">
             <!-- 这里再做一个弹出框-->
             <div id="ljgd-container">
-                <div id ="button"><p><a href ="http://tongling.github.com" target="_blank">个人主页</a></p></div>
-              <div id ="button"><p><a href ="https://www.zhihu.com/people/tong-ling-30" target="_blank">知乎</a></p></div>
-              <div id ="button"><p><a href ="http://blog.csdn.net/tlonline" target="_blank">CSDN</a></p></div>
-              <div id ="button"><p><a href="https://www.douban.com/people/63283548/" target="_blank">豆瓣</a></p></div>
-              <div id ="button"><p><a href="http://github.com/tongling" target="_blank">Github</a></p></div>
-                <div id ="button">  <p>Email: <a href ="mailto:545716730@163.com" >545716730@163.com</a></p></div>
-                <div id ="button-big">
-                    <a href = "resume.pdf">下载简历</a></div>
+                
+                <div id = "ljgd-left"><strong>[南华大学第十届程序设计竞赛]</strong></div>
+                <div id = "ljgd-right">[湖南,衡阳]</div>
+                <div id = "ljgd-left">[二等奖]</div><br>
+                <div id = "ljgd-right">[2014.3 - 2014.4]</div>
+                <br/>
+                <br/>
+                <div>比赛名次 Rank 8/92 </p>
+                </div>
+                <hr>      
+                <div id = "ljgd-left"><strong>[湖南省第九届程序设计竞赛]</strong></div>
+                <div id = "ljgd-right">[湖南,湘潭]</div>
+                <div id = "ljgd-left">[三等奖]</div><br>
+                <div id = "ljgd-right">[2015.8 - 2015.9]</div>
+                <br/>
+                <br/>
+                <div>比赛名次 Rank 44/130 </p>
+                <hr>
+                </div>
+                <div id = "ljgd-left"><strong>[湖南省大学生创新项目]</strong></div>
+                <div id = "ljgd-right">[湖南,湘潭]</div>
+                <div id = "ljgd-left"> </div><br>
+                <div id = "ljgd-right">[2016.3 - 2016.4]</div>
+                <br/>
+                <br/>
+                <div><p>项目课题：Scool在线考试系统的设计与开发</p>
+                    <p>获得省级立项，省级基金资助</p>
+                </div>
+                <hr>
+
             </div>
         </div>
 

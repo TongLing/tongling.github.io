@@ -113,6 +113,10 @@ overflow: hidden;
     height:80%;
 }
 #poster> .show{
+animation-name: fadeInPoster; /*动画名称*/
+animation-duration: 1s; /*动画持续时间*/
+animation-iteration-count: 1; /*动画次数*/
+animation-delay: 0s; /*延迟时间*/
 -webkit-animation-name: fadeInPoster; /*动画名称*/
 -webkit-animation-duration: 1s; /*动画持续时间*/
 -webkit-animation-iteration-count: 1; /*动画次数*/
@@ -138,6 +142,10 @@ overflow: hidden;
 }
 
 #content .show{
+animation-name: fadeInContents; /*动画名称*/
+animation-duration: 2s; /*动画持续时间*/
+animation-iteration-count: 1; /*动画次数*/
+animation-delay: 0s; /*延迟时间*/
 -webkit-animation-name: fadeInContents; /*动画名称*/
 -webkit-animation-duration: 2s; /*动画持续时间*/
 -webkit-animation-iteration-count: 1; /*动画次数*/
@@ -220,16 +228,21 @@ overflow: hidden;
     border:0px solid #CCC;
 }
 #jybj-container{
-    text-align: center;
+    text-align: left;
     width:470px;
-    height:250px;
+    height:auto;
     border: 1px solid #CCC;
-    margin:250px 20% 20% 20%;
+    margin:0px 20% 20% 20%;
     padding: 20 20px 20px 20px;
     border-radius: 10px;
     font-size: 18px;
 }
-
+.abstract{
+    color:#666;
+    font-size: 12px;
+    font-weight: 300;
+    padding:0 0 20px 0;
+}
 #ljgd-left{
     width:280px;
     float:left;
@@ -241,7 +254,33 @@ overflow: hidden;
     text-align: right;
     line-height: 2em;
 }
-
+#personalinfo{
+    border:1px solid #CCC;
+    color: #666;
+    background-color:#FFF;
+    width:400px;
+    height:auto;
+    margin:0px 0px 0px 420px;
+    padding:40px;
+    border-radius: 10px;
+    position:absolute;
+    font-weight:200;
+    z-index:3;
+    opacity: 0.95;
+}
+#confirm-button{
+    text-align:center;
+    background-color: antiquewhite;
+    padding:5px;
+    width:80px;
+    height:30px;
+    border-radius: 5px;
+   box-shadow:0px 0px 8px #BBB;
+}
+#confirm-button:hover {
+        cursor:pointer;
+    background-color:blanchedalmond;
+}
 hr{
     border: 1px solid #ccc;
 }
@@ -252,9 +291,9 @@ hr{
     line-height: 1.5em;
     text-align: left;
     width:530px;
-    height:250px;
-    border: 1px solid #CCC;
-    margin:250px 20% 20% 20%;
+    height:auto;
+  
+    margin:0 20% 20% 20%;
         padding: 20 20px 20px 20px;
     border-radius: 10px;
 }
