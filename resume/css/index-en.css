@@ -27,10 +27,11 @@ overflow: hidden;
     display:block;
 }
 #sidebar{
-     font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
+    font-family:"Courier New","Consolas","Times New Roman";
     float:left;
     width:120px;
     height:100%;
+    font-weight: 200;
     float: left;
     z-index: 1;
     position: relative;
@@ -90,7 +91,6 @@ overflow: hidden;
     box-shadow: 1px 1px 1px #333333;
 }
 #poster{
-    writing-mode:tb-rl;
      font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
     color:white;
     float:left;
@@ -214,9 +214,11 @@ animation-delay: 0s; /*延迟时间*/
     color:#777;
     text-align: left;
     float: left;
+    font-weight: 300;
     height:70px;
     width:280px;
-    margin:20px;
+    margin:5 20 0 20px;
+    font-size: 12px;
     border: 0px solid #CCC;
 }
 #left {
@@ -234,9 +236,10 @@ animation-delay: 0s; /*延迟时间*/
     height:auto;
     border: 1px solid #CCC;
     margin:0px 20% 20% 20%;
+    font-weight: 300;
     padding: 20 20px 20px 20px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .abstract{
     color:#666;
@@ -245,12 +248,12 @@ animation-delay: 0s; /*延迟时间*/
     padding:0 0 20px 0;
 }
 #ljgd-left{
-    width:280px;
+    width:320px;
     float:left;
     line-height: 2em;
 }
 #ljgd-right{
-    width:200px;
+    width:160px;
     float:right;
     text-align: right;
     line-height: 2em;
@@ -280,8 +283,13 @@ animation-delay: 0s; /*延迟时间*/
 }
 #confirm-button:hover {
         cursor:pointer;
-    background-color:blanchedalmond;
+    background-color:#FEF8E9;
 }
+#confirm-button:active {
+        cursor:pointer;
+    background-color:antiquewhite;
+}
+
 hr{
     border: 1px solid #ccc;
 }
@@ -293,7 +301,7 @@ hr{
     text-align: left;
     width:530px;
     height:auto;
-  
+    font-weight: 300;
     margin:0 20% 20% 20%;
         padding: 20 20px 20px 20px;
     border-radius: 10px;
@@ -334,13 +342,13 @@ hr{
       font-family:"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
      word-break:keep-all;
     overflow: hidden;
-    font-size:2em;
+    font-size:18px;
     color:#444444;
 }
 
 #tagdown{
     padding: 5px;
-    font-weight: 100;
+    font-weight: 300;
      word-break:keep-all;
        overflow: hidden;
     line-height: 2em;
@@ -406,11 +414,11 @@ hr{
     
 }
 #switch{
+    text-align: center;
     margin:300 50 10 10px;
     padding:2px 7px 2px 7px;
     height:25px;
     width:100px;
-    text-align: center;
     border: 1px solid #CCC;
     border-radius: 5px;
     background-color: #222222;
