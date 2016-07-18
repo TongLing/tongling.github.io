@@ -390,7 +390,8 @@ hr{
 }
 #wrapper{
     margin:100 100 100 500px;
-    width:246px;
+    width:300px;
+    text-align: center;
     height:auto;
 }
 #wrapper p{
