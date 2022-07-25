@@ -2,24 +2,31 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>University of Wisconsin Milwaukee</a>. Lecturer, Medical Informatics, Data Science. 
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_cicular: false # crops the image to make it circular
+  image_cicular: True # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Northwest Quadrant # 6565</p>
+    <p>2025 E Newport Ave</p>
+    <p>Milwaukee, WI 53211</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, Thanks for stopping by! 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I'm Ling Tong (童凌), a PhD candidate in the Department of Medical Informatics at the [University of Wisconsin-Milwaukee](https://uwm.edu/), currently working at [Dr Jake Luo](https://sites.uwm.edu/jakeluo/)'s lab. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My primary focus is on the intersection of `medical informatics` and `Artificial Intelligence`. During my PhD studies, I work on Statistical Modelling, Quantitative Analysis on Electronic Health Records. I'm also working on the topics of Artificial Intelligence, including Machine Learning diagnosis, Clinical Predictive Models and Medical Text Mining. 
+
+I've been teaching on healthcare computational tools course for the past 4 years. I believe each of us must determine how we will lead in times of great challenge -- and I'm committed to overcome the difficulties, and teach students to become a life-long learner. 
+
+I was born and raised in a small town of China until completing my undergradutate study. In my spare time, I enjoy playing piano/guitar, producing music, and enjoy time with bandmates.
+
+
+

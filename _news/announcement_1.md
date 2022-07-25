@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-07-01 15:59:00-0400
 inline: true
 ---
 
-A simple inline announcement.
+Our work `A clustering-Aided Approach for diagnosis Prediction in Electronic Health Records` was accepted and published at the <a href="https://ieeecompsac.computer.org/2022/">COMPSAC 2022</a> conference.
+
