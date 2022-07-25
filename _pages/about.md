@@ -8,10 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_cicular: True # crops the image to make it circular
-  address: >
-    <p>Northwest Quadrant # 6565</p>
-    <p>2025 E Newport Ave</p>
-    <p>Milwaukee, WI 53211</p>
+    
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
