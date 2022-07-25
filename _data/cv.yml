@@ -22,7 +22,7 @@
         - Program - College of Health Sciences
         - Thesis - Transforming and Formalizing Electronic Health Records for Machine Learning Diagnostic Models
         
-    - title: B.S. Computer Science, 
+    - title: B.S. Computer Science
       institution: University of South China
       year: 2017
       description:
@@ -46,7 +46,7 @@
 
 - title: Teaching Experience
   type: time_table
-  contencts:
+  contents:
     - title: Lecture Instructor - Computational Tools for Healthcare Professionals
       institution: University of Wisconsin Milwaukee
       year: 2019 - 2022
@@ -61,7 +61,7 @@
 
 - title: Work Experience
   type: time_table
-  contencts:
+  contents:
     - title: Data Analysis Engineer
       institution: University of Wisconsin Milwaukee
       year: 2020
@@ -80,7 +80,7 @@
   type: list
   contents:
     - M-CSAFN - Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation, Jinrong Mu, Yucong Lin*, Xianqi Meng, Jingfan Fan, Danni Ai, Defu Chen, Haixia Qiu, Jian Yang, Ying Gu. IEEE Journal of Biomedical and Health Informatics. 2022.
-    - Jung, E., Jain, H., Sinha, A. P., & Gaudioso, C. (2021). Building a specialized lexicon for breast cancer clinical trial subject eligibility analysis. Health Informatics Journal, 27(1), 1460458221989392.
+    - Jung, E., Jain, H., Sinha, A. P., & Gaudioso, C. (2021). [Building a specialized lexicon for breast cancer clinical trial subject eligibility analysis](https://pubmed.ncbi.nlm.nih.gov/33535885/). Health Informatics Journal, 27(1), 1460458221989392.
     - Kreimeyer, K., Dang, O., Spiker, J., Muñoz, M. A., Rosner, G., Ball, R., & Botsis, T. (2021). Feature Engineering and Machine Learning for Causality Assessment in Pharmacovigilance - Lessons Learned from Application to the FDA Adverse Event Reporting System. Computers in Biology and Medicine, 104517.
     - Shikha Dhyani, Adesh Kumar, Sushabhan Choudhury, Arrhythmia Disease Classification Utilizing ResRNN, Biomedical Signal Processing and Control. 2022.
     - Factors Associated With the Utilization of Outpatient Virtual Clinics - Retrospective Observational Study Using Multilevel Analysis, Yun-Hsuan Tzeng , Wei-Hsian Yin , Kuan-Chia Lin , Jeng Wei , Hao-Ren Liou , Hung-Ju Sung , Hui-Chu Lang, Journal of Medical Internet Research, 2022.
