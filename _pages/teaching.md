@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: Teaching at University of Wisconsin Milwaukee
+title: teaching
 description: classes, workshops, and teaching materials
 nav: true
 nav_order: 5
