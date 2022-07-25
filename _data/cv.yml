@@ -50,11 +50,13 @@
     - title: Lecture Instructor - Computational Tools for Healthcare Professionals
       institution: University of Wisconsin Milwaukee
       year: 2019 - 2022
-      description: This lecture focused on healthcare introduction of computational tools for information management, including system architecture, process, and ethical concepts. The course incorporates training in Microsoft Excel application software.
+      description: 
+        - This lecture focused on healthcare introduction of computational tools for information management, including system architecture, process, and ethical concepts. The course incorporates training in Microsoft Excel application software.
     - title: Teaching Assistant, Health Big Data Processing Platforms
       institution: University of Wisconsin Milwaukee
       year: 2018 
-      description: This teaching assistant focused on the implementation of Big Data Processing Platforms for healthcare. I helped students to deploy data analysis platform (Apache Spark), answer questions, and provide feedbacks.
+      description: 
+        - This teaching assistant focused on the implementation of Big Data Processing Platforms for healthcare. I helped students to deploy data analysis platform (Apache Spark), answer questions, and provide feedbacks.
 
 
 - title: Work Experience
@@ -63,12 +65,14 @@
     - title: Data Analysis Engineer
       institution: University of Wisconsin Milwaukee
       year: 2020
-      description: I worked part-time on data analysis, visualizations, and development of predictive model for DNC project - A Big Data Lens on the Elections. We tracked the major issues engaging both candidates and voters in the 2020 US election cycle. We applied a social curation technique to multiple sources of data ranging from traditional political polls and debate transcripts to political advertising and social media dialogue. 
+      description: 
+        - I worked part-time on data analysis, visualizations, and development of predictive model for DNC project - A Big Data Lens on the Elections. We tracked the major issues engaging both candidates and voters in the 2020 US election cycle. We applied a social curation technique to multiple sources of data ranging from traditional political polls and debate transcripts to political advertising and social media dialogue. 
 
     - title: Test Engineer 
       institution: Software Test Center of Hunan Province, China
       year: 2016
-      description: During this internship, I focus on automatic test script and performance analysis using document management tool. I also developed a git to monitor use-case testing and defects maintenance work.
+      description: 
+        - During this internship, I focus on automatic test script and performance analysis using document management tool. I also developed a git to monitor use-case testing and defects maintenance work.
 
 
 
