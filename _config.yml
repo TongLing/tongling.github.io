@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Ling Tong Site # the website title (if blank, full name will be used instead)
+title: Ling Tong # the website title (if blank, full name will be used instead)
 first_name: Tong 
 middle_name: 
 last_name: Ling
@@ -179,6 +179,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-target-blank
   - jekyll-twitter-plugin
+  - jekyll-scholar 
   - jemoji
 
 # Sitemap settings
