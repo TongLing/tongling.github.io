@@ -2,96 +2,123 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Ling Tong
     - name: Date of Birth
-      value: 14th March 1879
+      value: June 1st, 1994
     - name: Languages
-      value: English, German
+      value: Chinese, English
+    - name: Research Areas
+      value: Biomedical Informatics, Machine Learning, Data Science, Statistical Analysis
+    - name: contact
+      value: ltong [at] uwm [dot] edu
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD, Biomedical and Health Informatics
+      institution: University of Wisconsin Milwaukee
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Program - College of Health Sciences
+        - Thesis - Transforming and Formalizing Electronic Health Records for Machine Learning Diagnostic Models
+        
+    - title: B.S. Computer Science, 
+      institution: University of South China
+      year: 2017
       description:
-        - Description 1.
-        - Description 2.
+        - Thesis - Classifying Weibo Tweets for Tracking Influenza
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant,  Biomedical Data and Language Processing Lab
+      institution: University of Wisconsin Milwaukee
+      year: 2017 - 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Data-driven predictive analysis using machine-learning algorithms such as data mining, natural language processing and knowledge representation and modelling.
+        - Discovering gaps between demographical, socioeconomic, and diagnostic factors from Electronic Health Records using Statistical Methods
+    - title: Research Assistant, Dr Lingyun Luo's lab
+      institution: University of South China 
+      year: 2016 - 2017
       description:
-        - Description 1.
-        - Description 2.
+        - I worked with Dr Lingyun Luo to develop experiment and design models provided for evaluating granularity balance of semantic relationships in medical terminology corpus.
+        - Manuscript `Evaluating the granularity balance of hierarchical relationships within large biomedical terminologies towards quality improvement` was published in Journal of Biomedical informatics.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Teaching Experience
   type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+  contencts:
+    - title: Lecture Instructor - Computational Tools for Healthcare Professionals
+      institution: University of Wisconsin Milwaukee
+      year: 2019 - 2022
+      description: This lecture focused on healthcare introduction of computational tools for information management, including system architecture, process, and ethical concepts. The course incorporates training in Microsoft Excel application software.
+    - title: Teaching Assistant, Health Big Data Processing Platforms
+      institution: University of Wisconsin Milwaukee
+      year: 2018 
+      description: This teaching assistant focused on the implementation of Big Data Processing Platforms for healthcare. I helped students to deploy data analysis platform (Apache Spark), answer questions, and provide feedbacks.
 
-- title: Honors and Awards
+
+- title: Work Experience
   type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+  contencts:
+    - title: Data Analysis Engineer
+      institution: University of Wisconsin Milwaukee
+      year: 2020
+      description: I worked part-time on data analysis, visualizations, and development of predictive model for DNC project - A Big Data Lens on the Elections. We tracked the major issues engaging both candidates and voters in the 2020 US election cycle. We applied a social curation technique to multiple sources of data ranging from traditional political polls and debate transcripts to political advertising and social media dialogue. 
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: Test Engineer 
+      institution: Software Test Center of Hunan Province, China
+      year: 2016
+      description: During this internship, I focus on automatic test script and performance analysis using document management tool. I also developed a git to monitor use-case testing and defects maintenance work.
 
-- title: Other Interests
+
+
+- title: Invited Reviews as a referee
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - M-CSAFN - Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation, Jinrong Mu, Yucong Lin*, Xianqi Meng, Jingfan Fan, Danni Ai, Defu Chen, Haixia Qiu, Jian Yang, Ying Gu. IEEE Journal of Biomedical and Health Informatics. 2022.
+    - Jung, E., Jain, H., Sinha, A. P., & Gaudioso, C. (2021). Building a specialized lexicon for breast cancer clinical trial subject eligibility analysis. Health Informatics Journal, 27(1), 1460458221989392.
+    - Kreimeyer, K., Dang, O., Spiker, J., Muñoz, M. A., Rosner, G., Ball, R., & Botsis, T. (2021). Feature Engineering and Machine Learning for Causality Assessment in Pharmacovigilance - Lessons Learned from Application to the FDA Adverse Event Reporting System. Computers in Biology and Medicine, 104517.
+    - Shikha Dhyani, Adesh Kumar, Sushabhan Choudhury, Arrhythmia Disease Classification Utilizing ResRNN, Biomedical Signal Processing and Control. 2022.
+    - Factors Associated With the Utilization of Outpatient Virtual Clinics - Retrospective Observational Study Using Multilevel Analysis, Yun-Hsuan Tzeng , Wei-Hsian Yin , Kuan-Chia Lin , Jeng Wei , Hao-Ren Liou , Hung-Ju Sung , Hui-Chu Lang, Journal of Medical Internet Research, 2022.
+    - Home Monitoring Programs for Patients Testing Positive for SARS-CoV-2 - An Integrative Literature Review, Applied Clinical Informatics. 2022.
+    - Evaluating the Workflow and Usability Impacts of AI Imaging Diagnostic Medical Decision Support Systems In Radiology - a Research Study Protocol, David Hua et al, AMIA 2022 Annual Symposium
+    - Linking Network Camera Data and Pedestrian Simulations to Analyze Infection Risk in Crowded Locations, Kavya Karnati et al., AMIA 2022 Annual Symposium
+    - Identifying Cancer Symptoms in Clinical Notes Using Natural Language Processing, Stephania Gilbertson-White et al, AMIA 2022 Annual Symposium
+    - Flasch, Kevin, "Predicting Occurrence of the Term Sarcopenia with Semi-Supervised Machine Learning" (2021). Thesis. University of Wisconsin Milwaukee Library, 2782. 
+    - Ahmet Reşit KAVSAOĞLU,(2022) A Novel Study to Classify Breath Inhalation and Breath Exhalation Using Audio Signals from Heart And Trachea. Biomedical Signal Processing and Control.
+
+- title: Presentations
+  type: list
+  contents:
+    - Ling Tong, Jake Luo, Jazzmyne adams, Kristen Osinski, Xiaoyu Liu, David Friedland, A Clustering-Aided Approach for Diagnosis Prediction - A Case Study of Elderly Fall. (2022) IEEE 46th Annual Computers, Software, and Applications Conferences COMPSAC. 
+    - Ling Tong, Predicting the Clinical Outcomes from Clinical Trial Data using Machine Learning, presenting at 2019 Health Research Symposium at University of Wisconsin Milwaukee.
+    - Ling Tong, Jake Luo, Ron Cisler, Michael N. Cantor, Machine Learning-based Prediction of Death Events in Clinical Studies Using Big Clinical Trial Data, In 2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC)
+    - Ling Tong, Jake Luo, From Phone to Medical Database - An Automatic Document Processing System for Clinical Laboratory Test, Presenting at 2019 Research Poster Competition, University of Wisconsin Milwaukee.
+    - Neil K. Osafo, BS; David R. Friedland, MD, PhD; Michael S. Harris, MD; Jazzmyne Adams, MPH; Chasity Davis; Ling Tong; Jake Luo, PhD, Standardization of Outcome Measures for Intratympanic Steroid Treatment for Idiopathic Sudden Sensorineural Hearing Loss (podium), Combined Otolaryngology Specialties Meeting (COSM), Dallas, TX, 04/27/2022 - 05/01/2022
+    - Erin Harvey, MD; Katarina Stark, BS; David R. Friedland, MD, PhD; Jazzmyne A. Adams, Michael S. Harris, MD, Ling Tong MS, Jake Luo PhD, Impact of Demographics and Clinical Features on Initial Treatment Decision Making in Vestibular Schwannoma, 57th Annual Ans Spring Meeting, Dallas, TX, 04/29/2022 - 05/01/2022
+    - Ling Tong, Jake Luo, Ron Cisler, Michael N. Cantor, Machine Learning-based Prediction of Death Events in Clinical Studies Using Big 
+
+- title: Awards and Fellowship
+  type: time_table
+  contents:
+    - title: Chancellor's Graduate Student Awards by University of Wisconsin Milwaukee ($8,000) 
+      year: 2017-2019
+    - title: Hunan Province Undergraduate Student Research and Innovative experiment Project ($10,000)
+      year: 2016-2017
+
+
+- title: certificates
+  type: time_table
+  contents:
+    - title: Basic Life Support Provider - Authorized by American Heart Association
+      year: 2022
+    - title: Certified Medical Coder - American Association of Professional Coders (AAPC)
+      year: 2022
+    - title: Professional Data analytics - Google's Professional Certificate 
+      year: 2019
+    - title: Member - American Medical Informatics Association
+      year: 2019
+    - title: Data Science specialization Certificate - Coursera
+      year: 2017
+    - title: Member - IEEE (Institute of Electrical and Electronics Engineers) 
+      year: 2017
