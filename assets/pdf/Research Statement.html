@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Research Statement.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///y%3A/Notes/markdown-pdf.%2A" type="text/css">
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="research-statement">Research Statement</h1>
+<p>Ling Tong</p>
+<p>My primary research lies at the intersection of health informatics and machine learning. Both disciplines require medical data. Electronic Health Records show an unprecedented opportunity for the use of machine learning in health sciences. Specifically, I have explored the following directions in my doctoral study using machine learning techniques:</p>
+<ol>
+<li>Predicting Patient Prognosis and Fall Outcomes Using Machine Learning</li>
+<li>Analyzing biomedical images for osteosarcoma detection</li>
+<li>Using Machine Learning classification techniques to find adverse events from clinical trials</li>
+<li>The Interpretation of Machine Learning Diagnostic Models</li>
+</ol>
+<p>I will only show the first two pieces of research in this statement because of the page limits.</p>
+<h2 id="topic-1-patient-prognosis-of-elderly-falls-and-interpretation-of-machine-learning-model">Topic 1:  Patient prognosis of elderly falls and interpretation of machine learning model</h2>
+<p>Elderly-focused care has become a significant issue for the healthcare system due to the aging population [1]. Elderly falls are one of the major causes of mortality and morbidity among people over 60 years of age [2]. There is an imperative need for an approach to predict and prevent elderly falls in clinical practice. Clinical factors play an important role in clinical decision support systems. Key clinical factors include age, gender, impaired balance and gait, polypharmacy, and a history of previous falls [3]. A clinical decision-making model predict the risk of falls using these clinical features. A machine learning prediction model can quantify the risk of falls for the elderly [4] and prevent elderly falls. One of my conference proceeding [5] shows the effectiveness of a machine learning model to predict the risk of falls for the elderly.</p>
+<p>Predicting the risk of falls has significant implications for their prevention. Physicians can suggest precautions for high-risk patients. Proactive alerts reduce the risk of serious injuries. In a broader context, the machine learning algorithm can be used clinically in medical facilities, nursing homes, and other assisted living facilities. However, the adoption of diagnosis-based prediction remains low because of the lack of interpretability. If patients and healthcare providers are unable to understand the model, they will not make informed decisions and adopt the new forms of care.</p>
+<p>Despite the importance of model interpretability in the healthcare area, research and application in the medical domain is still far from mature. There is a wide gap between physicians' need to understand the prediction and the model's interpretability. Our ongoing study focuses on the interpretability of machine learning models to address such issues. This includes using SHAP [6] and LIME [7], two interpretable methods proposed as a way to interpret machine learning models from internal data. Therefore, we are working on a paper explaining how the machine learning model in the medical domain works for the layperson and clinical experts. The transparency of the model will be a key factor in encouraging the use of AI-assisted medical decision-making and may benefit the medical community in the future.</p>
+<h2 id="topic-2-analyzing-osteosarcoma-on-histological-images">Topic 2: Analyzing Osteosarcoma on Histological Images</h2>
+<p>Primary bone tumors account for 5–10% of all new pediatric cancer diagnoses. Osteosarcoma is the most common form of malignant primary bone tumor under the category of bone tumors. Despite the limited approximately 1,000 new cases every year in the United States, the prognosis of osteosarcoma remains a challenging issue [8]. If not treated, Osteosarcoma often results in metastasis to other parts of the body such as at lungs, other bones, and soft tissues [9].</p>
+<p>Diseases diagnosed based on radiological and histological images often get more help in Computer-Aided technologies. Although all diseases are possible with the help of CAD technology, this technique is specialized in pattern recognition in images. Therefore, CAD technology has its own strength in interpreting medical images in both the radiological department and lab tests. The accuracy is also high in both radiological and histological images.</p>
+<p>Fortunately, Machine learning shows promising results in detecting Osteosarcoma from histological images. Machine learning algorithms use computer-extracted features, which are called learning materials. Several machine learning techniques have been applied in the past, including linear discriminant analysis, support vector machines, decision trees, random forests, and neural networks [10]. For images, the data is often encoded with RGB-encoding schemas, and sometimes with additional features. With appropriate features, the important histological and radiological image information can be integrated into the above algorithms.</p>
+<p>My publication shows that (1) deep learning-based tools are capable of detecting osteosarcoma malignancy with high accuracies based on a public dataset. (2) The proposed deep learning method provides accurate detection, discovering possible features in the field of detecting histological images. The idea is to complement the internal drawbacks of machine learning models. Unlike widely used AI-based techniques such as face recognition and object detection, clinical data sets require significantly higher accuracy to prevent the cost of failure. Based on these thoughts, my lab also explored in clinical trials adverse event detection [16] and interpreting how a machine learning model will make a decision based on doctor's notes [17].</p>
+<h2 id="summary">Summary</h2>
+<p>The AI Leader of Stanford university, Andrew Ng, who proposed that AI will become the new electricity. They will integrate to every part of our life. For example, AI is quietly recommending your favorite Twitter posts, and AI is quietly filtering out email spams. Many Computer Science developments are on the frontier of innovation, yet its application on clinical field always seems to be behind. In current era, the use of AI in medicine are still limited to researcher's domain. In the next decades, I believe we can reach a point that AI will seamlessly integrate into the wide public. The healthcare AI may remind you to take pills on time, helping you to make a doctor's appointment smartly. On the doctor's side, when you take an x-ray picture in radiology department, AI will closely monitor your lung image and check for any problems in case they arise. The outlook of AI application in medical area is clear and promising.</p>
+<h1 id="future-work">Future work:</h1>
+<p>In the short term, I will continue to investigate the performance of machine learning algorithms in the clinical domain and find the internal weaknesses, such as lack of interpretability and the need for feature selections. We will need to overcome these problems before applying the machine learning algorithms to the clinical domain.</p>
+<p>In the long term, I will explore the possibility of deploying this model in traditional healthcare settings. More importantly, how can deploying such models impact the health outcomes of patients? In many settings, predictive performance cannot easily be translated into causal effects. My approach to this problem will be to map the outputs of a machine learning model to a treatment policy and then to estimate average patient outcomes under that policy using causal estimation methods. Looking for physicians' advices on how to improve the model will be a key part of my future work. The adoption and popularization of AI in healthcare will improve the health outcomes of the public and improve people's quality of life. This is a difficult commitment, and I will strive for the best.</p>
+<h1 id="undergraduate-research-considerations">Undergraduate Research Considerations</h1>
+<p>Machine learning projects are always a hot topic these years. My projects are well-suited for an undergraduate research student, especially for those looking for a Computer Science minor. It is an invaluable opportunity for undergraduate students to learn domain applications in a lab environment. It also has minimal device requirements. First, the necessary equipment only involves computers and databases, and the traditional onsite lab training can be transferred to an online environment. Through working in my lab, Students will master data analysis techniques. I can provide undergraduate researcher positions for the community, develop students’ skill sets, and empower the community to contribute to the conversion of digital health in the future. I have specifically designed research projects that are accessible at the graduate level. In addition to undergraduate students, I have successfully trained graduate students under my guidance in several of these statistical techniques. The students I mentor will gain experience in developing their own research plans, generating hypotheses, evaluating data, and preparing posters, talks, and papers. My proposed research will complement existing research and offer projects for both undergraduate and graduate students to perform exciting research in health informatics.</p>
+<p>References:
+[1] S. R. B. L. Shrivastava, P. S. Shrivastava, and J. Ramasamy, “Health-care of Elderly: Determinants, Needs and Services,” Int. J. Prev. Med., vol. 4, no. 10, p. 1224, 2013,</p>
+<p>[2] W. H. Organization, WHO global report on falls prevention in older age. 2008.</p>
+<p>[3] A. F. Ambrose, G. Paul, and J. M. Hausdorff, “Risk factors for falls among older adults: A review of the literature,” Maturitas, vol. 75, no. 1, pp. 51–61, May 2013, doi: 10.1016/J.MATURITAS.2013.02.009.</p>
+<p>[4] E. H. Shortliffe and J. J. Cimino. Computer applications in health care and biomedicine, 4th ed. Springer, 2014.</p>
+<p>[5] Tong, L., Luo, J., et al (2022, July). A Clustering-Aided Approach for Diagnosis Prediction: A Case Study of Elderly Fall. 2022 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC).</p>
+<p>[6]. Scott Lundberg. SHAP doc. Accessed 7/15, 2021.</p>
+<p>[7]. Mikahail Korobov, ELI5 doc. Accessed 7/15, 2021.</p>
+<p>[8] A. J. Chou, D. S. Geller, R. Gorlick, Therapy for osteosarcoma, Pediatric Drugs 10 (2008) 315–327.</p>
+<p>[9] P. P. Lin, S. Patel, Osteosarcoma, in: Bone Sarcoma, Springer, 2013, pp. 75–97.</p>
+<p>[10] C. Parmar, P. Grossmann, J. Bussink, P. Lambin, H.J. Aerts, Machine learning methods for quantitative radiomic biomarkers, Scientific Reports 5 (1) (2015) 1–11.</p>
+<p>[11] A.R. Jamieson, M.L. Giger, K. Drukker, L.L. Pesce, Enhancement of breast CADx with unlabeled data a, Medical Physics 37 (8) (2010) 4155–4172.</p>
+<p>[12] A.R. Jamieson, M.L. Giger, K. Drukker, H. Li, Y. Yuan, N. Bhooshan, Exploring nonlinear feature space dimension reduction and data representation in breast CADx with Laplacian eigenmaps and-SNE, Medical Physics 37. (1) (2010) 339–351</p>
+<p>[13] L. Huang, W. Xia, B. Zhang, B. Qiu, X. Gao, MSFCN-multiple supervised fully convolutional networks for the osteosarcoma segmentation of CT images, Computer Methods and Programs in Biomedicine 143 (2017) 67–74.</p>
+<p>[14] R. Shen, Z. Li, L. Zhang, Y. Hua, M. Mao, Z. Li, Z. Cai, Y. Qiu, J. Gryak, K. Najarian, Osteosarcoma Patients Classification Using Plain X-Rays and Metabolomic Data, in: 2018 40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), IEEE, 2018, pp. 690–693.</p>
+<p>[15] Z. Li, S.R. Soroushmehr, Y. Hua, M. Mao, Y. Qiu, K. Najarian, Classifying osteosarcoma patients using machine learning approaches, in: 2017 39th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), IEEE, 2017, pp. 82–85.</p>
+<p>[16] Tong, L., Luo, J., Cisler, R., &amp; Cantor, M. (2019, July). Machine learning-based modeling of big clinical trials data for adverse outcome prediction: A case study of death events. In 2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC).</p>
+<p>[17] Tong, L., Luo, J., Adams, J., Liu, X., Osinski, K., &amp; Friedland, D. Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture.[preprints], SSRN, 4034059.</p>
+
+</body>
+</html>
