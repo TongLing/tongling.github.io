@@ -9,6 +9,11 @@ nav_order: 5
 
 ## 2022 Fall course: HS 224 Computational tools for healthcare professionals
 
+{% include figure.html path="assets/img/digital-health.jpg" class="img-fluid rounded z-depth-1" %}
+<div class="caption">
+    HS 224 Computational tools for healthcare professionals
+</div>
+
 UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for Syllabus, Lecture Notes, and Assignments.
 
 ---
