@@ -7,8 +7,12 @@ nav: true
 nav_order: 5
 ---
 
+## 2022 Fall course: HS 224 Computational tools for healthcare professionals
+
+UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for Syllabus, Lecture Notes, and Assignments.
+
 ---
-## Invited Panel/Conference Talk:
+## My previous Panel/Conference Talk:
 
 - `A Clustering-Aided Approach for Diagnosis Prediction: A Case Study of Elderly Fall`, (2022) IEEE 46th Annual Computers, Software, and Applications Conferences COMPSAC.
 
@@ -25,7 +29,7 @@ nav_order: 5
 
 ---
 
-## Teaching experience:
+## My teaching experience:
 
 #### Lecture Instructor: [Computational Tools for Healthcare Professionals](https://catalog.uwm.edu/search/?search=HS+224), 2019 - 2022 
   
@@ -41,13 +45,14 @@ nav_order: 5
 
 
 ## Teaching Interest
+I can teach undergraduate courses, including, but not limited to:
 
-##### Undergraduate course:
-
-- As mentioned, I'm particularly interested in hands-on training courses in the general areas of healthcare professions. This includes my teaching on computational software, including Microsoft Excels and Healthcare Databases. These are two areas I see most undergraduate students are in lack of skills. Besides, I'm also happy to teach entry level statistical courses. I'm happy to bring my statistical knowledge from my background to future healthcare professionals. In addition, if campus is looking for a introductor for entry-level programming courses and database courses, I can also teach these courses in undergraduate level.
-
-##### Graduate course:
-
-- The interdisciplinary of Engineering and Healthcare are unmet needs in industry. The industry will need a large number of administrative and development professionals in next 5-10 years. I believe a hands-on training course related to Artificial Intelligence and Healthcare would be in high demand and become a highlight in course catalog. Besides, I'm also able to lecture advanced level statistical courses, including public health and research-based statistical knowledges. Statistics and evidence-based research is an important part that every healthcare graduate student needs to understand. Also, I'm able to host small interactive seminars for graduate students and help them gain experiences in academic peer discussion, and public presentation.
+- Computational Software for Healthcare Professionals: As previously stated, I am especially interested in hands-on training courses in general healthcare professions. This includes previous classes I taught on computational software, such as Microsoft Excel and healthcare databases. These are two areas where I see most undergraduate students falling short.
+- Introduction to Python Programming: Because of my background in computer science, I can also teach undergraduate-level programming courses, such as Python.
+- Introduction to Statistics: I’m also interested in teaching students introductory statistical course.
+  
+Also, I can teach following graduate courses:
+- Artificial Intelligence in Healthcare: I believe a hands-on training course in artificial intelligence and healthcare would be in high demand and become a course catalog highlight. In the interdisciplinary fields of engineering and healthcare, we are seeing unmet needs. In the next 5 to 10 years, the industry will require a large number of administrative and development professionals. Also, students will be interested in practical course like AI in Healthcare, which can improve the overall curriculum quality, thereby increasing enrollments. The interdisciplinary collaboration will also provide opportunities for research funding and cross-disciplinary academic collaborations. The active collaboration often results in academic achievements and improves the schools’ reputation.
+- Statistics for Evidence-based Medicine: In addition, statistics and evidence-based research are critical components of healthcare that every healthcare graduate student must comprehend. I am qualified to lecture on advanced level statistical courses, such as public health and research-based statistical methodology courses.
 
 ---

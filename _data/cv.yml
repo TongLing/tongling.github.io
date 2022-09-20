@@ -76,21 +76,17 @@
 
 
 
-- title: Invited Reviews as a referee
+- title: Scholarly Reviewed Journals
   type: list
   contents:
-    - M-CSAFN - Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation, Jinrong Mu, Yucong Lin*, Xianqi Meng, Jingfan Fan, Danni Ai, Defu Chen, Haixia Qiu, Jian Yang, Ying Gu. IEEE Journal of Biomedical and Health Informatics. 2022.
-    - Jung, E., Jain, H., Sinha, A. P., & Gaudioso, C. (2021). [Building a specialized lexicon for breast cancer clinical trial subject eligibility analysis](https://pubmed.ncbi.nlm.nih.gov/33535885/). Health Informatics Journal, 27(1), 1460458221989392.
-    - Kreimeyer, K., Dang, O., Spiker, J., Muñoz, M. A., Rosner, G., Ball, R., & Botsis, T. (2021). Feature Engineering and Machine Learning for Causality Assessment in Pharmacovigilance - Lessons Learned from Application to the FDA Adverse Event Reporting System. Computers in Biology and Medicine, 104517.
-    - Shikha Dhyani, Adesh Kumar, Sushabhan Choudhury, Arrhythmia Disease Classification Utilizing ResRNN, Biomedical Signal Processing and Control. 2022.
-    - Factors Associated With the Utilization of Outpatient Virtual Clinics - Retrospective Observational Study Using Multilevel Analysis, Yun-Hsuan Tzeng , Wei-Hsian Yin , Kuan-Chia Lin , Jeng Wei , Hao-Ren Liou , Hung-Ju Sung , Hui-Chu Lang, Journal of Medical Internet Research, 2022.
-    - Home Monitoring Programs for Patients Testing Positive for SARS-CoV-2 - An Integrative Literature Review, Applied Clinical Informatics. 2022.
-    - Evaluating the Workflow and Usability Impacts of AI Imaging Diagnostic Medical Decision Support Systems In Radiology - a Research Study Protocol, David Hua et al, AMIA 2022 Annual Symposium
-    - Linking Network Camera Data and Pedestrian Simulations to Analyze Infection Risk in Crowded Locations, Kavya Karnati et al., AMIA 2022 Annual Symposium
-    - Identifying Cancer Symptoms in Clinical Notes Using Natural Language Processing, Stephania Gilbertson-White et al, AMIA 2022 Annual Symposium
-    - Flasch, Kevin, "Predicting Occurrence of the Term Sarcopenia with Semi-Supervised Machine Learning" (2021). Thesis. University of Wisconsin Milwaukee Library, 2782. 
-    - Ahmet Reşit KAVSAOĞLU,(2022) A Novel Study to Classify Breath Inhalation and Breath Exhalation Using Audio Signals from Heart And Trachea. Biomedical Signal Processing and Control.
-
+    - Applied Clinical Informatics
+    - American Medical Informatics Association, 2022 Symposium
+    - Biomedical Signal Processing and Control
+    - Computers in Biology and Medicine
+    - Health Informatics Journal
+    - IEEE Journal of Biomedical and Health Informatics
+    - Journal of Medical Internet Research (JMIR)
+    - JMIR Public Health and Surveillance
 - title: Presentations
   type: list
   contents:
@@ -107,7 +103,7 @@
   contents:
     - title: Chancellor's Graduate Student Awards by University of Wisconsin Milwaukee ($8,000) 
       year: 2017-2019
-    - title: Hunan Province Undergraduate Student Research and Innovative experiment Project ($10,000)
+    - title: Hunan Province Undergraduate Student Research and Innovative experiment Project (CN¥ 10,000)
       year: 2016-2017
 
 

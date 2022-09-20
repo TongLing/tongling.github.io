@@ -15,15 +15,16 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi, Thanks for stopping by! 
+Hi, Thank you for visiting!
 
-I'm Ling Tong (童凌), a PhD candidate in the Department of Medical Informatics at the [University of Wisconsin-Milwaukee](https://uwm.edu/), currently working at [Dr Jake Luo](https://sites.uwm.edu/jakeluo/)'s lab. 
+I'm Ling Tong (童凌), a PhD student in the Department of Medical Informatics at the [University of Wisconsin-Milwaukee](https://uwm.edu/), and I'm currently working in [Center for Biomedical Data and Language Processing](https://sites.uwm.edu/jakeluo/).
 
-My primary focus is on the intersection of `medical informatics` and `Artificial Intelligence`. During my PhD studies, I work on Statistical Modelling, Quantitative Analysis on Electronic Health Records. I'm also working on the topics of Artificial Intelligence, including Machine Learning diagnosis, Clinical Predictive Models and Medical Text Mining. 
 
-I've been teaching on healthcare computational tools course for the past 4 years. I believe each of us must determine how we will lead in times of great challenge -- and I'm committed to overcome the difficulties, and teach students to become a life-long learner. 
+My primary research interests are `medical informatics` and `Artificial Intelligence`. I am working on Statistical Modeling and Quantitative Analysis of Electronic Health Records as part of my PhD studies. I also work on Artificial Intelligence topics such as Machine Learning diagnosis, Clinical Predictive Models, and Medical Text Mining.
 
-I was born and raised in a small town of China until completing my undergradutate study. In my spare time, I enjoy playing piano/guitar, producing music, and enjoy time with bandmates.
+For the past four years, I've been teaching a healthcare computational tools course. I believe that each of us must decide how we will lead in times of great challenge, and I am committed to overcoming the obstacles and teaching students to be life-long learners.
+
+I was born and raised in a small Chinese town until I finished my undergraduate studies. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
 
 
 

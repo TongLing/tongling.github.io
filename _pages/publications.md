@@ -14,6 +14,10 @@ nav_order: 1
 
 ### 2022: 
 
+- [Preprint: Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4034059), `Tong, L.`, Luo, J., Adams, J., Liu, X., Osinski, K., & Friedland, D. Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture.
+  
+- [Impact of Demographics and Clinical Features on Initial Treatment Pathway for Vestibular Schwannoma](https://journals.lww.com/otology-neurotology/Citation/2022/10000/Impact_of_Demographics_and_Clinical_Features_on.33.aspx), Harvey, Erin, Katarina Stark, David R. Friedland, Jazzmyne A. Adams, Michael S. Harris, `Ling Tong`, Kristen Osinksi, and Jake Luo Otology & Neurotology (2022). 
+
 - [A Clustering-Aided Approach for Diagnosis Prediction: A Case Study of Elderly Fall](https://ieeexplore.ieee.org/document/9842578), 2022 IEEE 46th Annual Computers, Software, and Applications Conference (COMPSAC), 2022, pp. 337-342, doi: 10.1109/COMPSAC54236.2022.00054
   
 - [Analysis of socioeconomic factors in laryngology clinic utilization for treatment of dysphonia](https://onlinelibrary.wiley.com/doi/full/10.1002/lio2.715), White, Shane W., Jonathan M. Bock, Joel H. Blumin, David R. Friedland, Jazzmyne A. Adams, `Ling Tong`, Kristen Osinski, and Jake Luo. 
