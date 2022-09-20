@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: classes, workshops, and teaching materials
 nav: true
 nav_order: 5
@@ -9,12 +9,13 @@ nav_order: 5
 
 ## 2022 Fall course: HS 224 Computational tools for healthcare professionals
 
+
+## UWM Students: Please visit `[Canvas](https://uwm.edu/canvas/)` for Syllabus, Lecture Notes, and Assignments.
+
 {% include figure.html path="assets/img/digital-health.jpg" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
     HS 224 Computational tools for healthcare professionals
 </div>
-
-UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for Syllabus, Lecture Notes, and Assignments.
 
 ---
 ## My previous Panel/Conference Talk:
@@ -52,12 +53,12 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for Syllabus, Lectu
 ## Teaching Interest
 I can teach undergraduate courses, including, but not limited to:
 
-- Computational Software for Healthcare Professionals: As previously stated, I am especially interested in hands-on training courses in general healthcare professions. This includes previous classes I taught on computational software, such as Microsoft Excel and healthcare databases. These are two areas where I see most undergraduate students falling short.
-- Introduction to Python Programming: Because of my background in computer science, I can also teach undergraduate-level programming courses, such as Python.
-- Introduction to Statistics: I’m also interested in teaching students introductory statistical course.
+- `Computational Software for Healthcare Professionals`: As previously stated, I am especially interested in hands-on training courses in general healthcare professions. This includes previous classes I taught on computational software, such as Microsoft Excel and healthcare databases. These are two areas where I see most undergraduate students falling short.
+- `Introduction to Python Programming`: Because of my background in computer science, I can also teach undergraduate-level programming courses, such as Python.
+- `Introduction to Statistics`: I’m also interested in teaching students introductory statistical course.
   
 Also, I can teach following graduate courses:
-- Artificial Intelligence in Healthcare: I believe a hands-on training course in artificial intelligence and healthcare would be in high demand and become a course catalog highlight. In the interdisciplinary fields of engineering and healthcare, we are seeing unmet needs. In the next 5 to 10 years, the industry will require a large number of administrative and development professionals. Also, students will be interested in practical course like AI in Healthcare, which can improve the overall curriculum quality, thereby increasing enrollments. The interdisciplinary collaboration will also provide opportunities for research funding and cross-disciplinary academic collaborations. The active collaboration often results in academic achievements and improves the schools’ reputation.
-- Statistics for Evidence-based Medicine: In addition, statistics and evidence-based research are critical components of healthcare that every healthcare graduate student must comprehend. I am qualified to lecture on advanced level statistical courses, such as public health and research-based statistical methodology courses.
+- `Artificial Intelligence in Healthcare`: I believe a hands-on training course in artificial intelligence and healthcare would be in high demand and become a course catalog highlight. In the interdisciplinary fields of engineering and healthcare, we are seeing unmet needs. In the next 5 to 10 years, the industry will require a large number of administrative and development professionals. Also, students will be interested in practical course like AI in Healthcare, which can improve the overall curriculum quality, thereby increasing enrollments. The interdisciplinary collaboration will also provide opportunities for research funding and cross-disciplinary academic collaborations. The active collaboration often results in academic achievements and improves the schools’ reputation.
+- `Statistics for Evidence-based Medicine`: In addition, statistics and evidence-based research are critical components of healthcare that every healthcare graduate student must comprehend. I am qualified to lecture on advanced level statistical courses, such as public health and research-based statistical methodology courses.
 
 ---

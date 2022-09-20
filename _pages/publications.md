@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: My publications in reversed chronological order.
 years: [1967, 1956, 1950, 1935, 1905]
 nav: true
@@ -12,6 +12,7 @@ nav_order: 1
 
 ---
 
+Please Visit My [ResearchGate]()
 ### 2022: 
 
 - [Preprint: Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4034059), `Tong, L.`, Luo, J., Adams, J., Liu, X., Osinski, K., & Friedland, D. Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture.
