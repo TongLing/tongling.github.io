@@ -12,7 +12,7 @@ nav_order: 1
 
 ---
 
-Please Visit My [ResearchGate]()
+Please Visit My [ResearchGate](https://www.researchgate.net/profile/Ling-Tong-4/research) to download (or request) my paper's copy. Feel free to send me an email if you don't have any paper's access. 
 ### 2022: 
 
 - [Preprint: Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4034059), `Tong, L.`, Luo, J., Adams, J., Liu, X., Osinski, K., & Friedland, D. Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture.
