@@ -16,6 +16,8 @@ Please Visit My [ResearchGate](https://www.researchgate.net/profile/Ling-Tong-4/
 ### 2022: 
 
 - [Preprint: Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4034059), `Tong, L.`, Luo, J., Adams, J., Liu, X., Osinski, K., & Friedland, D. Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture.
+
+- Patel, MA, Bock, JM, Blumin, JH, et al. Demographic differences in the treatment of unilateral vocal fold paralysis. Laryngoscope Investigative Otolaryngology. 2022; 1- 7. doi:[10.1002/lio2.920](https://doi.org/10.1002/lio2.920)
   
 - [Impact of Demographics and Clinical Features on Initial Treatment Pathway for Vestibular Schwannoma](https://journals.lww.com/otology-neurotology/Citation/2022/10000/Impact_of_Demographics_and_Clinical_Features_on.33.aspx), Harvey, Erin, Katarina Stark, David R. Friedland, Jazzmyne A. Adams, Michael S. Harris, `Ling Tong`, Kristen Osinksi, and Jake Luo Otology & Neurotology (2022). 
 
