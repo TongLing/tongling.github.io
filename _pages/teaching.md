@@ -5,6 +5,8 @@ title: Teaching
 description: classes, workshops, and teaching materials
 nav: true
 nav_order: 5
+
+social: true  # includes social icons at the bottom of the page
 ---
 
 ## 2022 Fall course: HS 224 Computational tools for healthcare professionals

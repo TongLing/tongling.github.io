@@ -6,6 +6,8 @@ description: My publications in reversed chronological order.
 years: [1967, 1956, 1950, 1935, 1905]
 nav: true
 nav_order: 1
+
+social: true  # includes social icons at the bottom of the page
 ---
 <!-- _pages/publications.md -->
 
@@ -23,7 +25,7 @@ have any paper's access.
 
 - [In review] `Ling Tong`, Masoud Khani, Jake Luo. Dr. Diagnosis: A Visualization Model for Diagnosing Diabetic Retinopathy Severity andDiscovering Plaque Patterns in Retinal Images. International Conference on AI in Aging and Age-related Diseases.
 
-- [In revision] `Ling Tong`, Ben George, Bradley Crotty, Somai Melek, Bradley Taylor, Kristen Osinski, Jake Luo, Telemedicine and Health Disparities: Association between Patient Characteristics and Telemedicine, In-person, Telephone and message-based Care During the COVID-19 Pandemic.
+- [In revision] `Ling Tong`, Ben George, Bradley Crotty, Somai Melek, Bradley Taylor, Kristen Osinski, Jake Luo, Telemedicine and Health Disparities: Association between Patient Characteristics and Telemedicine, In-person, Telephone and message-based Care During the COVID-19 Pandemic. IPEM Translation.
 
 - [In revision] `Ling Tong`, Masoud Khani, Qiang Lu, Bradley Taylor, Kristen Osinski, Jake Luo. Association between Obesity-related Comorbidities and COVID-19-related Adverse Outcomes, Clinical Obesity Journal.
 
