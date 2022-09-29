@@ -21,9 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 </div>
 
-Please Visit My [ResearchGate](https://www.researchgate.net/profile/Ling-Tong-4/research) to download (or request) my paper's copy. Feel free to send me an email if you don't 
-have any paper's access. 
-
+<!-- 
 ### In Revision/In review
 
 - [Preprint: Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture](https://ssrn.com/abstract=4034059), `Tong, L.`, Luo, J., Adams, J., Liu, X., Osinski, K., & Friedland, D, Computer Methods and Programs in Biomedicine
@@ -81,4 +79,4 @@ have any paper's access.
 - [Evaluating the granularity balance of hierarchical relationships within large biomedical terminologies towards quality improvement](https://www.sciencedirect.com/science/article/pii/S1532046417302204), Luo, Lingyun, `Ling Tong`, Xiaoxi Zhou, Jose LV Mejino Jr, Chunping Ouyang, and Yongbin Liu, Journal of biomedical informatics 75 (2017): 129-137.
 
 ---
-
+ -->

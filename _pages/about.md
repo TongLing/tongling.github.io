@@ -24,7 +24,7 @@ My primary research interests are `medical informatics` and `artificial intellig
 For the past four years, I've been teaching a healthcare computational tools course. I believe that each of us must decide how we will lead in times of great challenge, and I am committed to overcoming the obstacles and teaching students to be life-long learners. 
 
 I was born and raised in a small Chinese town until I finished my undergraduate studies. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
-
+<!-- 
 ## Selected Publications
 
 - [Evaluating the granularity balance of hierarchical relationships within large biomedical terminologies towards quality improvement](https://doi.org/10.1016/j.jbi.2017.10.001)
@@ -61,4 +61,4 @@ I was born and raised in a small Chinese town until I finished my undergraduate 
 
 - [In revision] `Ling Tong`, Ben George, Bradley Crotty, Somai Melek, Bradley Taylor, Kristen Osinski, Jake Luo, Telemedicine and Health Disparities: Association between Patient Characteristics and Telemedicine, In-person, Telephone and message-based Care During the COVID-19 Pandemic.
 
-- [In revision] `Ling Tong`, Masoud Khani, Qiang Lu, Bradley Taylor, Kristen Osinski, Jake Luo. Association between Obesity-related Comorbidities and COVID-19-related Adverse Outcomes, Clinical Obesity Journal
+- [In revision] `Ling Tong`, Masoud Khani, Qiang Lu, Bradley Taylor, Kristen Osinski, Jake Luo. Association between Obesity-related Comorbidities and COVID-19-related Adverse Outcomes, Clinical Obesity Journal -->
