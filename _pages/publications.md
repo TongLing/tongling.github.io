@@ -12,7 +12,22 @@ nav_order: 1
 
 ---
 
-Please Visit My [ResearchGate](https://www.researchgate.net/profile/Ling-Tong-4/research) to download (or request) my paper's copy. Feel free to send me an email if you don't have any paper's access. 
+Please Visit My [ResearchGate](https://www.researchgate.net/profile/Ling-Tong-4/research) to download (or request) my paper's copy. Feel free to send me an email if you don't 
+have any paper's access. 
+
+### In Revision/In review
+
+- [Preprint: Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture](https://ssrn.com/abstract=4034059), `Tong, L.`, Luo, J., Adams, J., Liu, X., Osinski, K., & Friedland, D, Computer Methods and Programs in Biomedicine
+  
+- [In revision] Xiaoyu Liu, Hiba Abd, `Ling Tong`, Susan Mcroy. Visualizing the Interpretation of a Criterion-Driven System that Automatically Evaluates the Quality of Health News: An Exploratory Study of Two Approaches, Journal of Medical Internet Research.
+
+- [In review] `Ling Tong`, Masoud Khani, Jake Luo. Dr. Diagnosis: A Visualization Model for Diagnosing Diabetic Retinopathy Severity andDiscovering Plaque Patterns in Retinal Images. International Conference on AI in Aging and Age-related Diseases.
+
+- [In revision] `Ling Tong`, Ben George, Bradley Crotty, Somai Melek, Bradley Taylor, Kristen Osinski, Jake Luo, Telemedicine and Health Disparities: Association between Patient Characteristics and Telemedicine, In-person, Telephone and message-based Care During the COVID-19 Pandemic.
+
+- [In revision] `Ling Tong`, Masoud Khani, Qiang Lu, Bradley Taylor, Kristen Osinski, Jake Luo. Association between Obesity-related Comorbidities and COVID-19-related Adverse Outcomes, Clinical Obesity Journal.
+
+
 ### 2022: 
 
 - [Preprint: Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4034059), `Tong, L.`, Luo, J., Adams, J., Liu, X., Osinski, K., & Friedland, D. Interpretable Machine Learning Text Classification for Computed Tomography Reports–A Case Study of Temporal Bone Fracture.
@@ -60,16 +75,3 @@ Please Visit My [ResearchGate](https://www.researchgate.net/profile/Ling-Tong-4/
 
 ---
 
-### Submitted Manuscripts, in review:
-
-- Ling Tong, Jake Luo, Jazzmyne Adams, Kristen Osinski, Xiaoyu Liu, David Friedland, Interpretable Machine Learning Text Classification for CT reports – A Case Study of Temporal Bone Fracture
-
-- Xiaoyu Liu, Ling Tong, Lei Yao, Susan Mcroy, AI-based Techniques for Combating Health Misinformation: A Systematic Review
-
-- Ling Tong, Masoud Khani, Jake Luo, Multi-class Image Classification of Diabetic Retinopathy Using Neural Networks 
-
-- Disparities in Telemedicine Adoption: Patient Characteristics and Remote Oncology Care During the COVID-19 Pandemic.
-
-- Obesity, a Risk Factor of COVID-19 Severity: Evaluation of Mortality and Adverse Outcomes Among Diagnosed Patients
-
----
