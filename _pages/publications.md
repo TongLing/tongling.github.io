@@ -9,10 +9,17 @@ nav_order: 1
 
 social: true  # includes social icons at the bottom of the page
 ---
+
+
 <!-- _pages/publications.md -->
+<div class="publications">
 
+{%- for y in page.years %}
+  <h2 class="year">{{y}}</h2>
+  {% bibliography -f papers -q @*[year={{y}}]* %}
+{% endfor %}
 
----
+</div>
 
 Please Visit My [ResearchGate](https://www.researchgate.net/profile/Ling-Tong-4/research) to download (or request) my paper's copy. Feel free to send me an email if you don't 
 have any paper's access. 
