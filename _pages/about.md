@@ -24,3 +24,11 @@ My primary research interests are `medical informatics` and `artificial intellig
 For the past four years, I've been teaching a healthcare computational tools course. I believe that each of us must decide how we will lead in times of great challenge, and I am committed to overcoming the obstacles and teaching students to be life-long learners. 
 
 I was born and raised in a small Chinese town until I finished my undergraduate studies. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
+
+
+
+### Upcoming website updates:
+
+- Add a completed list of News, tracing back to 2017 When I begin my PhD studies.
+- Move my [blog](https://blog.csdn.net/tlonline) contents to this place. I'm a bit upset about the CSDN. They used to be great place for technical blogs. They are now a place for advertisement and spams.
+- Update the teaching page, and upload teaching materials.
