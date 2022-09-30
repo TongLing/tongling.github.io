@@ -23,7 +23,7 @@ My primary research interests are `medical informatics` and `artificial intellig
 
 For the past four years, I've been teaching a healthcare computational tools course. I believe that each of us must decide how we will lead in times of great challenge, and I am committed to overcoming the obstacles and teaching students to be life-long learners. 
 
-I was born and raised in 丽水([Lishui](https://en.wikipedia.org/wiki/Lishui)),Chinese town until I finished my undergraduate studies. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
+I was born and raised in 丽水([Lishui](https://en.wikipedia.org/wiki/Lishui)), a beautiful town of China. After I finish my Bachelor degree in CS, I moved to United States and begins my doctoral study. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
 
 
 
