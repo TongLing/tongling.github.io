@@ -15,10 +15,10 @@ pagination:
 
 <div class="post">
 
-  <div class="header-bar">
+  <!-- <div class="header-bar">
     <h1>{{ site.blog_name }}</h1>
     <h2>{{ site.blog_description }}</h2>
-  </div>
+  </div> -->
 
   {% if site.display_tags %}
   <div class="tag-list">
@@ -38,7 +38,6 @@ pagination:
 
   <ul class="post-list">
     {% for post in paginator.posts %}
-    {% if post.display == true %}
       {% if post.external_source == blank %}
         {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
       {% else %}
@@ -92,7 +91,6 @@ pagination:
             {% endif %}
       </p>
       </li>
-    {% endif %}
     {% endfor %}
   </ul>
 
