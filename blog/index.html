@@ -44,8 +44,8 @@ pagination:
         {% assign categories = post.categories | join: "" %}  
       {% else %}
         {% assign year = post.date | date: "%Y" %}
-        {% assign tag = post.external_source  | replace: " ", "_" %}
-        {% assign category = post.external_source | replace: " ", "_"  %}
+        {% assign tag = post.external_source  | downcase | url_encode | remove: "(" |  remove: ")" | replace: "+", "-" %}
+        {% assign category = post.external_source | downcase | url_encode | remove: "(" |  remove: ")" | replace: "+", "-" %}
       {% endif %}
       
       <li>
