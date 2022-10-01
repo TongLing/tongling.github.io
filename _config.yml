@@ -126,7 +126,7 @@ external_sources:
   - name: sethsblog
     rss_url: http://feeds.feedblitz.com/SethsBlog
   - name: ruanyifeng
-  - rss_url: http://feeds.feedburner.com/ruanyifeng
+    rss_url: http://feeds.feedburner.com/ruanyifeng
 
 
 # -----------------------------------------------------------------------------
