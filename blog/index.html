@@ -36,6 +36,8 @@ pagination:
   
   {% endif %}
 
+  {% include pagination.html %}
+  
   <ul class="post-list">
     {% for post in paginator.posts %}
       {% if post.external_source == blank %}
@@ -44,8 +46,8 @@ pagination:
         {% assign categories = post.categories | join: "" %}  
       {% else %}
         {% assign year = post.date | date: "%Y" %}
-        {% assign tag = post.external_source  | downcase | url_encode | remove: "(" |  remove: ")" | replace: "+", "-" %}
-        {% assign category = post.external_source | downcase | url_encode | remove: "(" |  remove: ")" | replace: "+", "-" %}
+        {% assign tag = post.external_source  | downcase | remove: "(" |  remove: ")"  | url_encode | replace: "+", "-" %}
+        {% assign category = post.external_source | downcase | remove: "(" |  remove: ")"  | url_encode | replace: "+", "-" %}
       {% endif %}
       
       <li>
