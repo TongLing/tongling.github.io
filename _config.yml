@@ -102,7 +102,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Blog # blog_name will be displayed in your blog page
 blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: You can peek Ling's favorite reading list, research notes, music videos, books, and life hacks here. The reading list is updated every Monday.
+blog_description: You can peek Ling's favorite reading list, music videos, books, and life hacks here. The reading list is updated every Monday.
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -127,6 +127,8 @@ external_sources:
     rss_url: http://feeds.feedburner.com/typepad/sethsmainblog
   - name: ruanyifeng
     rss_url: http://feeds.feedburner.com/ruanyifeng
+  - name: my-technical-blog
+    rss_url: https://blog.csdn.net/tlonline/rss/list?spm=1001.2014.3001.5494
 
 
 # -----------------------------------------------------------------------------
