@@ -119,6 +119,13 @@ disqus_shortname: Ling Tong # put your disqus shortname
 external_sources:
   - name: medium.com
     rss_url: https://medium.com/@al-folio/feed
+  - name: Journal of Medical Internet Research (JMIR)
+    rss_url: http://feeds.feedburner.com/JMedInternetRes
+  - name: Journal of the American Medical Informatics Association (JAMIA)
+    rss_url: https://academic.oup.com/rss/site_5396/3257.xml
+  - name: Huberman Lab Podcast
+    rss_url: https://hubermanlab.com/feed/
+
 
 # -----------------------------------------------------------------------------
 # Collections
