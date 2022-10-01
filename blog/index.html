@@ -73,7 +73,7 @@ pagination:
           {%- endif %}
         </p>
         <p class="post-tags">
-          {% if post.exterlnal_source == blank %}
+          {% if post.external_source == blank %}
             <a href="{{ year | prepend: '/blog/' | prepend: site.baseurl}}">
             <i class="fas fa-calendar fa-sm"></i>{{ year }} </a>
             {% if tags != "" %}
@@ -108,7 +108,7 @@ pagination:
               {% endif %}
           {% endif %}
         </p>
-        <p>{{ post.description | truncate: 3000  }} ...
+        <p>{{ post.description | truncate: 2000  }} ...
         </p>
       </li>
     {% endfor %}
