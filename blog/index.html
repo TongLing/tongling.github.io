@@ -37,7 +37,7 @@ pagination:
   {% endif %}
 
   {% include pagination.html %}
-  
+
   <ul class="post-list">
     {% for post in paginator.posts %}
       {% if post.external_source == blank %}

@@ -4,7 +4,7 @@ title:  a post with JMIR initialization
 date:   2015-03-15 16:40:16
 description: march & april, looking forward to summer
 tags: journal-of-medical-internet-research-jmir
-categories: sample-posts
+categories: journal-of-medical-internet-research-jmir
 display: true
 ---
 

@@ -4,7 +4,7 @@ title:  a post with JMIR initialization
 date:   2015-03-15 16:40:16
 description: march & april, looking forward to summer
 tags: huberman-lab-podcast
-categories: sample-posts
+categories: huberman-lab-podcast
 display: true
 ---
 
