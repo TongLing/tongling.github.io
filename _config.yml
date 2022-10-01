@@ -84,7 +84,7 @@ dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 
 contact_note: >
-  The best way to contact me is through email.  I try to reply as soon as possible. Feel free to ask about everything on your mind. 
+  The best way to contact me is through email.  I try to reply as soon as possible. Feel free to ask everything in your mind. 
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -101,8 +101,8 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Ling Tong # blog_name will be displayed in your blog page
-blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: Ling Tong's developmental notes
+blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
+blog_description: Ling Tong's Blog and Notes
 permalink: /blog/:year/:title/
 
 # Pagination

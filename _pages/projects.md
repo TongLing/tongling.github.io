@@ -9,6 +9,7 @@ display_categories: [research, music, life]
 horizontal: false
 ---
 
+
 <h1> Project Website is in construction... </h1>
 <!-- pages/projects.md -->
 <div class="projects">
