@@ -65,7 +65,7 @@ pagination:
             {% endif %}
           {% endif %}
         </h3>
-        <p>{{ post.description }}</p>
+
         <p class="post-meta">
           {{ post.date | date: '%B %-d, %Y' }}
           {%- if post.external_source %}
@@ -107,7 +107,8 @@ pagination:
                 <i class="fas fa-tag fa-sm"></i>{{ category }}</a> &nbsp;
               {% endif %}
           {% endif %}
-      </p>
+        </p>
+        <p>{{ post.description }}</p>
       </li>
     {% endfor %}
   </ul>

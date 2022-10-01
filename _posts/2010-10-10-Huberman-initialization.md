@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  a post with JMIR initialization
+title:  a post with huberman lab podcast page initialization
 date:   2015-03-15 16:40:16
 description: march & april, looking forward to summer
 tags: huberman-lab-podcast
