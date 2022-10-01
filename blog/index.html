@@ -108,11 +108,7 @@ pagination:
               {% endif %}
           {% endif %}
         </p>
-        <p>{{ post.description | truncate: 3000  }} 
-          {% if post.description.size > 3000 %}
-            <a href="{{ post.redirect }}" target="_blank"> Read more </a>
-          {% endif %}
-
+        <p>{{ post.description | truncate: 3000  }} ...
         </p>
       </li>
     {% endfor %}
