@@ -108,7 +108,12 @@ pagination:
               {% endif %}
           {% endif %}
         </p>
-        <p>{{ post.description | truncatewords: 1000  }}</p>
+        <p>{{ post.description | truncate: 3000  }} 
+          {% if post.description.size > 3000 %}
+            <a href="{{ post.url | prepend: site.baseurl }}"> Read more </a>
+          {% endif %}
+
+        </p>
       </li>
     {% endfor %}
   </ul>
