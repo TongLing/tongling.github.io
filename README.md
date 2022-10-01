@@ -17,6 +17,10 @@ If you like the theme, give it a star!
 
 [![Preview](https://raw.githubusercontent.com/alshedivat/al-folio/master/assets/img/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
 
+# Todos: 
+
+- Make the the hashtag function work and archive the posts and links.
+- Update projects and split them into research, music life sub-sections.
 
 ## User community
 
