@@ -1,6 +1,6 @@
 ---
 layout: default
-title: blog
+title: Blog
 pagination:
   enabled: true
   collection: posts
@@ -51,7 +51,7 @@ pagination:
       {% endif %}
       
       <li>
-        <h3>
+        <h4>
           {% if post.redirect == blank %}
             <a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           {% else %}
@@ -64,7 +64,7 @@ pagination:
               <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
             {% endif %}
           {% endif %}
-        </h3>
+        </h4>
 
         <p class="post-meta">
           {{ post.date | date: '%B %-d, %Y' }}
