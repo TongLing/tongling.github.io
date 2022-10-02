@@ -8,13 +8,12 @@ category: research
 ---
 
 Posted on 05/27/2020 by [ruanyifeng](https://www.ruanyifeng.com/blog/2020/05/will-programmers-increase.html), Creative commons license. 
-1、
 
-最近，国外有一篇文章，标题很有趣，叫做[《软件吃掉软件》](https://themargins.substack.com/p/software-will-eat-software-in-a-remote)。
+1、最近，国外有一篇文章，标题很有趣，叫做[《软件吃掉软件》](https://themargins.substack.com/p/software-will-eat-software-in-a-remote)。
 
 作者认为，大型软件和通用软件越来越强大，将会取代小软件和专门软件，相当于把后者都吃掉了。
 
-{% include figure.html path="assets/img/project/bg2020052607.jpg.jpg" title="example image"  %}
+{% include figure.html path="assets/img/project/bg2020052607.jpg" title="example image"  %}
 
 他以自己的经历举例，云服务就取代了很多小软件。
 
@@ -26,9 +25,7 @@ Posted on 05/27/2020 by [ruanyifeng](https://www.ruanyifeng.com/blog/2020/05/wil
 
 他的结论就是，软件自动化技术的发展，可能将会减少对软件工程师的需求，未来的程序员可能会比现在少。
 
-2、
-
-我对这个话题很感兴趣，因为这是在预测未来的重大变化，而且跟就业趋势直接相关。如果未来软件的规模化和自动化，会抑制对程序员的需求，那么就不应该鼓励年轻人都来当程序员。
+2、我对这个话题很感兴趣，因为这是在预测未来的重大变化，而且跟就业趋势直接相关。如果未来软件的规模化和自动化，会抑制对程序员的需求，那么就不应该鼓励年轻人都来当程序员。
 
 Hacker News 论坛对这篇文章进行了[热烈的讨论](https://news.ycombinator.com/item?id=23297463)。大部分人（都是职业程序员）的看法是， 这种观点已经说了几十年了，根本是杞人忧天，实际情况恰恰相反，程序员变得越来越多。
 
