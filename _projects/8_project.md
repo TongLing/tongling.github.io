@@ -8,4 +8,4 @@ category: life
 ---
 
 
-{% include image-gallery.html folder="/img/project/graduation-images" %}
+{% include image-gallery.html folder="/img/project/graduation-images/compressed" %}
