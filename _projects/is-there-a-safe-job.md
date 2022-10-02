@@ -2,7 +2,7 @@
 layout: page
 title: Is there any safe job in the market?
 description: The short answer is no. 
-img: assets/img/1.jpg
+img: assets/img/2.jpg
 importance: 1
 category: research
 ---
