@@ -437,8 +437,14 @@ footer.sticky-bottom {
   }
 
   .card {
+    .hoverable{
+      padding: 0 !important;
+      border-radius: 15px;
+    }
     img {
       width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
     }
   }
 
