@@ -2,13 +2,13 @@
 layout: page
 title: 医学术语助手
 description: A quick Wechat-based mobile app for the convenience of Traditional Chinese Medicine (TCM) practitioners.
-img: assets/img/10.jpg
+img: assets/img/3.jpg
 importance: 2
 category: research
 ---
 #  医学术语助手  MedicalTermsDicMaster
  
-
+Posted on 8/19/2020 by Ling Tong
 
 NOTE: This app is no longer maintained. While the application is still available at Wechat mini program market, some functions might not function correctly. The service will be terminated at 01/01/2020.
 
