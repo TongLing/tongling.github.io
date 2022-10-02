@@ -7,7 +7,7 @@ importance: 1
 category: research
 ---
 
-Posted on 10/2/2022 by Ling Tong
+Posted on 10/2/2017 by Ling Tong
 
 If you spend a lot of time on the Internet, you've probably heard of Flash.
 
@@ -44,4 +44,4 @@ Other industries' transformations are not as dramatic and dramatic as the techno
 
 To return to the title of this article, is there such a thing as a safe job in the world? There should be, but there aren't many. Civil servants may be safer because their profession evolves at a slower pace and there is no pressure to upgrade skills. Doctors and lawyers are also safer because experience is valued in these fields, but technology is lowering their costs. Cooking and logistics are also relatively safe industries because, no matter how advanced technology becomes, people will always be needed to cook and deliver food, but they are purely manual labor, have no entry barrier, a large supply, and it is difficult to get high wages.
 
-Finally, human society's employment pattern is changing dramatically, and there are fewer and fewer "lifelong careers." Everyone should plan ahead of time: what will you do if your job disappears tomorrow?
+In fact, our society's employment pattern is changing dramatically, and there are fewer and fewer "lifelong careers." Everyone should plan ahead of time: what will you do if your job disappears tomorrow?
