@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Article - Machine learning is going real-time in Healthcare
-description: It might not be really fast, but I'm sure real-time machine learning is getting there.
+title: Is there any safe job in the market?
+description: The short answer is no. 
 img: assets/img/1.jpg
 importance: 1
 category: research
@@ -26,15 +26,13 @@ I met a friend in Shanghai during those years. He founded a software company tha
 
 Jobs associated with a technology die when it dies. This is especially common in the technology industry due to the rapid advancement of technology.
 
-
-
 Let me give you another example. Prior to the introduction of the iPhone, the most popular mobile phones used Nokia's "Symbian" operating system. Its typical logo is the "nine grid" menu, as you may recall. Saipan engineers were also very popular at the time, and it would take me at least one or two years to fully master its development technology. Later, smartphones became popular, and Saipan was a flop. Nokia announced in 2010 that it would abandon Symbian in favor of Microsoft's operating system. Later, Nokia went bankrupt, and all of the mobile phone engineers were fired. I know of a senior engineer at Nokia China who re-entered university to pursue an MBA.
 
 
 
-Imagine that after years of hard work, unwavering devotion, and practice, you have finally mastered a craft to make a living and have joined the world's largest multinational communications company. Everything changes just as you begin to feel secure in your life. In a few years, the big Mac that used to be disintegrated, not only is your job gone, but even more terrifying, the previous products are no longer used, and the world no longer produces any Saipan equipment. Your craft's worth is reduced to zero.
+Imagine that after years of hard work, unwavering devotion, and practice, you have finally mastered a craft to make a living and have joined the world's largest multinational communications company. Everything changes just as you begin to feel secure in your life. In a few years, the giants gets disintegrated, not only is your job gone, but even more terrifying, the previous products are no longer used, and the world no longer produces any Saipan-system devices. Your worth is reduced to zero.
 
-Some argue that you can return to school and then find work. You can learn Apple mobile phone development if Saipan is unable to work. Yes, you are correct. However, your previous accumulation is gone, and you must begin again. Standing on the same starting line as the students who have just left school, learning the same things. To be honest, despite your years of development experience, you probably don't learn as quickly as those 20-year-olds. In a fast-changing industry, experience can be a hindrance rather than a help, because old methods no longer work. Taking a step back, even if you relearn, iPhone development is changing, and you must always be on the lookout for new things. How many times in a person's life can he start from scratch?
+Some argue that you can return to school and then find work. You can learn Apple mobile phone development if Saipan is down. Yes, you are correct. However, your previous accumulation is gone, and you must begin again. Standing on the same starting line as the students who have just left school, learning the same things. To be honest, despite your years of development experience, you probably don't learn as quickly as those 20-year-olds. In a fast-changing industry, experience can be a hindrance rather than a help, because old methods no longer work. Taking a step back, even if you relearn, iPhone development is changing, and you must always be on the lookout for new things. How many times in a person's life can he start from scratch?
 
 Although the term "lifelong learning" is accurate, I do not believe it is possible to remain professionally competitive through "lifelong learning."
 
