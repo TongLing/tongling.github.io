@@ -50,7 +50,7 @@ navbar_fixed: true
 footer_fixed: true
 
 # Dimensions
-max_width: 800px
+max_width: 960px
 
 # TODO: add layout settings (single page vs. multi-page)
 
@@ -127,7 +127,7 @@ external_sources:
     rss_url: http://feeds.feedburner.com/typepad/sethsmainblog
   - name: ruanyifeng
     rss_url: http://feeds.feedburner.com/ruanyifeng
-  - name: my-technical-blog
+  - name: my-tech-blog
     rss_url: https://blog.csdn.net/tlonline/rss/list?spm=1001.2014.3001.5494
 
 
@@ -224,7 +224,7 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-display_tags:  ['sethsblog', 'journal-of-medical-internet-research-jmir', 'huberman-lab-podcast','formating','ruanyifeng'] # this tags will be dispalyed on the front page of your blog
+display_tags:  ['my-tech-blog', 'sethsblog', 'journal-of-medical-internet-research-jmir', 'huberman-lab-podcast','formating','ruanyifeng'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
