@@ -1,80 +1,36 @@
 ---
 layout: page
-title: project 1
+title: Machine learning is going real-time
 description: a project with a background image
 img: assets/img/1.jpg
 importance: 1
 category: research
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+These topics are not related to healthcare or medicine. However, the timestamp is really a special field in EHR. when we process data no matter in any format, it always has to convert to other formats. Sometimes its an DOB to age conversion, sometime is a chronological order, linking of one diagnosis event time happens before another diagnosis, then use a cohort study method to process them in statistical ways. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+I've been thinking about how to apply real-time prediction on many related events in healthcare, especially those events that must use multiple rows of timestamps.
 
----
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
+For example, thinking about a electrocardiogram (ECG) graph. Some papers (Cardiologist-Level Arrhythmia Detection With Convolutional Neural Networks) have proposed to use static panel data to predict Arrhythmia Detection (see paper above), but the clinical application does not work like this. In clinical scenario, the ECG graph is not a panel data. Each patient may equip with a monitoring system. The system will generate real-time data at every moment. The ML prediction model will be much more useful if they can process real-time data. Imagine a AI-equipped ECG monitoring device, when there is an emergency, the device can alarm which type of heart abnormality is detected in real-time.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/project/Google-Monarch.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    Google Monarch's Database system
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+This time-series form can not only work on heart rate, but also can work on other types of vital signs data. Other types of data may include blood pressure, respiration rate, SpO2, body Temperature.  As long as there is a real-time data stream, and the data stream have a identifiable pattern, it is possible to develop an AI application to empower the ability to identify patients' abnormal signs in real time. I believe no one have generated such results by far. How to implement such a monitoring system? There is a blog post Real-time machine learning: challenges and solutions have explained real-time prediction in great details. (Stage 2). I found the online prediction with batch features can be an feasible option. We can train model in one time using high-quality data, and then apply to real-time monitoring data events. For Stage 3 and after, the implementation seems really complicated.  As for continual learning, they are not necessary because we can choose not to learn from patient's real-time data stream. 
 
+The last link shows an implementation of machine learning services for real-time prediction just like an API. The implementation is not related to healthcare anyway.  When we input the data, the ML-model-based service can generate a label for specific tasks. It has really great potentials - when we find a scenario that really needs such services. 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+All of the discussions are based on traditional data frame. However, Google uploaded a brand new type of time series database. It is really new, so they may not possible to use. After reading Google's new DB structure, I believe this structure will be implemented on other Machine learning tasks requiring real-time pattern recognition, but not on healthcare domain. It may be on the far future.. but we can see (or contribute) something on this real-time event prediction topic.
 
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+## References
+[Machine learning is going real-time](https://huyenchip.com/2020/12/27/real-time-machine-learning.html)
+[Real-time machine learning: challenges and solutions](https://huyenchip.com/2022/01/02/real-time-machine-learning-challenges-and-solutions.html)
+[Monarch: Google's planet-scale in-memory time series database](https://www.vldb.org/pvldb/vol13/p3181-adams.pdf)
+[Cardiologist-Level Arrhythmia Detection With Convolutional Neural Networks](https://stanfordmlgroup.github.io/projects/ecg/)
+[Machine Learning Service for Real-Time Prediction](https://towardsdatascience.com/machine-learning-service-for-real-time-prediction-9f18d585a5e0)
