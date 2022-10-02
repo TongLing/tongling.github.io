@@ -12,7 +12,7 @@ social: true  # includes social icons at the bottom of the page
 
 
 <!-- _pages/publications.md -->
-<div class="publications">
+<div class="publications card">
 
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
