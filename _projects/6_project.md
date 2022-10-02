@@ -4,7 +4,7 @@ title: 西湖 (Westlake)
 description: A song played by our band in undergraduate school
 img: assets/img/project/westlake.png
 importance: 4
-category: music
+category: life
 ---
 
 Posted on 3/17/2019 by Ling Tong

@@ -4,7 +4,7 @@ title: Guitar playing - 流行的云
 description: 很喜欢的一首曲子，好听，好弹。
 img: assets/img/5.jpg
 importance: 3
-category: music
+category: life
 ---
 
 

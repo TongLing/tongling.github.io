@@ -4,7 +4,7 @@ title: project 1
 description: a project with a background image
 img: assets/img/9.jpg
 importance: 3
-category: life
+category: music
 ---
 
 Every project has a beautiful feature showcase page.

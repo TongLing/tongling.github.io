@@ -2,7 +2,7 @@
 layout: page
 title: COMPSAC 2019 Conference photo gallery
 description: When a happy moment becomes a memory, it becomes a treasure.
-img: assets/img/project/graduation/X2A2719-480-1400.webp
+img: assets/img/project/COMPSAC2019/3-800.webp
 importance: 1
 category: life
 

@@ -6,7 +6,7 @@ description: A growing collection of cool projects, developments, and memorable 
 nav: true
 nav_order: 2
 display_categories: [research, music, life]
-horizontal: false
+horizontal: true
 ---
 
 
