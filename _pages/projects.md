@@ -2,7 +2,7 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A growing collection of cool projects, developments, and memorable things.
 nav: true
 nav_order: 2
 display_categories: [research, music, life]
@@ -10,7 +10,6 @@ horizontal: false
 ---
 
 
-<h1> Project Website is in construction... </h1>
 <!-- pages/projects.md -->
 <div class="projects">
 {%- if site.enable_project_categories and page.display_categories %}
