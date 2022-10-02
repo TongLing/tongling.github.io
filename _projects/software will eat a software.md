@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Is there any safe job in the market?
-description: The short answer is no. 
+title: 软件吃掉软件
+description: an interesting story in software development.
 img: assets/img/2.jpg
 importance: 1
 category: research
