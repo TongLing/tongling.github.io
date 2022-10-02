@@ -2,7 +2,7 @@
 layout: page
 title: 软件吃掉软件
 description: an interesting story in software development.
-img: assets/img/2.jpg
+img: assets/img/project/bg2020052607.jpg
 importance: 1
 category: research
 ---
