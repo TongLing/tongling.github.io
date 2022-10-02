@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bachelor Graduation Ceremony
+title: Bachelor Graduation photo gallery
 description: When a happy moment becomes a memory, it becomes a treasure.
 img: assets/img/project/graduation/X2A2719-480.webp
 importance: 2
