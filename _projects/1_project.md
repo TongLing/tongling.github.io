@@ -1,17 +1,19 @@
 ---
 layout: page
-title: Machine learning is going real-time in Healthcare
+title: Article - Machine learning is going real-time in Healthcare
 description: It might not be really fast, but I'm sure real-time machine learning is getting there.
 img: assets/img/1.jpg
 importance: 1
 category: research
 ---
 
+Posted on 10/1/2022 by Ling Tong
+
 These topics are not related to healthcare or medicine. However, the timestamp is really a special field in EHR. when we process data no matter in any format, it always has to convert to other formats. Sometimes its an DOB to age conversion, sometime is a chronological order, linking of one diagnosis event time happens before another diagnosis, then use a cohort study method to process them in statistical ways. 
 
 I've been thinking about how to apply real-time prediction on many related events in healthcare, especially those events that must use multiple rows of timestamps.
 
-For example, thinking about a electrocardiogram (ECG) graph. Some papers ([Cardiologist-Level Arrhythmia Detection With Convolutional Neural Networks](https://stanfordmlgroup.github.io/projects/ecg/)) have proposed to use static panel data to predict Arrhythmia Detection (see paper above), but the clinical application does not work like this. In clinical scenario, the ECG graph is not a panel data. Each patient may equip with a monitoring system. The system will generate real-time data at every moment. The ML prediction model will be much more useful if they can process real-time data. Imagine a AI-equipped ECG monitoring device, when there is an emergency, the device can alarm which type of heart abnormality is detected in real-time.
+For example, thinking about a electrocardiogram (ECG) graph. Some papers ([Cardiologist-Level Arrhythmia Detection With Convolutional Neural Networks](https://stanfordmlgroup.github.io/projects/ecg/)) have proposed to use static panel data to predict Arrhythmia Detection. but the clinical application does not work like this. In clinical scenario, the ECG graph is not a panel data. Each patient may equip with a monitoring system. The system will generate real-time data at every moment. The ML prediction model will be much more useful if they can process real-time data. Imagine a AI-equipped ECG monitoring device, when there is an emergency, the device can alarm which type of heart abnormality is detected in real-time.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
