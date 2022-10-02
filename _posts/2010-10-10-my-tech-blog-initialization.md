@@ -3,8 +3,8 @@ layout: post
 title:  a post with my-technical-blog initialization
 date:   2015-03-15 16:40:16
 description: march & april, looking forward to summer
-tags: my-technical-blog
-categories: my-technical-blog
+tags: my-tech-blog
+categories: my-tech-blog
 display: true
 ---
 
