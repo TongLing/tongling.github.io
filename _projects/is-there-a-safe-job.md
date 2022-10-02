@@ -11,7 +11,7 @@ Posted on 10/2/2022 by Ling Tong
 
 If you spend a lot of time on the Internet, you've probably heard of Flash.
 
-{% {% include figure.html path="assets/img/project/bg2015121501.jpg" title="example image"  %}
+{% include figure.html path="assets/img/project/bg2015121501.jpg" title="example image"  %}
 
 It's a piece of software that's used to make web games, animations, and video players. You will essentially use it as long as you watch online videos.
 
