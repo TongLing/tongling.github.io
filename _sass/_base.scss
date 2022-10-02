@@ -399,6 +399,16 @@ footer.sticky-bottom {
   }
 }
 
+// news
+.news{
+  table.table-sm th, table.table-sm td {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left:0;
+    padding-right: 0;
+    min-width: 120px;
+  }
+}
 
 // Distill
 
