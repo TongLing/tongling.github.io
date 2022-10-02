@@ -271,11 +271,12 @@ blockquote {
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+  position: static;
   .container {
     color: var(--global-footer-text-color);
     padding-top: 9px;
     padding-bottom: 8px;
-    position:inherit;
+    position:static;
   }
   a {
     color: var(--global-footer-link-color);
