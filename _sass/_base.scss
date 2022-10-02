@@ -61,6 +61,10 @@ blockquote {
 }
 
 // Card
+.hoverable{
+  padding: 0 !important;
+  border-radius: 15px;
+}
 
 .card {
   background-color: var(--global-card-bg-color);
@@ -437,10 +441,6 @@ footer.sticky-bottom {
   }
 
   .card {
-    .hoverable{
-      padding: 0 !important;
-      border-radius: 15px;
-    }
     img {
       width: 100%;
       border-top-left-radius: 15px;
