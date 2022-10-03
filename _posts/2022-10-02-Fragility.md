@@ -14,7 +14,7 @@ display: true
 I've been wondering recently if mobile payment is truly convenient.
 
 
-I now go out with nothing but my phone, which is far more convenient than before. The issue is that I will undoubtedly need to bring my phone. I used to need to bring my wallet, but now I just need to bring my phone. If I forget to bring my phone, or if I'm on the road and it's lost, broken, or dead, it's a disaster because I can't make calls, take the subway, or pay...
+I now go out with nothing but my phone, which is far more convenient than before. The issue is that I will undoubtedly need to bring my phone. I used to bring my wallet, but now I just need to bring my phone. If I forget to bring my phone, or if I'm on the road and my phone is lost, broken, or dead, it's a disaster because I can't make calls, or pay with anything...
 
 
 
@@ -22,4 +22,5 @@ A better option appears to be biometric payment methods, such as face-scanning p
 
 
 
-Furthermore, I believe that the more convenient the payment, the more complex and vulnerable the technology must be. Technology has encapsulated the complexity that was supposed to be on everyone's shoulders (carrying and keeping physical currency on their own). There must be no technical glitches when everyone abandons paper money in favor of digital payments. In the event of a major power outage, for example, we can't even buy necessities, so we can only rely on the other party to accept the white paper.
+Furthermore, I believe that the more convenient the payment, the more complex and vulnerable the technology must be. Technology has encapsulated the complexity that was supposed to be on everyone's shoulders (carrying and keeping physical currency on their own). There must be no technical glitches when everyone abandons paper money in favor of digital payments. In the event of a major power outage, for example, we can't even buy anything, so we can only rely on the other party to accept the check. But the question is: is that really possible?
+
