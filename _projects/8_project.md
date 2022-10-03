@@ -7,7 +7,7 @@ importance: 2
 category: life
 
 ---
-
+Posted on 9/17/2017 by Ling Tong
 <div class="row">
     <div class="col-sm-4 mt-3 mt-md-0">
         {% include figure.html path="assets/img/project/graduation/MG_6159.jpg" title="example image" class="img-fluid rounded z-depth-1" %}

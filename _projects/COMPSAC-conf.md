@@ -8,6 +8,8 @@ category: life
 
 ---
 
+Posted on 7/19/2019 by Ling Tong
+
 <div class="row">
     <div class="col-sm-12 mt-9 mt-md-0">
         {% include figure.html path="assets/img/project/COMPSAC2019/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
