@@ -209,12 +209,26 @@ UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"
     <td>Online</td>
     <td><a href = "https://doi.org/10.1109/COMPSAC54236.2022.00054" target="_blank">paper</a> <a href = "{{'/assets/pdf/clustering-aided.pdf' | relative_url}}"> powerpoint </a></td>
   </tr>
+   <tr>
+    <td>May 2022</td>
+    <td>Standardization of Outcome Measures for Intratympanic Steroid Treatment for Idiopathic Sudden Sensorineural Hearing Loss (podium)</td>
+    <td>Combined Otolaryngology Specialties Meeting</td>
+    <td>Dallas, TX</td>
+    <td><a href = "https://doi.org/10.1097/MAO.0000000000003709" target="_blank">paper</a></td>
+  </tr>
+  <tr>
+    <td>Apr 2022</td>
+    <td>Impact of Demographics and Clinical Features on Initial Treatment Decision Making in Vestibular Schwannoma</td>
+    <td>57th Annual Ans Spring Meeting</td>
+    <td>Dallas, TX</td>
+    <td><a href = "https://doi.org/10.1097/MAO.0000000000003652" target = "_blank">paper</a> </td>
+  </tr>
   <tr>
     <td>Apr 2019</td>
     <td>Predicting the Clinical Outcomes from Clinical Trial Data using Machine Learning</td>
     <td>2019 Health Research Symposium at University of Wisconsin Milwaukee.</td>
     <td>Milwaukee, WI</td>
-    <td><a href = "{{'/assets/pdf/ml-2019-poster.pdf' | relative_url}}" target = "_blank"> poster </a></td></td>
+    <td><a href = "{{'/assets/pdf/ml-2019-poster.pdf' | relative_url}}" target = "_blank"> poster </a></td>
   </tr>
   <tr>
     <td>July 2019</td>
@@ -230,23 +244,8 @@ UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"
     <td>Milwaukee, WI</td>
     <td></td>
   </tr>
-  <tr>
-    <td>May 2022</td>
-    <td>Standardization of Outcome Measures for Intratympanic Steroid Treatment for Idiopathic Sudden Sensorineural Hearing Loss (podium)</td>
-    <td>Combined Otolaryngology Specialties Meeting</td>
-    <td>Dallas, TX</td>
-    <td><a href = "https://doi.org/10.1097/MAO.0000000000003709" target="_blank">paper</a></td>
-  </tr>
-  <tr>
-    <td>Apr 2022</td>
-    <td>Impact of Demographics and Clinical Features on Initial Treatment Decision Making in Vestibular Schwannoma</td>
-    <td>57th Annual Ans Spring Meeting</td>
-    <td>Dallas, TX</td>
-    <td><a href = "https://doi.org/10.1097/MAO.0000000000003652" target = "_blank">paper</a> </td>
-  </tr>
 </tbody>
 </table>
-
 
 ## Teaching Interest
 I can teach undergraduate courses, including, but not limited to:
