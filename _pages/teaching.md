@@ -13,14 +13,6 @@ social: true  # includes social icons at the bottom of the page
 <h4> University of Wisconsin-Milwaukee </h4>
 
 
-<div class="card mt-3">
-    <div class="p-3">
-
-<h4> 2022 Fall course: HS 224 Computational tools for healthcare professionals</h4>
-UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"> Canvas </a> for your Syllabus, Lecture Notes, and Assignments.
-    </div>
-</div>
-
 ---
 
 <div class="card mt-3">
@@ -28,9 +20,10 @@ UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"
         <div class="row">
             <div class="col-sm-10">
                 <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HS+224" target="_blank" rel="noopener noreferrer"></a>Computational tools for healthcare professionals </h5>
-                <h6 class="card-subtitle font-italic">Fall 2019 - 2022: Instructor</h6> 
+                <h6 class="card-subtitle font-italic"> Every semester, Fall 2019 - Fall 2022: Instructor</h6> 
+                <p>UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"> Canvas </a> for your Syllabus, Lecture Notes, and Assignments.</p>
                 <span><a href = "{{'/assets/pdf/hs224-syllabus.pdf' | relative_url}}"> [Syllabus] </a></span>
-                <p><i>This lecture focused on healthcare introduction of computational tools for information management, including system architecture, process, and ethical concepts. The course also incorporates training in Microsoft Excel application software.</i></p>
+                <p>This lecture focused on healthcare introduction of computational tools for information management, including system architecture, process, and ethical concepts. The course also incorporates training in Microsoft Excel application software.</p>
             </div>
             <div class="col-sm-2 text-sm-right">
                 <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">
