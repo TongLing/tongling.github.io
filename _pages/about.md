@@ -31,6 +31,6 @@ I was born and raised in 丽水([Lishui](https://en.wikipedia.org/wiki/Lishui)),
 
 - ~~Add a completed list of News, tracing back to 2017 When I begin my PhD studies.~~
 - ~~Move my [blog](https://blog.csdn.net/tlonline) contents to this place. I'm a bit upset about the CSDN. They used to be great place for technical blogs. They are now a place for advertisement and spams.~~
-- Update the teaching page, and upload teaching materials. 
-- Upload my bachelor's thesis.
-- Add my 2018 symposium poster to the teaching's page.
+- ~~Update the teaching page, and upload teaching materials. ~~
+- ~~Upload my bachelor's thesis.~~
+- ~~Add my 2018 symposium poster to the teaching's page.~~
