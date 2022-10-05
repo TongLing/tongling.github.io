@@ -181,22 +181,7 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for your Syllabus, 
 
 ---
 
-## My previous Panel/Conference Talk:
 
-- `A Clustering-Aided Approach for Diagnosis Prediction: A Case Study of Elderly Fall`, (2022) IEEE 46th Annual Computers, Software, and Applications Conferences COMPSAC.
-
-- `Predicting the Clinical Outcomes from Clinical Trial Data using Machine Learning`, 2019 Health Research Symposium at University of Wisconsin Milwaukee.
-
-
-- `Machine Learning-based Prediction of Death Events in Clinical Studies Using Big Clinical Trial Data`, 2019 IEEE 43rd Annual Computer Software and Applications Conference (COMPSAC)
-
-- `From Phone to Medical Database: An Automatic Document Processing System for Clinical Laboratory Test`, 2019 Research Poster Competition, University of Wisconsin Milwaukee.
-
-- `Standardization of Outcome Measures for Intratympanic Steroid Treatment for Idiopathic Sudden Sensorineural Hearing Loss (podium)`, ), Combined Otolaryngology Specialties Meeting at Dallas, TX.
-
-- `Impact of Demographics and Clinical Features on Initial Treatment Decision Making in Vestibular Schwannoma`, 57th Annual Ans Spring Meeting, Dallas, TX.
-
----
 
 <h4> Previous Panel/Conference Talks: </h4>
 <table class = "table table-hover table-sm">
@@ -221,7 +206,7 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for your Syllabus, 
     <td>A Clustering-Aided Approach for Diagnosis Prediction: A Case Study of Elderly Fall</td>
     <td>IEEE 46th Annual Computers, Software, and Applications Conferences</td>
     <td>Online</td>
-    <td></td>
+    <td><a href = "https://doi.org/10.1109/10.1109/COMPSAC54236.2022.00054" target="_blank">paper</a></td>
   </tr>
   <tr>
     <td>Apr 2019</td>
@@ -235,7 +220,7 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for your Syllabus, 
     <td>Machine Learning-based Prediction of Death Events in Clinical Studies Using Big Clinical Trial Data</td>
     <td>IEEE 43rd Annual Computer Software and Applications Conference </td>
     <td>Milwaukee, WI</td>
-    <td></td>
+    <td><a href = "https://doi.org/10.1109/COMPSAC.2019.10218" target="_blank">paper</a></td>
   </tr>
   <tr>
     <td>Apr 2018</td>
@@ -249,14 +234,14 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for your Syllabus, 
     <td>Standardization of Outcome Measures for Intratympanic Steroid Treatment for Idiopathic Sudden Sensorineural Hearing Loss (podium)</td>
     <td>Combined Otolaryngology Specialties Meeting</td>
     <td>Dallas, TX</td>
-    <td></td>
+    <td><a href = "https://doi.org/10.1097/MAO.0000000000003709" target="_blank">paper</a></td>
   </tr>
   <tr>
     <td>Apr 2022</td>
     <td>Impact of Demographics and Clinical Features on Initial Treatment Decision Making in Vestibular Schwannoma</td>
     <td>57th Annual Ans Spring Meeting</td>
     <td>Dallas, TX</td>
-    <td></td>
+    <td><a href = "https://doi.org/10.1097/MAO.0000000000003652" target = "_blank">paper</a> </td>
   </tr>
 </tbody>
 </table>
