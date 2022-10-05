@@ -69,9 +69,6 @@ blockquote {
 .card {
   background-color: var(--global-card-bg-color);
   padding: 3rem;
-  .list-group-item {
-    background-color: inherit !important;
-  }
   img {
     width: 100%;
   }
@@ -310,6 +307,7 @@ footer.sticky-bottom {
     background-color: var(--global-card-bg-color);
     border: 1px solid var(--global-divider-color);
     .list-group-item {
+      background-color: inherit;
       .badge {
         color: var(--global-card-bg-color) !important;
         background-color: var(--global-theme-color) !important;

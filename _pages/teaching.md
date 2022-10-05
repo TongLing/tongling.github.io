@@ -206,7 +206,7 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for your Syllabus, 
     <td>A Clustering-Aided Approach for Diagnosis Prediction: A Case Study of Elderly Fall</td>
     <td>IEEE 46th Annual Computers, Software, and Applications Conferences</td>
     <td>Online</td>
-    <td><a href = "https://doi.org/10.1109/10.1109/COMPSAC54236.2022.00054" target="_blank">paper</a> <a href = "{{'/assets/pdf/clustering-aided.pdf' | relative_url}}"> powerpoint </a></td>
+    <td><a href = "https://doi.org/10.1109/COMPSAC54236.2022.00054" target="_blank">paper</a> <a href = "{{'/assets/pdf/clustering-aided.pdf' | relative_url}}"> powerpoint </a></td>
   </tr>
   <tr>
     <td>Apr 2019</td>
