@@ -10,6 +10,9 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
+<h4> University of Wisconsin-Milwaukee </h4>
+
+
 <div class="card mt-3">
     <div class="p-3">
 
@@ -18,7 +21,6 @@ UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"
     </div>
 </div>
 
-<h4> University of Wisconsin-Milwaukee </h4>
 ---
 
 <div class="card mt-3">
