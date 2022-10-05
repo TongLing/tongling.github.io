@@ -198,6 +198,70 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for your Syllabus, 
 
 ---
 
+<h4> Previous Panel/Conference Talks: </h4>
+<table class = "table table-hover table-sm">
+<colgroup>
+    <col style="width:15%">
+    <col style="width:50%">
+    <col style="width:30%">
+    <col style="width:5%">
+  </colgroup>
+<thead>
+  <tr>
+    <th>Date</th>
+    <th>Talk</th>
+    <th>Conference</th>
+    <th>Location</th>
+    <th>Download</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>July 2022</td>
+    <td>A Clustering-Aided Approach for Diagnosis Prediction: A Case Study of Elderly Fall</td>
+    <td>IEEE 46th Annual Computers, Software, and Applications Conferences</td>
+    <td>Online</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Apr 2019</td>
+    <td>Predicting the Clinical Outcomes from Clinical Trial Data using Machine Learning</td>
+    <td>2019 Health Research Symposium at University of Wisconsin Milwaukee.</td>
+    <td>Milwaukee, WI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>July 2019</td>
+    <td>Machine Learning-based Prediction of Death Events in Clinical Studies Using Big Clinical Trial Data</td>
+    <td>IEEE 43rd Annual Computer Software and Applications Conference </td>
+    <td>Milwaukee, WI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Apr 2018</td>
+    <td>From Phone to Medical Database: An Automatic Document Processing System for Clinical Laboratory Test</td>
+    <td>2019 Research Poster Competition, University of Wisconsin Milwaukee.</td>
+    <td>Milwaukee, WI</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>May 2022</td>
+    <td>Standardization of Outcome Measures for Intratympanic Steroid Treatment for Idiopathic Sudden Sensorineural Hearing Loss (podium)</td>
+    <td>Combined Otolaryngology Specialties Meeting</td>
+    <td>Dallas, TX</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Apr 2022</td>
+    <td>Impact of Demographics and Clinical Features on Initial Treatment Decision Making in Vestibular Schwannoma</td>
+    <td>57th Annual Ans Spring Meeting</td>
+    <td>Dallas, TX</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+
+
 ## Teaching Interest
 I can teach undergraduate courses, including, but not limited to:
 
