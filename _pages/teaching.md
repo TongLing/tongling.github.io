@@ -14,10 +14,11 @@ social: true  # includes social icons at the bottom of the page
     <div class="p-3">
 
 <h4> 2022 Fall course: HS 224 Computational tools for healthcare professionals</h4>
-UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for your Syllabus, Lecture Notes, and Assignments.
+UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"> Canvas </a> for your Syllabus, Lecture Notes, and Assignments.
     </div>
 </div>
 
+<h4> University of Wisconsin-Milwaukee </h4>
 ---
 
 <div class="card mt-3">
