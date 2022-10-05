@@ -9,10 +9,14 @@ nav_order: 5
 social: true  # includes social icons at the bottom of the page
 ---
 
-## 2022 Fall course: HS 224 Computational tools for healthcare professionals
 
-UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for Syllabus, Lecture Notes, and Assignments.
+<div class="card mt-3">
+    <div class="p-3">
 
+<h4> 2022 Fall course: HS 224 Computational tools for healthcare professionals</h4>
+UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for your Syllabus, Lecture Notes, and Assignments.
+    </div>
+</div>
 
 ---
 
@@ -27,7 +31,7 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for Syllabus, Lectu
             </div>
             <div class="col-sm-2 text-sm-right">
                 <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">
-                HS-224
+                UWM HS-224
                 </span>
             </div>
         </div>
@@ -168,14 +172,15 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for Syllabus, Lectu
             </div>
             <div class="col-sm-2 text-sm-right">
                 <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">
-                HCA-745
+                UWM HCA 745
                 </span>
             </div>
         </div>
     </div>
 </div>
-<div class = "card mt-3">
-    <div class="p-3">
+
+---
+
 ## My previous Panel/Conference Talk:
 
 - `A Clustering-Aided Approach for Diagnosis Prediction: A Case Study of Elderly Fall`, (2022) IEEE 46th Annual Computers, Software, and Applications Conferences COMPSAC.
@@ -190,13 +195,9 @@ UWM Students: Please visit [Canvas](https://uwm.edu/canvas/) for Syllabus, Lectu
 - `Standardization of Outcome Measures for Intratympanic Steroid Treatment for Idiopathic Sudden Sensorineural Hearing Loss (podium)`, ), Combined Otolaryngology Specialties Meeting at Dallas, TX.
 
 - `Impact of Demographics and Clinical Features on Initial Treatment Decision Making in Vestibular Schwannoma`, 57th Annual Ans Spring Meeting, Dallas, TX.
-    </div>
-</div>
 
-<p></p>
+---
 
-<div class = "card mt-3">
-    <div class="p-3">
 ## Teaching Interest
 I can teach undergraduate courses, including, but not limited to:
 
@@ -207,6 +208,3 @@ I can teach undergraduate courses, including, but not limited to:
 Also, I can teach following graduate courses:
 - `Artificial Intelligence in Healthcare`: I believe a hands-on training course in artificial intelligence and healthcare would be in high demand and become a course catalog highlight. In the interdisciplinary fields of engineering and healthcare, we are seeing unmet needs. In the next 5 to 10 years, the industry will require a large number of administrative and development professionals. Also, students will be interested in practical course like AI in Healthcare, which can improve the overall curriculum quality, thereby increasing enrollments. The interdisciplinary collaboration will also provide opportunities for research funding and cross-disciplinary academic collaborations. The active collaboration often results in academic achievements and improves the schools’ reputation.
 - `Statistics for Evidence-based Medicine`: In addition, statistics and evidence-based research are critical components of healthcare that every healthcare graduate student must comprehend. I am qualified to lecture on advanced level statistical courses, such as public health and research-based statistical methodology courses.
-    </div>
-</div>
-<p></p>
