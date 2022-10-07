@@ -82,7 +82,7 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
   <tr>
     <td>Jul 14, 2022</td>
     <td>(Name was hidden because this work has not been published)</td>
-    <td>IEEE journal of Biomedical and Health Informatics</td>
+    <td>IEEE Journal of Biomedical and Health Informatics</td>
   </tr>
   <tr>
     <td>Jun 23, 2022</td>
@@ -108,6 +108,11 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
     <td>Dec 02, 2021</td>
     <td><a href = "https://pubmed.ncbi.nlm.nih.gov/35172373/" target = "_blank"> Home Monitoring Programs for Patients Testing Positive for SARS-CoV-2: An Integrative Literature Review</a></td>
     <td>Applied Clinical Informatics</td>
+  </tr>
+    <tr>
+    <td>Oct 04, 2021</td>
+    <td><a href = "https://pubmed.ncbi.nlm.nih.gov/35348470/" target = "_blank"> Development and Evaluation of Short-Form Measures of the HIV/AIDS Knowledge Assessment Tool Among Sexual and Gender Minorities in Brazil: Cross-sectional Study </a></td>
+    <td>JMIR Public Health and Surveillance</td>
   </tr>
   <tr>
     <td>May 07, 2021</td>
