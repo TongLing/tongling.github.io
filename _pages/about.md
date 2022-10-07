@@ -38,20 +38,91 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
 
 -->
 
-## My Scholarly Review Records
-| Review Completed Date 	| Manuscript                                                                                                                                                                                	| Journal Name                             	|
-|-----------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------	|
-| Sep 30, 2022          	| (Name was hidden because this work has not been published) 	|                    Journal of Medical Internet Research(JMIR)         	|
-| Sep 12, 2022          	| (Name was hidden because this work has not been published)                                                                                                      	| Biomedical Signal Processing and Control 	|
-| Aug 29, 2022          	| [Arrhythmia Disease Classification Utilizing ResRNN](https://www.sciencedirect.com/science/article/abs/pii/S1746809422006140)                                                                                                                                        	| Biomedical Signal Processing and Control 	|
-| Aug 16, 2022          	| (Name was hidden because this work has not been published)                       	| Biomedical Signal Processing and Control 	|
-| Aug 16, 2022          	| (Name was hidden because this work has not been published)                                                                                                                     	| Biomedical Signal Processing and Control 	|
-| Jul 14, 2022          	| (Name was hidden because this work has not been published)                                                                                            	|   IEEE journal of Biomedical and Health Informatics   	|
-| Jun 23, 2022          	| [Factors Associated With the Utilization of Outpatient Virtual Clinics: Retrospective Observational Study Using Multilevel Analysis](https://pubmed.ncbi.nlm.nih.gov/35917486/)                                                        	|         Journal of Medical Internet Research(JMIR)               	| 
-|Apr 05, 2022|	 Evaluating the Workflow And Usability Impacts of AI Imaging Diagnostic Medical Decision Support Systems In Radiology: a Research Study Protocol|AMIA 2022 Symposium|
-|Apr 04, 2022|Linking Network Camera Data and Pedestrian Simulations to Analyze Infection Risk in Crowded Locations|AMIA 2022 Symposium|
-|Apr 03, 2022|	Identifying Cancer Symptoms in Clinical Notes Using Natural Language Processing|AMIA 2022 Symposium|
-| Dec 02, 2021          	| [Home Monitoring Programs for Patients Testing Positive for SARS-CoV-2: An Integrative Literature Review](https://pubmed.ncbi.nlm.nih.gov/35172373/)                                                                                   	| Applied Clinical Informatics             	|
-| May 07, 2021          	| [Feature Engineering and Machine Learning for Causality Assessment in Pharmacovigilance:  Lessons Learned from Application to the FDA Adverse Event Reporting System (FAERS)](https://pubmed.ncbi.nlm.nih.gov/34130003/)               	| Computers in Biology and Medicine        	|
-| Jan 03, 2021          	| [Building a Specialized Lexicon for Breast Cancer Clinical Trial Subject Eligibility Analysis](https://pubmed.ncbi.nlm.nih.gov/33535885/)                                                                                              	| Health Informatics Journal               	|
-| Dec 10, 2018          	| [A Health Education Website Developed to Meet Young People’s Information Needs About Web-Based Pornography and Sharing of Sexually Explicit Imagery (SCOPE): Usability Study](https://pubmed.ncbi.nlm.nih.gov/31411140/)               	| JMIR Formulative Research                	|
+## Scholarly Review Records
+<table class = "table table-hover table-sm">
+<colgroup>
+    <col style="width:15%">
+    <col style="width:50%">
+    <col style="width:30%">
+    <col style="width:5%">
+  </colgroup>
+<thead>
+  <tr>
+    <th>Completed Date</th>
+    <th>Manuscript</th>
+    <th>Journal Name</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Sep 30, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>Journal of Medical Internet Research(JMIR)</td>
+  </tr>
+  <tr>
+    <td>Sep 12, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+    <td>Aug 29, 2022</td>
+    <td><a href = "https://www.sciencedirect.com/science/article/abs/pii/S1746809422006140" target = "_blank"> Arrhythmia Disease Classification Utilizing ResRNN </a></td>
+    <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+    <td>Aug 16, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+    <td>Aug 16, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+    <td>Jul 14, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>IEEE journal of Biomedical and Health Informatics</td>
+  </tr>
+  <tr>
+    <td>Jun 23, 2022</td>
+    <td><a href = "https://pubmed.ncbi.nlm.nih.gov/35917486/" target = "_blank"> Factors Associated With the Utilization of Outpatient Virtual Clinics: Retrospective Observational Study Using Multilevel Analysis </a> </td>
+    <td>Journal of Medical Internet Research(JMIR)</td>
+  </tr>
+  <tr>
+    <td>Apr 05, 2022</td>
+    <td>Evaluating the Workflow And Usability Impacts of AI Imaging Diagnostic Medical Decision Support Systems In Radiology: a Research Study Protocol</td>
+    <td>AMIA 2022 Symposium</td>
+  </tr>
+  <tr>
+    <td>Apr 04, 2022</td>
+    <td>Linking Network Camera Data and Pedestrian Simulations to Analyze Infection Risk in Crowded Locations</td>
+    <td>AMIA 2022 Symposium</td>
+  </tr>
+  <tr>
+    <td>Apr 03, 2022</td>
+    <td>Identifying Cancer Symptoms in Clinical Notes Using Natural Language Processing</td>
+    <td>AMIA 2022 Symposium</td>
+  </tr>
+  <tr>
+    <td>Dec 02, 2021</td>
+    <td><a href = "https://pubmed.ncbi.nlm.nih.gov/35172373/" target = "_blank"> Home Monitoring Programs for Patients Testing Positive for SARS-CoV-2: An Integrative Literature Review</a></td>
+    <td>Applied Clinical Informatics</td>
+  </tr>
+  <tr>
+    <td>May 07, 2021</td>
+    <td> <a href = "https://pubmed.ncbi.nlm.nih.gov/34130003/" target = "_blank"> Feature Engineering and Machine Learning for Causality Assessment in Pharmacovigilance: Lessons Learned from Application to the FDA Adverse Event Reporting System (FAERS) </a> </td>
+    <td>Computers in Biology and Medicine</td>
+  </tr>
+  <tr>
+    <td>Jan 03, 2021</td>
+    <td> <a href = "https://pubmed.ncbi.nlm.nih.gov/33535885/" target = "_blank"> Building a Specialized Lexicon for Breast Cancer Clinical Trial Subject Eligibility Analysis </a> </td>
+    <td>Health Informatics Journal</td>
+  </tr>
+  <tr>
+    <td>Dec 10, 2018</td>
+    <td>  <a href = "https://pubmed.ncbi.nlm.nih.gov/31411140/" target = "_blank"> A Health Education Website Developed to Meet Young People’s Information Needs About Web-Based Pornography and Sharing of Sexually Explicit Imagery (SCOPE): Usability Study </a> </td>
+    <td>JMIR Formulative Research</td>
+  </tr>
+</tbody>
+</table>
