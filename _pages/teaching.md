@@ -178,7 +178,6 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-
 <h4> Previous Panel/Conference Talks: </h4>
 <table class = "table table-hover table-sm">
 <colgroup>
