@@ -23,3 +23,35 @@ My primary research interests are `medical informatics` and `artificial intellig
 For the past four years, I've been teaching a healthcare computational tools course. I believe that each of us must decide how we will lead in times of great challenge, and I am committed to overcoming the obstacles and teaching students to be life-long learners. 
 
 I was born and raised in 丽水([Lishui](https://en.wikipedia.org/wiki/Lishui)), a beautiful town of China. After I finish my Bachelor degree in CS, I moved to United States and begins my doctoral study. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
+
+
+<!-- 
+
+IEEE JBHI, Jul 14, 2022, M-CSAFN: Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation, 
+BSPC, 8-16-2022, A Novel Study To Classify Breath Inhalation And Breath Exhalation Using Audio Signals From Heart And Trachea     
+BSPC, Aug 16, 2022, A Multi-modal Radiomics Feature-driven COVID-19 Statistical Diagnosis
+BSPC, SEP 12,2022, M-CSAFN: Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation
+JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visits through student-delivered helping sessions at a United States Federally Qualified Health Center: A pilot intervention study
+|Apr 05, 2022|	 Evaluating the Workflow And Usability Impacts of AI Imaging Diagnostic Medical Decision Support Systems In Radiology: a Research Study Protocol|AMIA 2022 Symposium|
+|Apr 04, 2022|Linking Network Camera Data and Pedestrian Simulations to Analyze Infection Risk in Crowded Locations|AMIA 2022 Symposium|
+|Apr 03, 2022|	Identifying Cancer Symptoms in Clinical Notes Using Natural Language Processing|AMIA 2022 Symposium|
+
+-->
+
+## My Scholarly Review Records
+| Review Completed Date 	| Manuscript                                                                                                                                                                                	| Journal Name                             	|
+|-----------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|------------------------------------------	|
+| Sep 30, 2022          	| (Name was hidden because this work has not been published) 	|                    Journal of Medical Internet Research(JMIR)         	|
+| Sep 12, 2022          	| (Name was hidden because this work has not been published)                                                                                                      	| Biomedical Signal Processing and Control 	|
+| Aug 29, 2022          	| [Arrhythmia Disease Classification Utilizing ResRNN](https://www.sciencedirect.com/science/article/abs/pii/S1746809422006140)                                                                                                                                        	| Biomedical Signal Processing and Control 	|
+| Aug 16, 2022          	| (Name was hidden because this work has not been published)                       	| Biomedical Signal Processing and Control 	|
+| Aug 16, 2022          	| (Name was hidden because this work has not been published)                                                                                                                     	| Biomedical Signal Processing and Control 	|
+| Jul 14, 2022          	| (Name was hidden because this work has not been published)                                                                                            	|   IEEE journal of Biomedical and Health Informatics   	|
+| Jun 23, 2022          	| [Factors Associated With the Utilization of Outpatient Virtual Clinics: Retrospective Observational Study Using Multilevel Analysis](https://pubmed.ncbi.nlm.nih.gov/35917486/)                                                        	|         Journal of Medical Internet Research(JMIR)               	| 
+|Apr 05, 2022|	 Evaluating the Workflow And Usability Impacts of AI Imaging Diagnostic Medical Decision Support Systems In Radiology: a Research Study Protocol|AMIA 2022 Symposium|
+|Apr 04, 2022|Linking Network Camera Data and Pedestrian Simulations to Analyze Infection Risk in Crowded Locations|AMIA 2022 Symposium|
+|Apr 03, 2022|	Identifying Cancer Symptoms in Clinical Notes Using Natural Language Processing|AMIA 2022 Symposium|
+| Dec 02, 2021          	| [Home Monitoring Programs for Patients Testing Positive for SARS-CoV-2: An Integrative Literature Review](https://pubmed.ncbi.nlm.nih.gov/35172373/)                                                                                   	| Applied Clinical Informatics             	|
+| May 07, 2021          	| [Feature Engineering and Machine Learning for Causality Assessment in Pharmacovigilance:  Lessons Learned from Application to the FDA Adverse Event Reporting System (FAERS)](https://pubmed.ncbi.nlm.nih.gov/34130003/)               	| Computers in Biology and Medicine        	|
+| Jan 03, 2021          	| [Building a Specialized Lexicon for Breast Cancer Clinical Trial Subject Eligibility Analysis](https://pubmed.ncbi.nlm.nih.gov/33535885/)                                                                                              	| Health Informatics Journal               	|
+| Dec 10, 2018          	| [A Health Education Website Developed to Meet Young People’s Information Needs About Web-Based Pornography and Sharing of Sexually Explicit Imagery (SCOPE): Usability Study](https://pubmed.ncbi.nlm.nih.gov/31411140/)               	| JMIR Formulative Research                	|
