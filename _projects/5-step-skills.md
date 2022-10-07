@@ -4,7 +4,7 @@ title: 最有效的五步推销法
 description: 如果你只有一次 PPT 演讲的机会，怎么才有最大的说服力？
 img: assets/img/6.jpg
 importance: 1
-category: 
+category: life 
 ---
 
 Posted on 11/19/2018 by RuanYiFeng, creative commons license.
