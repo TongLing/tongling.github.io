@@ -125,10 +125,6 @@ external_sources:
     rss_url: https://hubermanlab.com/feed/
   - name: sethsblog
     rss_url: http://feeds.feedburner.com/typepad/sethsmainblog
-  - name: ruanyifeng
-    rss_url: http://feeds.feedburner.com/ruanyifeng
-  - name: my-tech-blog
-    rss_url: https://blog.csdn.net/tlonline/rss/list?spm=1001.2014.3001.5494
 
 
 # -----------------------------------------------------------------------------
