@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: Teaching
-description: classes, workshops, and teaching materials
+description: classes, workshops, and teaching Videos
 nav: true
 nav_order: 5
 
@@ -36,8 +36,8 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 1: Introduction of Microsoft Excel; Performing Calculations  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/understanding-workbooks-and-worksheets" target = "_blank">[Material]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-simple-formulas" target = "_blank">[Material]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/understanding-workbooks-and-worksheets" target = "_blank">[Video]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-simple-formulas" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
@@ -45,8 +45,8 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 2: Performing Calculations; Formatting Data; Modifying Data  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/copying-a-formula-into-adjacent-cells" target = "_blank">[Material]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-sum-and-average" target = "_blank">[Material]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/copying-a-formula-into-adjacent-cells" target = "_blank">[Video]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-sum-and-average" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
@@ -54,8 +54,8 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 3: Creating Charts; Printing Options; Introducing Excel Projects  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-charts" target = "_blank">[Material]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/working-with-axes-titles-and-other-chart-elements" target = "_blank">[Material]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-charts" target = "_blank">[Video]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/working-with-axes-titles-and-other-chart-elements" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
@@ -63,7 +63,7 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 4: Linking and Summarization; Work on project  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-formulas-to-link-worksheets-and-workbooks" target = "_blank">[Material]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-formulas-to-link-worksheets-and-workbooks" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
@@ -71,8 +71,8 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 5: Sorting; Pivot Tables; Prepare For Presentation  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/sorting-data" target = "_blank">[Material]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-pivottables" target = "_blank">[Material]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/sorting-data" target = "_blank">[Video]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-pivottables" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
@@ -101,9 +101,9 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 9: Database Interview, Microsoft Access vs Microsoft Excel  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.youtube.com/watch?v=eXiCza050ug&ab_channel=GCFLearnFree.org" target = "_blank">[Material]</a>
-                <a href = "https://www.youtube.com/watch?v=bWKf6gT8_JI&ab_channel=GCFLearnFree.org" target = "_blank">[Material]</a>
-                <a href = "https://www.youtube.com/watch?v=nMWnqySvLWc&ab_channel=eHowTech" target = "_blank">[Material]</a>
+                <a href = "https://www.youtube.com/watch?v=eXiCza050ug&ab_channel=GCFLearnFree.org" target = "_blank">[Video]</a>
+                <a href = "https://www.youtube.com/watch?v=bWKf6gT8_JI&ab_channel=GCFLearnFree.org" target = "_blank">[Video]</a>
+                <a href = "https://www.youtube.com/watch?v=nMWnqySvLWc&ab_channel=eHowTech" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
@@ -111,8 +111,8 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 10: Advanced Pivot Tables  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/manipulating-pivottable-data" target = "_blank">[Material]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-pivotcharts" target = "_blank">[Material]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/manipulating-pivottable-data" target = "_blank">[Video]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-pivotcharts" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
@@ -120,8 +120,8 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 11: Advanced VLOOKUP. IF statement function  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-if-functions-and-relational-operators" target = "_blank">[Material]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/getting-exact-table-data-with-the-vlookup-function" target = "_blank">[Material]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-if-functions-and-relational-operators" target = "_blank">[Video]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/getting-exact-table-data-with-the-vlookup-function" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
@@ -136,7 +136,7 @@ social: true  # includes social icons at the bottom of the page
                 <div class="row">
                 <div class="col-sm-9"> Week 13: Goal seek Excel Function  </div>
                 <div class="col-sm-3">
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-goal-seek" target = "_blank">[Material]</a>
+                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-goal-seek" target = "_blank">[Video]</a>
                 </div>
                 </div>
             </li>
