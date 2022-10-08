@@ -175,6 +175,25 @@ social: true  # includes social icons at the bottom of the page
     </div>
 </div>
 
+
+<div class="card mt-3">
+    <div class="p-3">
+        <div class="row">
+            <div class="col-sm-10">
+                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HCA+745" target="_blank" rel="noopener noreferrer"></a>Health Big Data Processing Platforms </h5>
+                <h6 class="card-subtitle font-italic">Fall 2018: Teaching Assistant</h6> 
+                <p>This graduate-level course focuses on big data processing techniques in healthcare. </p>
+            </div>
+            <div class="col-sm-2 text-sm-right">
+                <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">
+                UWM HCA 745
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 ---
 
 
