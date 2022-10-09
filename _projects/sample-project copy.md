@@ -14,13 +14,13 @@ Income often reveals more about how people live than location. When I visit a ne
 
 The answers to these questions reveal a lot about the people who live there. If I see power lines, I know that homes in this area have electricity, which means that kids have enough light to do their homework after the sun goes down. Families who have patchwork roofs are likely to sleep less during the rainy season because they are wet and cold. If I see bikes, I know people don't have to walk for hours every day to get water.
 
-Dollar Street brilliantly illustrates the importance of income level. Anna dispatched photographers to photograph hundreds of homes from all over the world. These houses can be sorted by income, location, or even household object (so for example you can have it show you just beds, or dish soap, or cooking utensils). Each home has been meticulously tagged and includes a biography of the family who lives there. You can examine 135 objects belonging to each family, ranging from their front door to their shoes. The user interference is simple and straightforward to use.
+Dollar Street brilliantly illustrates the importance of income level. Anna dispatched photographers to photograph hundreds of homes from all over the world. These houses can be sorted by income, location, or even household object (so for example you can have it show you just beds, or dish soap, or cooking utensils). Each home has been meticulously tagged and includes a biography of the family who lives there. You can examine 135 objects belonging to each family, ranging from their front door to their shoes. The website is simple and straightforward to use
 
 When you start comparing objects, Dollar Street comes to life. The toothbrush photos were particularly intriguing to me. Families at the poorest end of the street clean their teeth with their fingers or sticks. However, once you reach a certain level of income, everyone starts using a plastic toothbrush with bristles.
 
-The more time you spend on Dollar Street, it becomes clear that we all have the same basic wants and needs. People, whether in China or Cameroon, tend to spend their money on the same things when their income rises. At the end of the day, we all want a secure roof over our heads, a more efficient mode of transportation, and better tools to care for ourselves. It's a lovely reminder that we have more in common than we realize with people on the other side of the world.
+The more time you spend on Dollar Street, it becomes clear that we all have the same basic wants and needs. People, whether in China or Cameroon, tend to spend their money on the same things when their income rises. At the end of the day, we all want a secure roof over our heads, a more efficient mode of transportation, some better tools to care for ourselves, and have a loved one on your side. It's a lovely reminder that we have more in common than we realize with people on the other side of the world.
 
-Anna and her team at Gapminder have created the most complete portrait of humanity I've ever seen. I could spend hours wandering around Dollar Street, and I hope you do as well.
+Anna and her team at Dollar street have created the most complete portrait of humanity I've ever seen. I could spend hours wandering around Dollar Street, and I hope you do as well.
 
 Here is what I found from the website:
 
@@ -58,7 +58,5 @@ Income is not a good indicator of what people prize most. Here’s a quick overv
 ### Almost everyone has a cell phone now
 
 Even the poorest people, who live on less than $90 a month, often have cell phones. Cell phones, once considered a luxury, are now an affordable way for people living in poverty to communicate with their loved ones and do business. In fact, more households have cell phones than have toilets! Using phones to deliver financial services is going to be a big factor in helping millions more people get loans and savings accounts, which is another step in the fight against extreme poverty.
-
-
 
 {% include figure.html path="assets/img/project/phone.jpg"  %}
