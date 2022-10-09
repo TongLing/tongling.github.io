@@ -4,7 +4,7 @@ title:  JS Bach - French Suite BWV 813 Allemande in A minor
 description: A nice playing of JS Bach - French Suite BWV 813 Allemande in A minor by myself.
 img: assets/img/project/bach-bwv-813.jpg
 importance: 3
-category: life
+category: music
 ---
 
 Posted on 9/13/2020 by Ling Tong

@@ -5,5 +5,5 @@ description: Lang Lang says, "For me it is very romantic, and light, like a feat
 img: assets/img/project/fur-elise.jpg
 redirect: https://www.youtube.com/watch?v=s71I_EWJk7I
 importance: 1
-category: life
+category: music
 ---
