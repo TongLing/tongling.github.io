@@ -26,7 +26,7 @@ I was born and raised in 丽水([Lishui](https://en.wikipedia.org/wiki/Lishui)),
 
 
 <!-- 
-
+BSPC, Oct 09. 2022, SERA: a two-stage CNN method for prostate MRI Segmentation
 IEEE JBHI, Jul 14, 2022, M-CSAFN: Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation, 
 BSPC, 8-16-2022, A Novel Study To Classify Breath Inhalation And Breath Exhalation Using Audio Signals From Heart And Trachea     
 BSPC, Aug 16, 2022, A Multi-modal Radiomics Feature-driven COVID-19 Statistical Diagnosis
