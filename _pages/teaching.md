@@ -19,10 +19,10 @@ social: true  # includes social icons at the bottom of the page
     <div class="p-3">
         <div class="row">
             <div class="col-sm-10">
-                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HS+224" target="_blank" rel="noopener noreferrer"></a>Computational tools for healthcare professionals </h5>
+                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HS+224" target="_blank" rel="noopener noreferrer">Computational tools for healthcare professionals</a><a href = "{{'/assets/pdf/hs224-syllabus.pdf' | relative_url}}" target = "_blank"> [Syllabus] </a></h5>
                 <h6 class="card-subtitle font-italic"> Every semester, Fall 2019 - Fall 2022: Instructor</h6> 
                 <p>UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"> Canvas </a> for your Syllabus, Lecture Notes, and Assignments.</p>
-                <span><a href = "{{'/assets/pdf/hs224-syllabus.pdf' | relative_url}}" target = "_blank"> [Syllabus] </a></span>
+                <span></span>
                 <p>This lecture focused on healthcare introduction of computational tools for information management, including system architecture, process, and ethical concepts. The course also incorporates training in Microsoft Excel application software.</p>
             </div>
             <div class="col-sm-2 text-sm-right">
@@ -162,13 +162,13 @@ social: true  # includes social icons at the bottom of the page
     <div class="p-3">
         <div class="row">
             <div class="col-sm-10">
-                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HCA+745" target="_blank" rel="noopener noreferrer"></a>Health Big Data Processing Platforms </h5>
+                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HCA+745" target="_blank" rel="noopener noreferrer"></a>Health Information Technology and Management</h5>
                 <h6 class="card-subtitle font-italic">Fall 2018: Teaching Assistant</h6> 
-                <p>This graduate-level course focuses on big data processing techniques in healthcare. </p>
+                <p>Introduction to origins, sources and content of healthcare data; technologies used to manage and control healthcare databases. Introduction to key components of healthcare databases, telecommunications technology, electronic medical record (EMR), project management, and systems evaluation. </p>
             </div>
             <div class="col-sm-2 text-sm-right">
                 <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">
-                UWM HCA 745
+                HCA 537
                 </span>
             </div>
         </div>
@@ -186,7 +186,7 @@ social: true  # includes social icons at the bottom of the page
             </div>
             <div class="col-sm-2 text-sm-right">
                 <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">
-                UWM HCA 745
+                HCA 745
                 </span>
             </div>
         </div>
