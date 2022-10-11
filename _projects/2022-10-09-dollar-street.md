@@ -11,7 +11,6 @@ Posted on 10/9/2022 by Ling Tong
 
 [Dollar Street](https://www.gapminder.org/dollar-street/) is a website that I'm totally obsessed with. Dollar Street, created by Factfulness co-author Anna Rosling Rönnlund, imagines a world where everyone lives on the same street and houses are ordered by income. The poorest live on one end of the spectrum, while the richest live on the other.
 
-
 Income often reveals more about how people live than location. When I visit a new place, I look for clues about the income level of the local families. Is there any power lines? What kind of roofs are on the houses? Are people riding bikes or walking from one location to another?
 
 The answers to these questions reveal a lot about the people who live there. If I see power lines, I know that homes in this area have electricity, which means that kids have enough light to do their homework after the sun goes down. Families who have patchwork roofs are likely to sleep less during the rainy season because they are wet and cold. If I see bikes, I know people don't have to walk for hours every day to get water.

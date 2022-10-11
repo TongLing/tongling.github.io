@@ -8967,11 +8967,11 @@ distill-header svg path {
 }
 distill-header .logo {
   font-size: 17px;
-  font-weight: 200;
+  font-weight: 300;
 }
 distill-header .nav {
   float: right;
-  font-weight: 300;
+  font-weight: 400;
 }
 distill-header .nav a {
   font-size: 12px;
@@ -9081,7 +9081,7 @@ distill-header .nav a {
 
 :host {
   color: rgba(255, 255, 255, 0.5);
-  font-weight: 300;
+  font-weight: 400;
   padding: 2rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   background-color: hsl(180, 5%, 15%); /*hsl(200, 60%, 15%);*/
@@ -9104,7 +9104,7 @@ distill-header .nav a {
 
 .footer-container .logo {
   font-size: 17px;
-  font-weight: 200;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   margin-right: 6px;
