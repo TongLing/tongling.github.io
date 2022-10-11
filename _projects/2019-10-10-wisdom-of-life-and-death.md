@@ -11,7 +11,7 @@ Posted on 10/10/2020 by Ling Tong
 
 Warning: Medically Explicit images, please proceed reading with care.
 
-Three days ago, Dr. Ke Wenzhe's TED talk titled "[Wisdom of Life and Death](https://www.youtube.com/watch?v=N0zhdMwD2Z8)" was on Youtube.
+Three days ago, Dr. Ke Wenzhe's TED talk titled [Wisdom of Life and Death](https://www.youtube.com/watch?v=N0zhdMwD2Z8) was on Youtube.
 
 This 18-minute speech is very exciting and thought-provoking for me. I couldn't resist translating the entire transcript for the hope that more people would read it, and think about this topic.
 
