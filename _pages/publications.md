@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: Publications
-description: My publications in reversed chronological order.
+title: Research
+description: My Research and Scholarly reviews records in reversed chronological order.
 years: [2022,2021,2020,2019,2017]
 nav: true
 nav_order: 1
@@ -80,3 +80,96 @@ social: true  # includes social icons at the bottom of the page
 
 ---
  -->
+## Scholarly Review Records
+<table class = "table table-hover table-sm">
+<colgroup>
+    <col style="width:15%">
+    <col style="width:50%">
+    <col style="width:30%">
+    <col style="width:5%">
+  </colgroup>
+<thead>
+  <tr>
+    <th>Completed Date</th>
+    <th>Manuscript</th>
+    <th>Journal Name</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Sep 30, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>Journal of Medical Internet Research(JMIR)</td>
+  </tr>
+  <tr>
+    <td>Sep 12, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+    <td>Aug 29, 2022</td>
+    <td><a href = "https://www.sciencedirect.com/science/article/abs/pii/S1746809422006140" target = "_blank"> Arrhythmia Disease Classification Utilizing ResRNN </a></td>
+    <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+    <td>Aug 16, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+    <td>Aug 16, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+    <td>Jul 14, 2022</td>
+    <td>(Name was hidden because this work has not been published)</td>
+    <td>IEEE Journal of Biomedical and Health Informatics</td>
+  </tr>
+  <tr>
+    <td>Jun 23, 2022</td>
+    <td><a href = "https://pubmed.ncbi.nlm.nih.gov/35917486/" target = "_blank"> Factors Associated With the Utilization of Outpatient Virtual Clinics: Retrospective Observational Study Using Multilevel Analysis </a> </td>
+    <td>Journal of Medical Internet Research(JMIR)</td>
+  </tr>
+  <tr>
+    <td>Apr 05, 2022</td>
+    <td>Evaluating the Workflow And Usability Impacts of AI Imaging Diagnostic Medical Decision Support Systems In Radiology: a Research Study Protocol</td>
+    <td>AMIA 2022 Symposium</td>
+  </tr>
+  <tr>
+    <td>Apr 04, 2022</td>
+    <td>Linking Network Camera Data and Pedestrian Simulations to Analyze Infection Risk in Crowded Locations</td>
+    <td>AMIA 2022 Symposium</td>
+  </tr>
+  <tr>
+    <td>Apr 03, 2022</td>
+    <td>Identifying Cancer Symptoms in Clinical Notes Using Natural Language Processing</td>
+    <td>AMIA 2022 Symposium</td>
+  </tr>
+  <tr>
+    <td>Dec 02, 2021</td>
+    <td><a href = "https://pubmed.ncbi.nlm.nih.gov/35172373/" target = "_blank"> Home Monitoring Programs for Patients Testing Positive for SARS-CoV-2: An Integrative Literature Review</a></td>
+    <td>Applied Clinical Informatics</td>
+  </tr>
+    <tr>
+    <td>Oct 04, 2021</td>
+    <td><a href = "https://pubmed.ncbi.nlm.nih.gov/35348470/" target = "_blank"> Development and Evaluation of Short-Form Measures of the HIV/AIDS Knowledge Assessment Tool Among Sexual and Gender Minorities in Brazil: Cross-sectional Study </a></td>
+    <td>JMIR Public Health and Surveillance</td>
+  </tr>
+  <tr>
+    <td>May 07, 2021</td>
+    <td> <a href = "https://pubmed.ncbi.nlm.nih.gov/34130003/" target = "_blank"> Feature Engineering and Machine Learning for Causality Assessment in Pharmacovigilance: Lessons Learned from Application to the FDA Adverse Event Reporting System (FAERS) </a> </td>
+    <td>Computers in Biology and Medicine</td>
+  </tr>
+  <tr>
+    <td>Jan 03, 2021</td>
+    <td> <a href = "https://pubmed.ncbi.nlm.nih.gov/33535885/" target = "_blank"> Building a Specialized Lexicon for Breast Cancer Clinical Trial Subject Eligibility Analysis </a> </td>
+    <td>Health Informatics Journal</td>
+  </tr>
+  <tr>
+    <td>Dec 10, 2018</td>
+    <td>  <a href = "https://pubmed.ncbi.nlm.nih.gov/31411140/" target = "_blank"> A Health Education Website Developed to Meet Young People’s Information Needs About Web-Based Pornography and Sharing of Sexually Explicit Imagery (SCOPE): Usability Study </a> </td>
+    <td>JMIR Formulative Research</td>
+  </tr>
+</tbody>
+</table>
