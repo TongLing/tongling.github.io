@@ -69,6 +69,7 @@ blockquote {
 .card {
   background-color: var(--global-card-bg-color);
   padding: 2rem;
+  margin: 1rem;
   img {
     width: 100%;
   }
@@ -476,6 +477,7 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
