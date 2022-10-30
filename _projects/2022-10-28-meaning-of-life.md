@@ -7,16 +7,15 @@ importance: 2
 category: life
 ---
 
+Posted on 10/28/2022 by Ling Tong
+
 这几天睡觉前，我在读《季羡林文集》。
 
 季羡林先生2009年就去世了，出版社请了他儿子季承写序言。
 
 {% include figure.html path="assets/img/project/bg2022102303.webp"  class="img-fluid rounded z-depth-1" %}
 
-
-
 季承（1935-2018），中国科学院高能物理所高级工程师，曾任李政道先生主持的中国高等科学技术中心顾问，与李政道有着长达三十年的紧密合作。（摘自百度百科）
-
 
 网上一查就知道了，季承跟他老爹关系不太好，十多年不相往来。
 
