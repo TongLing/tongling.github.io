@@ -87,7 +87,7 @@ BSPC, Oct 09. 2022, SERA: a two-stage CNN method for prostate MRI Segmentation
 IEEE JBHI, Jul 14, 2022, M-CSAFN: Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation, 
 BSPC, 8-16-2022, A Novel Study To Classify Breath Inhalation And Breath Exhalation Using Audio Signals From Heart And Trachea     
 BSPC, Aug 16, 2022, A Multi-modal Radiomics Feature-driven COVID-19 Statistical Diagnosis
-BSPC, SEP 12,2022, M-CSAFN: Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation
+JBHI, SEP 12,2022, M-CSAFN: Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation
 JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visits through student-delivered helping sessions at a United States Federally Qualified Health Center: A pilot intervention study
 |Apr 05, 2022|	 Evaluating the Workflow And Usability Impacts of AI Imaging Diagnostic Medical Decision Support Systems In Radiology: a Research Study Protocol|AMIA 2022 Symposium|
 |Apr 04, 2022|Linking Network Camera Data and Pedestrian Simulations to Analyze Infection Risk in Crowded Locations|AMIA 2022 Symposium|
