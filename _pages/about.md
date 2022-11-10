@@ -16,6 +16,8 @@ social: true  # includes social icons at the bottom of the page
 
 Hi, Thank you for visiting!
 
+**I'm actively interviewing to advance my career in a assistant professor or postdoc position in the United States. If you are looking for candidates specialized in AI in biomedical informatics, Please do not hesitate to reach out.**
+
 I'm Ling Tong (童凌), a PhD student in the Department of Medical Informatics at the [University of Wisconsin-Milwaukee](https://uwm.edu/), and I'm currently working in [Center for Biomedical Data and Language Processing](https://sites.uwm.edu/jakeluo/).
 
 My primary research interests are `medical informatics` and `artificial intelligence`. I am working on Statistical Modeling and Quantitative Analysis of Electronic Health Records as part of my PhD studies. I'm also interested in machine learning diagnosis, clinical predictive models, medical text mining, and natural language processing.
