@@ -18,7 +18,7 @@ social: true  # includes social icons at the bottom of the page
 
 I'm Ling Tong (童凌), a PhD candidate in the Department of Health Informatics and Administration at the [University of Wisconsin-Milwaukee](https://uwm.edu/), and I'm currently working in [Center for Biomedical Data and Language Processing](https://sites.uwm.edu/jakeluo/). My primary research interests are `medical informatics` and `artificial intelligence`. 
 
-- I focus on health care population studies. I have developed quantitative methods to analyse the gaps and inequities in telemedicine and health care, especially in the context of COVID-19 pandemic. My study `Telemedicine Adoption during the COVID-19 Pandemic: Gaps and Inequalities` was among top 10% cited paper in Applied Clinical Informatics Journals in 2021.  
+- I focus on health care population studies. I have developed quantitative methods to analyse the gaps and inequities in telemedicine and health care, especially in the context of COVID-19 pandemic. My paper `Telemedicine Adoption during the COVID-19 Pandemic: Gaps and Inequalities` was among top 10% cited paper in Applied Clinical Informatics Journals in 2021.  
 
 - In terms of AI, my goal is to explore the interactions between AI models and Electronic Health Records, and how AI make precision medicine possible. One of my major research objectives is to leverage Electronic Health Record data to improve machine learning model's transparency. 
   
