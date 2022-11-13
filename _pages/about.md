@@ -26,7 +26,7 @@ I co-authored over 20 publications in  biomedical informatics, clinical informat
 
 I've been teaching a healthcare computational tools course since 2019. I believe that each of us must decide how we will lead in times of great challenge, and I am committed to overcoming the obstacles and teaching students to be life-long learners. 
 
-Please visit my [google scholar](https://scholar.google.com/citations?user=lIl39DUAAAAJ&hl=en), [publication](https://tongling.github.io/publications/), and 
+Please visit my [google scholar](https://scholar.google.com/citations?user=lIl39DUAAAAJ&hl=en), [publications](https://tongling.github.io/publications/), and [teaching page](https://tongling.github.io/teaching/).
 
 I was born and raised in 丽水([Lishui](https://en.wikipedia.org/wiki/Lishui)), a beautiful town of China. After I finish my Bachelor degree in CS, I moved to United States and begins my doctoral study. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
 
