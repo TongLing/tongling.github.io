@@ -55,24 +55,6 @@ preview={tong2022interpretable.png},
   selected={true}
 }
 
-@article{liu2022visualizing,
-preview={liu2022visualizing.png},
-  bibtex_show={true},
-  title = {In Revision: Visualizing the Interpretation of a Criterion-Driven System that Automatically Evaluates the Quality of Health News: An Exploratory Study of Two Approaches},
-  author = {Liu, Xiaoyu and Abd, Hiba and Tong, Ling and Mcroy, Susan},
-  abstract = {Background: Machine learning techniques have been shown efficient at identifying health misinformation. However, interpreting a classification model remains challenging due to the model's intricacy. The absence of a justification for the classification result and disclosure of the model's domain knowledge may erode end-users’ trust in such models. This diminished trust may also undermine the effectiveness of artificial intelligence-based initiatives to counteract health misinformation. 
-Objective: This study is part of a broader, continuing project that aims to build an interpretable, criteria-based system to address the public's need for assistance evaluating the quality of health news as well as the typical opaqueness of an AI approach. Experimenting with a subset of the system's criteria, the objective of this study is to examine the feasibility of two methods for adding interpretability to the system.  The interpretability arises from the provision of visually interpretable representation, which is in the form of highlighting  sentence-level evidence from the news, to support the document-level automatic criterion evaluation result. We also aim to find an optimal window size for selecting sentences to produce accurate interpretation.
-Methods: Three of ten well-established criteria were chosen for our experimentation, namely whether the health news discusses the costs of the intervention (the Cost criterion); explains or quantifies the harms of the intervention (the Harm criterion);or identifies the conflicts of interest (the Conflict criterion). The first step of the experiment was to automate the evaluation of three criteria. For this step, we tested Logistic Regression, Naive Bayes, Support Vector Machine, and Random Forest algorithms. We then experimented with two approaches for developing interpretable representations of the results for three criteria respectively. For the first approach, (1) we calculate word feature weights, which explains how classification models distill keywords that contribute to the prediction;(2) then using the Local Interpretable Model Explanations (LIME) framework, we automatically select keywords for visualization that show how classification models identify positive news articles, based on related keywords;(3)and finally, the system highlights target sentences containing keywords to justify the criterion evaluation result.
-For the second approach, (1) we extract sentences that provide evidence to support the evaluation result from 100 health news articles, (2) based on these results, we train a typology classification model at a sentence level; (3) then, the system highlights a positive sentence instances for the result justification.  For the final visual presentation, we select the number of sentences to highlight based on a predetermined threshold of highlighting accuracy.
-Results: The automatic evaluation of health news on the Cost, Harm, and Conflict criteria achieved an average AUC score of 0.88, 0.76, and 0.73 respectively, after 50 repetitions of 10-fold cross validation Additionally, LIME provided a visualization of how keywords impact the evaluation results. Both approaches could successfully visualize the interpretation of the system. When tested with 20 cases, the performances of two approaches vary by criterion. A decrement of highlighting accuracy is observed as the number of highlighting sentences increases.  When the threshold for highlighting accuracy is set at 75% or higher, this results in a visualization with a variable length from 1 to 6 sentences. 
-Conclusions: We provide two approaches to interpret criteria-based health news evaluation models  tested on three criteria. The method incorporates rule-based and statistical machine learning approaches. Results suggest one might visually interpret an automatic criterion-based health news quality evaluation successfully using either approach, but larger differences may arise when multiple quality-related criteria are considered. This work can increase public trust in computerized health information evaluation.
-},
-  year = {2022},
-  month = {10},
-  journal = {Journal of Medical Internet Research.},
-  selected={false}
-}
-
 @article{tong2022dr,
 preview={tong2022dr.png},
   bibtex_show={true},
