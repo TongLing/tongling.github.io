@@ -11,6 +11,8 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1M0xClkq_2nrPGQcFITUYhBpDM3Xb-TU&ehbc=2E312F" width="640" height="480"></iframe>
+
 <!-- _pages/publications.md -->
 <div class="publications card">
 
