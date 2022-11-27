@@ -8,8 +8,13 @@ nav_order: 5
 
 social: true  # includes social icons at the bottom of the page
 ---
+[SIU Overview](/assets/pdf/SIU-HCM-Assistant-Professor-Overview.pptx)
 
+[SIU Research Talk](/assets/pdf/SIU-research-talk-10min.pptx)
 
+[SIU Teaching Talk](/assets/pdf/SIU-teaching-talk-20min.pptx)
+
+[SIU Startup proposal](/assets/pdf/MI_lab_startup_proposal_v0.1.pdf)
 <h4> University of Wisconsin-Milwaukee </h4>
 
 <div class="card mt-3">
