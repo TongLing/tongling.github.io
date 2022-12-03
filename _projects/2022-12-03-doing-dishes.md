@@ -6,11 +6,15 @@ img: assets/img/dishes.jpg
 importance: 3
 category: life
 ---
+
+Posted on 12/3/2022 by Ling Tong
+
+
 Although I don't want to do every housework, doing dishes can always beat dirty housework like "washing the toilet" and rank first and become my most disliked work.
 
 There are more than 20 questions and answers about dishwashing on the social media platform, some of which I find very interesting.
 
-"What kind of music, for example, will make a person not hate doing dishes?" It makes me wonder why people despise doing the dishes so much.
+"What kind of music, for example, will make a person not hate doing dishes?" It makes me wonder why people hate doing the dishes so much.
 
 
 ## You will be labeled as "sloppy" if you do not wash the dishes within half an hour of eating.
@@ -27,15 +31,13 @@ When things become forced, the fundamental premise of freedom and happiness is u
 
 ## 2 You might not understand the true meaning of dishwashing.
 
-It is said that washing dishes is one of the things to do.
+It is said that dishes is only one thing you need to do. But the truth is, you need to do:
 
 wash the dishes
 
-pot to wash
+wash the pots
 
-Cleaning knives, cutting boards, and other tools
-
-pans and dry pots
+Cleaning knives, cutting boards, forks and spoons, and other tools
 
 Remove the grease from the stove.
 
@@ -43,7 +45,7 @@ Clean up the kitchen counters.
 
 Gather leftover ingredients and store them in the refrigerator.
 
-soiled brush sink
+brush the dirty sink
 
 clean the floor
 
@@ -51,9 +53,11 @@ mop
 
 garbage bag
 
-New trash bag set
+New trash bag
 
-"Look! It's not as easy as simply washing the dishes!"
+Throw out the trash
+
+"Look! It's not as easy as simply doing the dishes!"
 
 ## 3 Additional Costs
 
@@ -61,6 +65,6 @@ Washing dishes is not only a complicated process, but it also has some hidden co
 
 Water and oil, for example, will inevitably splash during the washing process. If you move too much, the sewage will flow to the sink cabinet's surface. The jacket may be splattered with water, the trousers may be scratched, and the indoor slippers may be filthy.
 
-After you've washed the dishes, you'll need to change your clothes and probably take a shower. "Washing a bowl isn't worth the loss of washing yourself as well."
+After you've washed the dishes, you'll need to change your clothes and probably take a shower. " Doing dish is not worth the loss of washing yourself as well." Every time when I wash the dishes, I will feel that I am wasting my time and energy. I would rather spend my time on a total loss of boredom. 
 
 [dish](\assets\img\dishes.gif)
