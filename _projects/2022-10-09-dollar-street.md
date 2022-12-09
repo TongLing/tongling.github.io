@@ -6,8 +6,8 @@ img: assets/img/13.jpg
 importance: 2
 category: life
 ---
-
 Posted on 10/9/2022 by Ling Tong
+
 
 [Dollar Street](https://www.gapminder.org/dollar-street/) is a website that I'm totally obsessed with. Dollar Street, created by Factfulness co-author Anna Rosling Rönnlund, imagines a world where everyone lives on the same street and houses are ordered by income. The poorest live on one end of the spectrum, while the richest live on the other.
 

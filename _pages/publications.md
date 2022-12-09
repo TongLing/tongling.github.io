@@ -85,7 +85,23 @@ social: true  # includes social icons at the bottom of the page
 
  
 <!-- 
+
+JMIR AI, NOV 22, 2022,  Automated identification of aspirin exacerbated respiratory disease using natural language processing: a pilot study
+
+BSPC, DEC 08, 2022, Leukocyte Image Classification Using Channel Fusion and Wavelet Scattering Network	
+
+BSPC, DEC 01, 2022, Infant Cry Recognition by Using Different Deep Neural Network Models and Acoustic-Spectral Features
+
+BSPC, NOV 23, 2022, Safe-Level SMOTE Method for Handling the Class Imbalanced Problem in Electroencephalography Dataset of Adult Anxious State
+
+
+BSPC, OCT 23, 2022, CATARACT CLASSIFICATION AND GRADING IN FEDERATED LEARNING ENVIRONMENT USING CNN BASED MODIFIED-RESNET-50
+
+
+BSPC, OCT 09, 2022, CANet: Context Aware Network with Dual-Stream Pyramid for Medical Image Segmentation
+
 BSPC, Oct 09. 2022, SERA: a two-stage CNN method for prostate MRI Segmentation
+
 IEEE JBHI, Jul 14, 2022, M-CSAFN: Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation, 
 BSPC, 8-16-2022, A Novel Study To Classify Breath Inhalation And Breath Exhalation Using Audio Signals From Heart And Trachea     
 BSPC, Aug 16, 2022, A Multi-modal Radiomics Feature-driven COVID-19 Statistical Diagnosis
@@ -116,19 +132,47 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
 </thead>
 <tbody>
   <tr>
-      <td>Oct 9, 2022</td>
-      <td>(Name was hidden because this work has not been published)</td>
+      <td>Dec 08, 2022</td>
+      <td>Leukocyte Image Classification Using Channel Fusion and Wavelet Scattering Network</td>
       <td>Biomedical Signal Processing and Control</td>
   </tr>
     
   <tr>
+      <td>Dec 01, 2022</td>
+      <td>Infant Cry Recognition by Using Different Deep Neural Network Models and Acoustic-Spectral Features</td>
+      <td>Biomedical Signal Processing and Control</td>
+  </tr>
+
+  <tr>
+      <td>Nov 23, 2022</td>
+      <td>Safe-Level SMOTE Method for Handling the Class Imbalanced Problem in Electroencephalography Dataset of Adult Anxious State</td>
+      <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
+      <td>Nov 22, 2022</td>
+      <td>Automated identification of aspirin exacerbated respiratory disease using natural language processing: a pilot study</td>
+      <td>JMIR AI</td>
+  </tr>
+
+  <tr>
+      <td>Oct 23, 2022</td>
+      <td>Cataract classification and grading in federated learning environment using cnn based modified-resnet-50</td>
+      <td>Biomedical Signal Processing and Control</td>
+  </tr>
+
+  <tr>
+      <td>Oct 12, 2022</td>
+      <td>A two-stage CNN method for diseased prostate MRI segmentation</td>
+      <td>Biomedical Signal Processing and Control</td>
+  </tr>
+  <tr>
     <td>Sep 30, 2022</td>
-    <td>(Name was hidden because this work has not been published)</td>
+    <td>Targeting patients’ cognitive load for telehealth video visits through student-delivered helping sessions at a United States Federally Qualified Health Center: An equity-focused, mixed methods pilot intervention study</td>
     <td>Journal of Medical Internet Research(JMIR)</td>
   </tr>
   <tr>
     <td>Sep 12, 2022</td>
-    <td>(Name was hidden because this work has not been published)</td>
+    <td>CANet: Context Aware Network with Dual-Stream Pyramid for Medical Image Segmentation	</td>
     <td>Biomedical Signal Processing and Control</td>
   </tr>
   <tr>
@@ -138,17 +182,17 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
   </tr>
   <tr>
     <td>Aug 16, 2022</td>
-    <td>(Name was hidden because this work has not been published)</td>
+    <td>A Multi-modal Radiomics Feature-driven COVID-19 Statistical Diagnosis</td>
     <td>Biomedical Signal Processing and Control</td>
   </tr>
   <tr>
     <td>Aug 16, 2022</td>
-    <td>(Name was hidden because this work has not been published)</td>
+    <td><a href = "https://www.sciencedirect.com/science/article/abs/pii/S1746809422006747" target = "_blank"> A Novel Study To Classify Breath Inhalation And Breath Exhalation Using Audio Signals From Heart And Trachea</a></td>
     <td>Biomedical Signal Processing and Control</td>
   </tr>
   <tr>
     <td>Jul 14, 2022</td>
-    <td>(Name was hidden because this work has not been published)</td>
+    <td>M-CSAFN: Multi-color Space Adaptive Fusion Network for Automated Port-wine Stains Segmentation</td>
     <td>IEEE Journal of Biomedical and Health Informatics</td>
   </tr>
   <tr>
