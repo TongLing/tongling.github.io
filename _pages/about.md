@@ -27,15 +27,14 @@ I'm an active member of the American Medical Informatics Association (AMIA), and
 
 I've been teaching a healthcare computational tools course since 2019. I believe that each of us must decide how we will lead in times of great challenge. I encourage students to face challenges, and teaching them to be life-long learners. 
 
+Please visit my [google scholar](https://scholar.google.com/citations?user=lIl39DUAAAAJ&hl=en), [publications](https://tongling.github.io/publications/), and [teaching page](https://tongling.github.io/teaching/) for more information. 
 ## My Research and Teaching 
-
 
 My research interest is on health care population studies. I have developed quantitative methods to analyze the gaps and inequities in telemedicine and health care, especially in the context of COVID-19 pandemic. My paper Telemedicine Adoption during the COVID-19 Pandemic: Gaps and Inequalities was among the top 10% cited paper of Applied Clinical Informatics Journal in 2021. 
 
 Also, I'm interested in AI applications in medicine. My goal is to explore the interactions between AI models and Electronic Health Records, and how AI make precision medicine possible. One of my major research objectives is to leverage Electronic Health Record data to improve machine learning model's transparency. Our recent study of AI-based health news evaluation was accepted on [JMIR AI](https://preprints.jmir.org/preprint/37751/accepted).
 
 
-Please visit my [google scholar](https://scholar.google.com/citations?user=lIl39DUAAAAJ&hl=en), [publications](https://tongling.github.io/publications/), and [teaching page](https://tongling.github.io/teaching/) for more information. 
 
 ## Life
 I was born and raised in 丽水([Lishui](https://en.wikipedia.org/wiki/Lishui)), a beautiful town of China. After I finish my Bachelor degree in CS, I moved to United States and begins my doctoral study. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
