@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 
 I'm Ling Tong (童凌), a PhD candidate in the Department of Health Informatics and Administration at the [University of Wisconsin-Milwaukee](https://uwm.edu/), and I'm currently working in [Center for Biomedical Data and Language Processing](https://sites.uwm.edu/jakeluo/). My primary research interests are medical informatics and artificial intelligence. 
 
-I co-authored over 20 publications in biomedical informatics, clinical informatics, and computer science journals. Some are on top journals, such as Journal of Biomedical Informatics, JMIR AI, Biomedical Signal Processing and Control, IEEE Computer Software and Applications Conference, and Applied Clinical Informatics. I have also been a reviewer for many journals, including IEEE Journal of Biomedical and Health Informatics, Journal of Medical Internet Research(JMIR), Health Informatics Journal, and Computers in Biology and Medicine.  
+I co-authored over 20 publications in biomedical informatics, clinical informatics, and computer science journals. Some are on top journals, such as Journal of Biomedical Informatics, JMIR AI, and IEEE Computer Software and Applications Conference. I have also been a reviewer for medical informatics journals.
 
 I'm an active member of the American Medical Informatics Association (AMIA), and served as a reviewer for AMIA's conference proceedings. I have worked under the research projects funded by National Institute of Health(NIH), National Natural Science Foundation of China(NSFC), and Advancing a Healthier Wisconsin Endowment (AHW).
 
