@@ -39,7 +39,7 @@
                   {%- endif -%}
                 </a>
               </li>
-              
+<!--               
               {% if site.blog_nav_title %}
               
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
@@ -51,8 +51,9 @@
               </li>
              
               {%- endif %}
-            
+             -->
               <!-- Other pages -->
+
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}

@@ -3,11 +3,14 @@
 
   <!-- Head -->
   <head>
-  {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl | prepend: site.url }}/" />
-  {%- endif -%}
-  {% include head.html %}
-  </head>
+    {%- if page.redirect -%}
+      <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+    {%- endif -%}
+    {%- if page.redirect_to -%}
+      <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}/" />
+    {%- endif -%}
+    {% include head.html %}
+    </head>
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
