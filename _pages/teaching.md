@@ -8,15 +8,13 @@ nav_order: 5
 
 social: true  # includes social icons at the bottom of the page
 ---
-[SIU Overview](/assets/pdf/SIU-HCM-Assistant-Professor-Overview.pptx), [SIU Research Talk](/assets/pdf/SIU-research-talk-10min.pptx), [SIU Teaching Talk](/assets/pdf/SIU-teaching-talk-20min.pptx), [SIU Lab Startup proposal](/assets/pdf/MI_lab_startup_proposal_v0.1.pdf)
 <h4> University of Wisconsin-Milwaukee </h4>
-
 <div class="card mt-3">
     <div class="p-3">
         <div class="row">
             <div class="col-sm-10">
-                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HS+224" target="_blank" rel="noopener noreferrer">Computational tools for healthcare professionals</a><a href = "{{'/assets/pdf/hs224-syllabus.pdf' | relative_url}}" target = "_blank"> [Syllabus] </a></h5>
-                <h6 class="card-subtitle font-italic"> Every semester, Fall 2019 - Fall 2022: Instructor</h6> 
+                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HS+224" target="_blank" rel="noopener noreferrer">Computational tools for healthcare professionals</a> <a href = "{{'/assets/pdf/hs224-syllabus.pdf' | relative_url}}" target = "_blank">[Syllabus] </a></h5>
+                <h6 class="card-subtitle font-italic"> Fall 2019 - Fall 2022: Instructor</h6> 
                 <p>UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"> Canvas </a> for your Syllabus, Lecture Notes, and Assignments.</p>
                 <span></span>
                 <p>This lecture focused on healthcare introduction of computational tools for information management, including system architecture, process, and ethical concepts. The course also incorporates training in Microsoft Excel application software.</p>
@@ -193,7 +191,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 
-<h4> Previous Panel/Conference Talks: </h4>
+<h4> Conference Talks: </h4>
 <table class = "table table-hover table-sm">
 <colgroup>
     <col style="width:15%">
@@ -257,7 +255,8 @@ social: true  # includes social icons at the bottom of the page
 </table>
 
 ## Teaching Interest
-I can teach undergraduate courses, including, but not limited to:
+
+I'm able to teach undergraduate courses, including, but not limited to:
 
 - `Computational Software for Healthcare Professionals`: As previously stated, I am especially interested in hands-on training courses in general healthcare professions. This includes previous classes I taught on computational software, such as Microsoft Excel and healthcare databases. These are two areas where I see most undergraduate students falling short.
 - `Introduction to Python Programming`: Because of my background in computer science, I can also teach undergraduate-level programming courses, such as Python.
@@ -266,3 +265,4 @@ I can teach undergraduate courses, including, but not limited to:
 Also, I can teach following graduate courses:
 - `Artificial Intelligence in Healthcare`: I believe a hands-on training course in artificial intelligence and healthcare would be in high demand and become a course catalog highlight. In the interdisciplinary fields of engineering and healthcare, we are seeing unmet needs. In the next 5 to 10 years, the industry will require a large number of administrative and development professionals. Also, students will be interested in practical course like AI in Healthcare, which can improve the overall curriculum quality, thereby increasing enrollments. The interdisciplinary collaboration will also provide opportunities for research funding and cross-disciplinary academic collaborations. The active collaboration often results in academic achievements and improves the schools’ reputation.
 - `Statistics for Evidence-based Medicine`: In addition, statistics and evidence-based research are critical components of healthcare that every healthcare graduate student must comprehend. I am qualified to lecture on advanced level statistical courses, such as public health and research-based statistical methodology courses.
+
