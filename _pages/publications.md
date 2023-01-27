@@ -132,7 +132,7 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
 </thead>
 <tbody>
   <tr>
-      <td>Jan 03, 2022</td>
+      <td>Jan 03, 2023</td>
       <td>Protocol for a Real-Time Electronic Health Record Implementation of a Natural Language Processing and Deep Learning Clinical Decision Support Tool: A Use-Case for an Opioid Misuse Screener in Hospitalized Adults</td>
       <td>Journal of Medical Internet Research</td>
   </tr>
