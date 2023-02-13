@@ -117,6 +117,26 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
   </tr>
 </thead>
 <tbody>
+<tr>
+      <td>Feb 12, 2023</td>
+      <td>Personality traits moderated the link between perceived social support and suicidal behaviors among medical students: A cross-sectional study during the COVID-19 pandemic in China</td>
+      <td>BMC Psychiatry</td>
+  </tr>
+  <tr>
+      <td>Feb 12, 2023</td>
+      <td>A Nomogram for predicting cause-specific mortality among patients with cecal carcinoma: A study based on SEER database</td>
+      <td>BMC Gastroenterology</td>
+  </tr>
+<tr>
+      <td>Feb 9, 2023</td>
+      <td>A study on the use of octreotide to prevent delayed hemorrhage after ESD</td>
+      <td>Clinical and Experimental Medicine</td>
+  </tr>
+  <tr>
+      <td>Feb 8, 2023</td>
+      <td>Privacy-Preserving Federated Machine Learning on FAIR Health Data: A Real-World Application</td>
+      <td>Applied Clinical Informatics</td>
+  </tr>
   <tr>
       <td>Jan 03, 2023</td>
       <td>Protocol for a Real-Time Electronic Health Record Implementation of a Natural Language Processing and Deep Learning Clinical Decision Support Tool: A Use-Case for an Opioid Misuse Screener in Hospitalized Adults</td>

@@ -112,7 +112,7 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
 |Apr 03, 2022|	Identifying Cancer Symptoms in Clinical Notes Using Natural Language Processing|AMIA 2022 Symposium|
 
 -->
-
+<!-- 
 
 ## Scholarly Review Records
 
@@ -246,4 +246,4 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
     <td>JMIR Formulative Research</td>
   </tr>
 </tbody>
-</table>
+</table> -->
