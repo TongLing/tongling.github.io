@@ -266,3 +266,8 @@ Also, I can teach following graduate courses:
 - `Artificial Intelligence in Healthcare`: I believe a hands-on training course in artificial intelligence and healthcare would be in high demand and become a course catalog highlight. In the interdisciplinary fields of engineering and healthcare, we are seeing unmet needs. In the next 5 to 10 years, the industry will require a large number of administrative and development professionals. Also, students will be interested in practical course like AI in Healthcare, which can improve the overall curriculum quality, thereby increasing enrollments. The interdisciplinary collaboration will also provide opportunities for research funding and cross-disciplinary academic collaborations. The active collaboration often results in academic achievements and improves the schools’ reputation.
 - `Statistics for Evidence-based Medicine`: In addition, statistics and evidence-based research are critical components of healthcare that every healthcare graduate student must comprehend. I am qualified to lecture on advanced level statistical courses, such as public health and research-based statistical methodology courses.
 
+[IUPUI Syllabus](/assets/pdf/IUPUI-syllabus.docx)
+[IUPUI Slides](/assets/pdf/IUPUI-syllabus.docx)
+[IUPUI Excel File](/assets/pdf/IUPUI-excel-file.xlsx)
+[IUPUI Handout](/assets/pdf/IUPUI-handout.docx)
+[IUPUI Teaching Demonstration Rubric](/assets/pdf/IUPUI-teaching-demonstration-rubric.docx) 
