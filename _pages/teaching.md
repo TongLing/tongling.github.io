@@ -267,7 +267,12 @@ Also, I can teach following graduate courses:
 - `Statistics for Evidence-based Medicine`: In addition, statistics and evidence-based research are critical components of healthcare that every healthcare graduate student must comprehend. I am qualified to lecture on advanced level statistical courses, such as public health and research-based statistical methodology courses.
 
 [IUPUI Syllabus](/assets/pdf/IUPUI-syllabus.docx)
-[IUPUI Slides](/assets/pdf/IUPUI-syllabus.docx)
+
+[IUPUI Slides](/assets/pdf/IUPUI-presentation.pptx)
+
 [IUPUI Excel File](/assets/pdf/IUPUI-excel-file.xlsx)
+
 [IUPUI Handout](/assets/pdf/IUPUI-handout.docx)
-[IUPUI Teaching Demonstration Rubric](/assets/pdf/IUPUI-teaching-demonstration-rubric.docx) 
+
+<!-- [IUPUI Teaching Demonstration Rubric](/assets/pdf/IUPUI-teaching-demonstration-rubric.docx)  -->
+
