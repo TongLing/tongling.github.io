@@ -268,7 +268,7 @@ Also, I can teach following graduate courses:
 
 [IUPUI Syllabus](/assets/pdf/IUPUI-syllabus.docx)
 
-[IUPUI Slides](/assets/pdf/IUPUI-presentation.pptx)
+[IUPUI Slides](/assets/pdf/IUPUI-presentation.pdf)
 
 [IUPUI Excel File](/assets/pdf/IUPUI-excel-file.xlsx)
 
