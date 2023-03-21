@@ -337,7 +337,7 @@ social: true  # includes social icons at the bottom of the page
 </tbody>
 </table>
 
-## Teaching Interest
+<!-- ## Teaching Interest
 
 I'm able to teach undergraduate courses, including, but not limited to:
 
@@ -355,7 +355,7 @@ Also, I can teach following graduate courses:
 
 [IUPUI Excel File](/assets/pdf/IUPUI-excel-file.xlsx)
 
-[IUPUI Handout](/assets/pdf/IUPUI-handout.docx)
+[IUPUI Handout](/assets/pdf/IUPUI-handout.docx) -->
 
 <!-- [IUPUI Teaching Demonstration Rubric](/assets/pdf/IUPUI-teaching-demonstration-rubric.docx)  -->
 
