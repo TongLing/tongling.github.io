@@ -35,8 +35,8 @@ My research interest is on health care population studies. I have developed quan
 Also, I'm interested in AI applications in medicine. My goal is to explore the interactions between AI models and Electronic Health Records, and how AI make precision medicine possible. One of my major research objectives is to leverage Electronic Health Record data to improve machine learning model's transparency. Our recent study of AI-based health news evaluation was accepted on [JMIR AI](https://preprints.jmir.org/preprint/37751/accepted).
 
 
-
+<!-- 
 ## Life
 I was born and raised in 丽水([Lishui](https://en.wikipedia.org/wiki/Lishui)), a beautiful town of China. After I finish my Bachelor degree in CS, I moved to United States and begins my doctoral study. In my spare time, I like to play the piano/guitar, make music, and spend time with my bandmates.
 
-
+ -->
