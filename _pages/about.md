@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 I’m testing a new method to establish research connections. If you would like to collaborate with me, you can [click here](https://docs.google.com/forms/d/e/1FAIpQLSeUVQQL8nbCAC8MFUDGfafvxWAfPwx337xD2DnC8Ng3vY6xQg/viewform) to fill a form. I will contact you as soon as possible.
 ## Biography
 
-I'm Ling Tong (童凌), a PhD candidate in the Department of Health Informatics and Administration at the [University of Wisconsin-Milwaukee](https://uwm.edu/), and I'm currently working in [Center for Biomedical Data and Language Processing](https://sites.uwm.edu/jakeluo/). My primary research interests are medical informatics and artificial intelligence. 
+I'm Ling Tong (童凌) in the Department of Health Informatics and Administration at the [University of Wisconsin-Milwaukee](https://uwm.edu/), and I'm currently working in [Center for Biomedical Data and Language Processing](https://sites.uwm.edu/jakeluo/). My primary research interests are medical informatics and artificial intelligence. 
 
 I co-authored over 20 publications in biomedical informatics, clinical informatics, and computer science journals. Some are on top journals, such as Journal of Biomedical Informatics, JMIR AI, and IEEE Computer Software and Applications Conference. I have also been a reviewer for medical informatics journals.
 
