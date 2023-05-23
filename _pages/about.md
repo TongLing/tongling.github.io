@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://uwm.edu/'>University of Wisconsin Milwaukee</a>. Lecturer, Medical Informatics, Data Science. 
+subtitle: <a href='https://uwm.edu/'>University of Wisconsin Milwaukee</a>. Research Fellow, Medical Informatics, Data Science. 
 
 profile:
   align: right
@@ -16,7 +16,7 @@ social: true  # includes social icons at the bottom of the page
 <!-- 
 **I'm actively interviewing to advance my career in a assistant professor or postdoc position in the United States. If you are looking for candidates specialized in AI in biomedical informatics, please do not hesitate to reach out.** -->
 
-I will be joining into the Department of Neurology in McGovern Medical School, an affiliation of UTHealth Houston (The University of Texas Health Science Center at Houston. I will work there as a research fellow.
+I will be joining into the Department of Neurology in McGovern Medical School, an affiliation of UTHealth Houston (The University of Texas Health Science Center at Houston. 
 
 ## Biography
 
