@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://uwm.edu/'>University of Wisconsin Milwaukee</a>. Research Fellow, Medical Informatics, Data Science. 
+subtitle: Research Fellow, Medical Informatics, Data Science. 
 
 profile:
   align: right
