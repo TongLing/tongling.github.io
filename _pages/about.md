@@ -13,10 +13,8 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-<!-- 
-**I'm actively interviewing to advance my career in a assistant professor or postdoc position in the United States. If you are looking for candidates specialized in AI in biomedical informatics, please do not hesitate to reach out.** -->
 
-I will be joining into the Department of Neurology in McGovern Medical School, an affiliation of UTHealth Houston.  
+I will be joining into the Department of Neurology in McGovern Medical School, an affiliation of UTHealth (University of Texas Health Science Center) at Houston in 2023 Summer.  
 
 ## Biography
 
