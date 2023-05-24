@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://uwm.edu/'>University of Wisconsin Milwaukee</a>. Lecturer, Medical Informatics, Data Science. 
+subtitle: Research Fellow, Medical Informatics, Data Science. 
 
 profile:
   align: right
@@ -13,10 +13,9 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-<!-- 
-**I'm actively interviewing to advance my career in a assistant professor or postdoc position in the United States. If you are looking for candidates specialized in AI in biomedical informatics, please do not hesitate to reach out.** -->
 
-I’m testing a new method to establish research connections. If you would like to collaborate with me, you can [click here](https://docs.google.com/forms/d/e/1FAIpQLSeUVQQL8nbCAC8MFUDGfafvxWAfPwx337xD2DnC8Ng3vY6xQg/viewform) to fill a form. I will contact you as soon as possible.
+I will be joining into the Department of Neurology in McGovern Medical School, an affiliation of UTHealth (University of Texas Health Science Center) at Houston in 2023 Summer.  
+
 ## Biography
 
 I'm Ling Tong (童凌) in the Department of Health Informatics and Administration at the [University of Wisconsin-Milwaukee](https://uwm.edu/), and I'm currently working in [Center for Biomedical Data and Language Processing](https://sites.uwm.edu/jakeluo/). My primary research interests are medical informatics and artificial intelligence. 
