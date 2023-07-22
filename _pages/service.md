@@ -118,6 +118,11 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
 </thead>
 <tbody>
 <tr>
+      <td>Jun 27, 2023</td>
+      <td>A Risk Identification Model for Detection of Patients at Risk of Antidepressant Discontinuation</td>
+      <td>Frontiers in Artificial Intelligence</td>
+  </tr>
+<tr>
       <td>Feb 12, 2023</td>
       <td>Personality traits moderated the link between perceived social support and suicidal behaviors among medical students: A cross-sectional study during the COVID-19 pandemic in China</td>
       <td>BMC Psychiatry</td>
