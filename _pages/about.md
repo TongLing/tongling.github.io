@@ -14,7 +14,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-** I will be joining into the  in 2023 Summer.  **
+**I will be joining into the University of Texas Health Science Center at Houston in 2023 Summer.**
+
 ## Biography
 
 I'm Ling Tong (童凌). I'm currently working at [University of Texas Health Science Center at Houston](https://www.uth.edu/). My primary research interests are medical informatics and artificial intelligence. 
@@ -26,6 +27,7 @@ I'm an active member of the American Medical Informatics Association (AMIA), and
 I've been teaching a healthcare computational tools course since 2019. I believe that each of us must decide how we will lead in times of great challenge. I encourage students to face challenges, and teaching them to be life-long learners. 
 
 Please visit my [google scholar](https://scholar.google.com/citations?user=lIl39DUAAAAJ&hl=en), [publications](https://tongling.github.io/publications/), and [teaching page](https://tongling.github.io/teaching/) for more information. 
+
 ## My Research and Teaching 
 
 My research interest is on health care population studies. I have developed quantitative methods to analyze the gaps and inequities in telemedicine and health care, especially in the context of COVID-19 pandemic. My paper Telemedicine Adoption during the COVID-19 Pandemic: Gaps and Inequalities was among the top 10% cited paper of Applied Clinical Informatics Journal in 2021. 
