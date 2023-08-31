@@ -117,14 +117,14 @@ disqus_shortname: Ling Tong # put your disqus shortname
 # If you have blog posts published on medium.com or other exteranl sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-  - name: Journal of Medical Internet Research (JMIR)
-    rss_url: http://feeds.feedburner.com/JMedInternetRes
-  - name: Huberman Lab Podcast
-    rss_url: https://hubermanlab.com/feed/
-  - name: sethsblog
-    rss_url: http://feeds.feedburner.com/typepad/sethsmainblog
+# - name: medium.com
+#   rss_url: https://medium.com/@al-folio/feed
+# - name: Journal of Medical Internet Research (JMIR)
+#   rss_url: http://feeds.feedburner.com/JMedInternetRes
+# - name: Huberman Lab Podcast
+#   rss_url: https://hubermanlab.com/feed/
+# - name: sethsblog
+#   rss_url: http://feeds.feedburner.com/typepad/sethsmainblog
 
 
 # -----------------------------------------------------------------------------
