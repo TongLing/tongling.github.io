@@ -117,6 +117,11 @@ JMIR, Sep 30 2022, Reducing patients’ cognitive load for telehealth video visi
   </tr>
 </thead>
 <tbody>
+  <tr>
+      <td>Sep 11, 2023</td>
+      <td>ChatGPT as a source for a self-reflection experiment and critical evaluation of patient information: Results from a study course for medical students</td>
+      <td>JMIR Medical Education</td>
+  </tr>
 <tr>
       <td>Jun 27, 2023</td>
       <td>A Risk Identification Model for Detection of Patients at Risk of Antidepressant Discontinuation</td>
