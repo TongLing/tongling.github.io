@@ -13,7 +13,7 @@ social: true  # includes social icons at the bottom of the page
     <div class="p-3">
         <div class="row">
             <div class="col-sm-10">
-                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HS+224" target="_blank" rel="noopener noreferrer">Computational tools for healthcare professionals</a> <a href = "{{'/assets/pdf/hs224-syllabus.pdf' | relative_url}}" target = "_blank">[Syllabus] </a></h5>
+                <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HS+224" target="_blank" rel="noopener noreferrer">Computational tools for healthcare professionals</a> 
                 <h6 class="card-subtitle font-italic"> Fall 2019 - Fall 2022: Instructor</h6> 
                 <p>UWM Students: Please visit <a href = "https://uwm.edu/canvas/" target = "_blank"> Canvas </a> for your Syllabus, Lecture Notes, and Assignments.</p>
                 <span></span>
@@ -25,89 +25,7 @@ social: true  # includes social icons at the bottom of the page
                 </span>
             </div>
         </div>
-        <table class = "table table-hover table-sm">
-        <colgroup>
-            <col style="width:80%">
-            <col style="width:20%">
-        </colgroup>
-        <thead>
-        <tr>
-            <th>Week</th>
-            <th>Download</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td>Week 1: Introduction of Microsoft Excel; Performing Calculations</td>
-        <td><a href = "https://www.linkedin.com/learning/excel-2016-essential-training/understanding-workbooks-and-worksheets" target = "_blank">[Video]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-simple-formulas" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td> Week 2: Performing Calculations; Formatting Data; Modifying Data </td>
-        <td>        <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/copying-a-formula-into-adjacent-cells" target = "_blank">[Video]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-sum-and-average" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td>Week 3: Creating Charts; Printing Options; Introducing Excel Projects  </td>
-        <td> <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-charts" target = "_blank">[Video]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/working-with-axes-titles-and-other-chart-elements" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td>Week 4: Linking and Summarization; Work on project</td>
-        <td> <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-formulas-to-link-worksheets-and-workbooks" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td> Week 5: Sorting; Pivot Tables; Prepare For Presentation </td>
-        <td> <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/sorting-data" target = "_blank">[Video]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/creating-pivottables" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td>Week 6: Excel Project and Presentation  </td>
-        <td></td>
-        </tr>
-        <tr>
-        <td>Week 7: Excel Re-enforcement exercise #1; Review for Excel Quiz</td>
-        <td></td>
-        </tr>
-        <tr>
-        <td>Week 8: Hands-on Excel Quiz; Deadline for Week 1-7 assignment re-submissions8</td>
-        <td></td>
-        </tr>
-        <tr>
-        <td>Week 9: Database Interview, Microsoft Access vs Microsoft Excel</td>
-        <td><a href = "https://www.youtube.com/watch?v=eXiCza050ug&ab_channel=GCFLearnFree.org" target = "_blank">[Video]</a>
-                <a href = "https://www.youtube.com/watch?v=bWKf6gT8_JI&ab_channel=GCFLearnFree.org" target = "_blank">[Video]</a>
-                <a href = "https://www.youtube.com/watch?v=nMWnqySvLWc&ab_channel=eHowTech" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td>Week 10: Advanced Pivot Tables </td>
-        <td>  <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/manipulating-pivottable-data" target = "_blank">[Video]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-pivotcharts" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td>Week 11: Advanced VLOOKUP. IF statement function</td>
-        <td><a href = "https://www.linkedin.com/learning/excel-2016-essential-training/manipulating-pivottable-data" target = "_blank">[Video]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-pivotcharts" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td>Week 11: Advanced VLOOKUP. IF statement function  </td>
-        <td>  <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-if-functions-and-relational-operators" target = "_blank">[Video]</a>
-                <a href = "https://www.linkedin.com/learning/excel-2016-essential-training/getting-exact-table-data-with-the-vlookup-function" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td>Week 12: Thanksgiving Break </td>
-        <td></td>
-        </tr>
-        <tr>
-        <td>Week 13: Goal seek Excel Function </td>
-        <td><a href = "https://www.linkedin.com/learning/excel-2016-essential-training/using-goal-seek" target = "_blank">[Video]</a></td>
-        </tr>
-        <tr>
-        <td> Week 15: Final quiz </td>
-        <td></td>
-        </tr>
-        </tbody>
-        </table>
+        
         <!-- <ul class="card-text font-weight-light list-group list-group-flush">
             <li class="list-group-item">
                 <div class="row">
