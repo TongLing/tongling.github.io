@@ -14,14 +14,11 @@ social: true  # includes social icons at the bottom of the page
         <div class="row">
             <div class="col-sm-10">
                 <h5 class="card-title"><a href="https://catalog.uwm.edu/search/?search=HS+224" target="_blank" rel="noopener noreferrer">Computational tools for healthcare professionals</a> 
-                <h6 class="card-subtitle font-italic"> Fall 2019 - Fall 2022: Instructor</h6> 
-                
+                <h6 class="card-subtitle font-italic"> Fall 2019 - Fall 2022: Instructor</h6>
                 <p>This lecture focused on healthcare introduction of computational tools for information management, including system architecture, process, and ethical concepts. The course also incorporates training in Microsoft Excel application software.</p>
             </div>
             <div class="col-sm-2 text-sm-right">
-                <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">
-                UWM HS-224
-                </span>
+                <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle">UWM HS-224</span>
             </div>
         </div>
     </div>
@@ -63,7 +60,7 @@ social: true  # includes social icons at the bottom of the page
 </div>
 
 
----
+
 
 
 <h4> Conference Talks: </h4>
